@@ -1,0 +1,59 @@
+.footer .nav-tabs{
+    border-bottom: none;
+    padding: 15px 0;
+}
+.footer .nav-tabs .nav-link.active{
+    border-color: transparent;
+    background: transparent;
+}
+
+.footer {
+    padding: 110px 0 50px 0;
+    background-color: #082a37;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+.moon {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 100%;
+}
+.moon img{
+    width: 100%;
+    height: auto;
+}
+.footer .container-fluid{
+    margin: 0;
+    /* padding: 0; */
+}
+.footer .nav-tabs .nav-link {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.img-wrapper img {
+    width: 100px;
+    height: 30px;
+}
+.copy {
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+}
+.haveproject p{
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+
+}
+.haveproject .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+}

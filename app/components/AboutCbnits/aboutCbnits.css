@@ -1,0 +1,67 @@
+.aboutCbnits {
+    /* height: 500px; */
+    width: 100%;
+    background:
+    linear-gradient(
+      rgba(0, 148, 68, 0.65), 
+      rgba(0, 148, 68, 0.65)
+    ), url("./../../images/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.left-party  img{
+    width: 205px;
+    height: 166px;
+    margin: auto;
+    text-align: center;
+}
+.left-party p{
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+}
+.right-party p{
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: left;
+}
+.right-party-1  img{
+    width: 205px;
+    height: 150px;
+    margin-bottom: 25px;
+}
+.right-party-2  img{
+    width: 145px;
+    height: 110px;
+}
+
+.about-desp {
+
+}
+.about-desp h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+.about-desp h4{
+    text-transform: uppercase;
+    color: #bfdfce;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.about-desp p {
+    color: #bfdfce;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.about-desp p:last-child {
+    margin-bottom: 0px;
+}

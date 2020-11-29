@@ -1,0 +1,39 @@
+.header .nav-tabs{
+    border-bottom: none;
+    padding: 15px 0;
+}
+.header .nav-tabs .nav-link.active{
+    border-color: transparent;
+    background: transparent;
+}
+
+.header {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: rgba(255,255,255,0.08);
+}
+.header .container-fluid{
+    margin: 0;
+    /* padding: 0; */
+}
+.header .nav-tabs .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.header .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.img-wrapper img {
+    width: 133px;
+    height: 40px;
+}

@@ -1,0 +1,128 @@
+.domain {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.domain-head h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 10px;
+}
+.domain-head h2 span {
+    color: #1dbdfc;
+}
+.domain-head p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 70px;
+}
+
+
+
+.topic img{
+    height: 180px;
+    width: 210px;
+}
+
+.desp-topic .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.leftTopic h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+
+.position-relative {
+    position: relative;
+    padding: 2px 35px;
+
+}
+.green ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: #009444;
+}
+.purple ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: #7f3f98;
+}
+.orange ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: #f15a29;
+}
+.sky ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: #1cb5f2;
+}
+.blue ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: #01478e;
+}
+.health-before ::before {
+    content: "";
+    position: absolute;
+    right: 39%;
+    bottom: 0px;
+    height: 6px;
+    width: 30px;
+    background-color: red;
+}
+
+.green-back {
+    background-color: #009444;
+    position: relative;
+}
+
+.green-back::after {
+    content: "";
+    position: absolute;
+    right: 35%;
+    top: -31px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 31px solid #009444;
+}
+
+

@@ -1,0 +1,46 @@
+.clients {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+.client-img img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #1dbdfc;
+    margin-right: 15px;
+
+}
+.custom-carousel .carousel {
+    height: 350px;
+}
+.custom-carousel .carousel-indicators .active {
+    background-color: #1dbdfc;
+}
+.custom-carousel .carousel-indicators li {
+    background-color: #cdcdcd;
+}
+.actual-client h5{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.actual-client p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.title-carousel h3{
+    color: #000;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.title-carousel h4{
+    color: #1dbdfc;
+    font-size: 42px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
