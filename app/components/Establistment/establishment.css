@@ -1,0 +1,142 @@
+.ProgressBar {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ProgressBar-step {
+    text-align: center;
+    position: relative;
+    width: 100%;
+  }
+  
+.ProgressBar-step:before,
+.ProgressBar-step:after {
+      content: "";
+      height: 2px;
+      background-color: #ccc;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      left: -50%;
+      top: 50%;
+      /* transform: translateY(-50%); */
+      transition: all .25s ease-out;
+    }
+    
+    .ProgressBar-step:first-child:before,
+    .ProgressBar-step:first-child:after { 
+      display: none; 
+    }
+  
+    .ProgressBar-step:after {
+      background-color: blue;
+      width: 0%;
+    }
+  
+    .ProgressBar-step.is-complete + .ProgressBar-step.is-current:after,
+    .ProgressBar-step.is-complete + .ProgressBar-step.is-complete:after {
+      width: 100%;
+    }
+  
+    .ProgressBar-step.is-current::before{
+        background: #f15a29;
+        border-color:#f15a29;
+    }
+    .ProgressBar-step.is-current .ProgressBar-icon{
+        background: #f15a29;
+        border-color:#f15a29;
+    }
+    .ProgressBar-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    fill: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    transition: all .25s ease-out;
+    border: 2px solid #ccc;
+  }
+    
+.is-current  {
+    fill: blue;
+    /* background-color:blue; */
+}
+
+.is-complete  {
+    fill: #fff;
+    /* background-color: blue; */
+}
+  
+.ProgressBar-stepLabel {
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    transition: all .25s ease-out;
+}
+    
+.is-current > .is-complete > {
+    color: blue;
+}
+
+.wrapper {
+    margin: 4em auto;
+    font-size: 16px;
+}
+.progressSection{
+    position: relative;
+}
+.npButton{
+    position: absolute;
+    width: 100%;
+    top: 25px;
+    left: 0;
+}
+.npButton button{
+    background: #e4e5e8;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 100%;
+}
+.npButton button:hover, .npButton button:focus{
+    outline: none;
+    border: none;
+}
+.npButton #advance{
+    float: right;
+}
+.infoBox{
+    display: flex;
+    padding: 4rem 3rem;
+    align-items: center;
+}
+.infoYear{
+    border-right: 2px dashed #dcdde0;
+    margin-right: 2rem;
+    padding-right: 5rem;
+}
+.infoYear h3{
+    color: #f7aa99;
+    font-size: 200px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    width: 210px;
+    height: 440px;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.infoContent p em{
+    color: #404040;
+}

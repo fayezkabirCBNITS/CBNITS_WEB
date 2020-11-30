@@ -1,0 +1,21 @@
+.listStyle{
+    list-style-type: none;
+    padding-left: 0;
+}
+.listStyle li{
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.listStyle li::before{
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQBAMAAAACH4lsAAAAKlBMVEVHcEzxWinxWinxWinxWinxWinxWinxWinxWinxWinxWinxWinxWinxWinlMfquAAAADXRSTlMA7neKIjMRzLtm3VWqZ9AVVgAAAHdJREFUCNdjYGBIXnv3KAMIMN29e7cBzLK9DCIVGBg4rzsAGRxAbqIISKjXgIFBVwEqxHDWIYWBrRbELWRbGJB+CaSikCFQcu0EhlgDoCyr7G0GhrkKIB2BG4CaA6CmcF6HmbxRBGqbz90NUBfcXQp2AtBVTUAKALLUJErkCeklAAAAAElFTkSuQmCC);
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 4px;
+    width: 17px;
+    height: 16px;
+    background-repeat: no-repeat;
+}

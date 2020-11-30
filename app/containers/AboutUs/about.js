@@ -7,7 +7,10 @@ import WhoWeAre from "./../../components/WhoWeAre/whoWeAre";
 import ImageGallery from "./../../components/Image-Gallery/gallery";
 import WorkingWithUs from "./../../components/Caroousel/carousel";
 import CustomerSay from "./../../components/CustomerSay/customarSay";
-import Establishment from "./../../components/Establistment/establishment"
+import Establishment from "./../../components/Establistment/establishment";
+import Transformation from "./../../components/Transformation";
+import FourReasons from "./../../components/FourReasons";
+import Opertunities from "./../../components/Opportunities";
 import react from "./../../images/react.png"
 import angular from "./../../images/angular.png"
 import vue from "./../../images/vue.png"
@@ -93,13 +96,23 @@ const AboutUs = props => {
                             <TabContent activeTab={activeTab}>
                                 <TabPane tabId="1">
                                     <Row>
-                                        <Col sm="12"><AboutCbnits />
-
+                                        <Col sm="12">
+                                            <AboutCbnits />
                                             <WhoWeAre />
                                             <Establishment />
                                             <ImageGallery />
                                             <WorkingWithUs />
                                             <CustomerSay />
+                                        </Col>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="2">
+                                    <Row>
+                                        <Col sm="12">
+                                            <Transformation />
+                                            <ImageGallery />
+                                            <FourReasons />
+                                            <Opertunities />                                            
                                         </Col>
                                     </Row>
                                 </TabPane>
@@ -110,14 +123,7 @@ const AboutUs = props => {
                     </Row>
                 </Container>
             </div>
-            {/* <AboutCbnits />
-
-            <WhoWeAre />
-            <Establishment />
-            <ImageGallery />
-            <WorkingWithUs />
-            <CustomerSay /> */}
-
+            
         </div>
     )
 }
