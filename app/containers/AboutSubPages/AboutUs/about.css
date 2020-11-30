@@ -1,0 +1,117 @@
+/*****************************banner section****************************************/
+.header-img {
+    /* margin-top: -73px; */
+    height: 640px;
+    width: 100%;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ), url("./../../images/bnr2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: 'Lato', sans-serif;
+}
+.title-info {
+    color: #fff;
+}
+.title-info abbr {
+    margin-right: 20px;
+}
+.title-info span {
+    margin-right: 20px;
+}
+.middle-section {
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+}
+.middle-section h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.middle-section h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.middle-section p {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.middle-section h2 span{
+    color: #fff;
+}
+.middle-section .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.lang-container {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lang-wrapper {
+    color: #fff;
+}
+.lang-wrapper span {
+    margin-left: 12px;
+}
+/*****************************end****************************************/
+
+.sub-header .nav-tabs{
+    border-bottom: none;
+    padding: 15px 0;
+}
+.sub-header .nav-tabs .nav-link.active{
+    border-color: transparent;
+    background: transparent;
+}
+
+.sub-header {
+    /* border: 1px solid red; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+    width: 100%;
+    background-color: rgba(0,0,0,0.15);
+}
+
+.sub-header .nav-tabs .nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sub-header .nav-tabs .nav-link:hover{
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+}
+.active-nav-link {
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff !important;
+}
+/* 
+.sub-header .btn-primary {
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-transform: uppercase;
+    font-size: 15px;
+} */

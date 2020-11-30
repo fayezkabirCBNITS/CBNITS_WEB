@@ -12,6 +12,7 @@ import FooterComp from './../components/Footer/index';
 import HomePage from "./../containers/Home/index";
 import NotFound from "./../containers/NotFoundPage/Loadable"
 import AboutUs from "./../containers/AboutUs/about";
+import Career from "./../containers/AboutSubPages/Career/index";
 // import GlobalStyle from '../global-styles';
 
 const AppWrapper = styled.div`
@@ -37,6 +38,7 @@ const Routing = _ => {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/home" component={HomePage} />
                 <Route exact path="/aboutus" component={AboutUs} />
+                <Route exact path="/career" component={Career} />
                 <Route path="" component={NotFound} />
             </Switch>
             <FooterComp />

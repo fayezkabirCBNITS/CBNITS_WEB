@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
 
-import "./about.css";
-import AboutCbnits from "./../../components/About-AboutUs"
-import WhoWeAre from "./../../components/WhoWeAre/whoWeAre";
-import ImageGallery from "./../../components/Image-Gallery/gallery";
-import WorkingWithUs from "./../../components/Caroousel/carousel";
-import CustomerSay from "./../../components/CustomerSay/customarSay";
-import Establishment from "./../../components/Establistment/establishment"
-import react from "./../../images/react.png"
-import angular from "./../../images/angular.png"
-import vue from "./../../images/vue.png"
-import node from "./../../images/node.png"
-import python from "./../../images/python.png"
-import java from "./../../images/java.png"
-import golang from "./../../images/golang.png"
-import msg from "./../../images/msg.png"
-import ph from "./../../images/ph.png"
+// import "./career.css";
+import Transformation from "./../../../components/Transformation"
+import WhoWeAre from "./../../../components/WhoWeAre/whoWeAre";
+import ImageGallery from "./../../../components/Image-Gallery/gallery";
+import WorkingWithUs from "./../../../components/Caroousel/carousel";
+import CustomerSay from "./../../../components/CustomerSay/customarSay";
+import Establishment from "./../../../components/Establistment/establishment"
+import react from "./../../../images/react.png"
+import angular from "./../../../images/angular.png"
+import vue from "./../../../images/vue.png"
+import node from "./../../../images/node.png"
+import python from "./../../../images/python.png"
+import java from "./../../../images/java.png"
+import golang from "./../../../images/golang.png"
+import msg from "./../../../images/msg.png"
+import ph from "./../../../images/ph.png"
 const imgArr = [
     { img: react, lang: "react.js" },
     { img: angular, lang: "angular.js" },
@@ -29,7 +29,7 @@ const imgArr = [
 
 
 
-const AboutUs = props => {
+const Career = props => {
     return (
         <div>
             <div className="header-img">
@@ -70,7 +70,7 @@ const AboutUs = props => {
                                     <NavLink href="#">HOW WE WORK</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="#subAbout">OUR TEAM</NavLink>
+                                    <NavLink href="#">OUR TEAM</NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">MISSION AND VISSION</NavLink>
@@ -81,19 +81,12 @@ const AboutUs = props => {
                     </Row>
                 </Container>
             </div>
-
-            <div id="subAbout">
-            <AboutCbnits />
-
-            <WhoWeAre />
-            <Establishment />
-            <ImageGallery />
-            <WorkingWithUs />
-            <CustomerSay />
-            </div>
+            
+            
+           <Transformation />
 
         </div>
     )
 }
 
-export default AboutUs;
+export default Career;
