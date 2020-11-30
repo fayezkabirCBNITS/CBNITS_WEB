@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
+import { Nav, NavItem, Button, TabContent, TabPane, NavLink, Row, Col, Container } from 'reactstrap';
 
 import "./about.css";
 import AboutCbnits from "./../../components/About-AboutUs"
@@ -26,10 +26,15 @@ const imgArr = [
     { img: java, lang: "java" },
     { img: golang, lang: "golang" }
 ];
-
+import classnames from 'classnames';
 
 
 const AboutUs = props => {
+    const [activeTab, setActiveTab] = useState('1');
+
+    const toggle = tab => {
+        if (activeTab !== tab) setActiveTab(tab);
+    }
     return (
         <div>
             <div className="header-img">
@@ -56,38 +61,62 @@ const AboutUs = props => {
                 </Container>
             </div>
             <div className="sub-header">
+                <Nav tabs>
+                    <Container className="themed-container" fluid={false}>
+                        <Row className="d-flex justify-content-center">
+                            <Col xl={12} lg={12}>
+                                <div className="d-flex">
+                                    <NavItem>
+                                        <NavLink
+                                            className={classnames({ active: activeTab === '1' })}
+                                            onClick={() => { toggle('1'); }}
+                                        >
+                                            About Us
+                                    </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink
+                                            className={classnames({ active: activeTab === '2' })}
+                                            onClick={() => { toggle('2'); }}
+                                        >
+                                            Career
+                                    </NavLink>
+                                    </NavItem>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Nav>
                 <Container className="themed-container" fluid={false}>
                     <Row className="d-flex justify-content-center">
-                        <Col xl={10} lg={10}>
-                            <Nav tabs className="d-flex justify-content-center" >
-                                <NavItem>
-                                    <NavLink className="active-nav-link" href="#">ABOUT US</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">CAREERS</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">HOW WE WORK</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">OUR TEAM</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="#">MISSION AND VISSION</NavLink>
-                                </NavItem>
-                            </Nav>
+                        <Col xl={12} lg={12}><div>
+                            <TabContent activeTab={activeTab}>
+                                <TabPane tabId="1">
+                                    <Row>
+                                        <Col sm="12"><AboutCbnits />
+
+                                            <WhoWeAre />
+                                            <Establishment />
+                                            <ImageGallery />
+                                            <WorkingWithUs />
+                                            <CustomerSay />
+                                        </Col>
+                                    </Row>
+                                </TabPane>
+                            </TabContent>
+                        </div>
 
                         </Col>
                     </Row>
                 </Container>
             </div>
-            <AboutCbnits />
+            {/* <AboutCbnits />
 
             <WhoWeAre />
             <Establishment />
             <ImageGallery />
             <WorkingWithUs />
-            <CustomerSay />
+            <CustomerSay /> */}
 
         </div>
     )
