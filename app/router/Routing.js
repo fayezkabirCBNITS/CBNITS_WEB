@@ -10,6 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HeaderComp from './../components/Header/index';
 import FooterComp from './../components/Footer/index';
 import HomePage from "./../containers/Home/index";
+import NotFound from "./../containers/NotFoundPage/Loadable"
+import AboutUs from "./../containers/AboutUs/about";
 // import GlobalStyle from '../global-styles';
 
 const AppWrapper = styled.div`
@@ -21,7 +23,7 @@ const AppWrapper = styled.div`
   // flex-direction: column;
 `;
 
-const Routing =  _ =>  {
+const Routing = _ => {
     return (
         <AppWrapper>
             <Helmet
@@ -33,6 +35,9 @@ const Routing =  _ =>  {
             <HeaderComp />
             <Switch>
                 <Route exact path="/" component={HomePage} />
+                <Route exact path="/home" component={HomePage} />
+                <Route exact path="/aboutus" component={AboutUs} />
+                <Route path="" component={NotFound} />
             </Switch>
             <FooterComp />
             {/* <GlobalStyle /> */}
