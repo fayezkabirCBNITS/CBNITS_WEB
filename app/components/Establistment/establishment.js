@@ -1,39 +1,92 @@
 import React, { useState, useEffect } from "react";
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
+import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
+import Axios from "../../service/axios-config";
 
 import arrowLeft from "./../../images/black-arrow-left.png";
 import arrowRight from "./../../images/black-arrow-right.png";
 
 import "./establishment.css";
 
+const Establishment = (props) => {
+  const [progressPoint, setProgressPoint] = useState(2013);
+  const [milestone, setMileStone] = useState([]);
 
-const Establishment = props => {
-    const[progressPoint, setProgressPoing]=useState(0)
+  useEffect(() => {
+    _getMilestone();
+  }, []);
 
-    const handelNext = data => {
-        let currentProgressPoint = progressPoint
-        let completedProgressPoint = parseInt(currentProgressPoint) + parseInt(1)
-        setProgressPoing(completedProgressPoint)        
+  const _getMilestone = async () => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        category: "Milestone",
+        page: "About Us",
+      });
+      console.log("res-- Milestone --->", res);
+      if (res.status == 200) {
+        setMileStone(res.data.data);
+      } else {
+        console.log("Something went wrong");
+      }
+    } catch (error) {
+      console.log("error---->", error);
     }
-    const handelPrevious = data => {
-        let currentProgressPoint = progressPoint
-        let completedProgressPoint = parseInt(currentProgressPoint) - parseInt(1)
-        setProgressPoing(completedProgressPoint) 
-    }
-    return (
-        <div className="establishment">
-            {/* {console.log(progressPoing)} */}
-            <Container className="themed-container" fluid={false}>
-                <div className="text-center establish">
-                    <h4>Established 2014 in Cbnits has been </h4>
-                    <h4>offering <span  className="skycolor">world-class information technology.</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-                </div>
+  };
 
-                <div className="wrapper">    
-                    <div className="progressSection">               
-                    <ol className="ProgressBar">
-                        <li className={progressPoint >= 1 ?"ProgressBar-step is-current":"ProgressBar-step"}>
+  const handelNext = (data) => {
+    let currentProgressPoint = progressPoint;
+    let completedProgressPoint = parseInt(currentProgressPoint) + parseInt(1);
+    if (completedProgressPoint <= 2020) {
+      setProgressPoint(completedProgressPoint);
+    }
+  };
+  const handelPrevious = (data) => {
+    let currentProgressPoint = progressPoint;
+    let completedProgressPoint = parseInt(currentProgressPoint) - parseInt(1);
+    if (completedProgressPoint >= 2013) {
+      setProgressPoint(completedProgressPoint);
+    }
+  };
+  return (
+    <div className="establishment">
+      {/* {console.log(progressPoing)} */}
+      <Container className="themed-container" fluid={false}>
+        <div className="text-center establish">
+          <h4>Established 2014 in Cbnits has been </h4>
+          <h4>
+            offering{" "}
+            <span className="skycolor">
+              world-class information technology.
+            </span>
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.{" "}
+          </p>
+        </div>
+
+        <div className="wrapper">
+          <div className="progressSection">
+            <ol className="ProgressBar">
+              {milestone && milestone.length > 0
+                ? milestone.map((item, key) => (
+                    <li
+                      className={
+                        progressPoint >= +item.name
+                          ? "ProgressBar-step is-current"
+                          : "ProgressBar-step"
+                      }
+                      key={key}
+                    >
+                      <span className="ProgressBar-stepLabel">{item.name}</span>
+                      <svg className="ProgressBar-icon">
+                        <use href="#checkmark-bold" />
+                      </svg>
+                    </li>
+                  ))
+                : null}
+              {/* <li className={progressPoint >= 1 ?"ProgressBar-step is-current":"ProgressBar-step"}>
                             <span className="ProgressBar-stepLabel">2014</span>
                             <svg className="ProgressBar-icon"><use href="#checkmark-bold"/></svg>                            
                         </li>
@@ -60,34 +113,48 @@ const Establishment = props => {
                         <li className={progressPoint >= 7 ?"ProgressBar-step is-current":"ProgressBar-step"}>
                             <span className="ProgressBar-stepLabel">2020</span>
                             <svg className="ProgressBar-icon"><use href="#checkmark-bold"/></svg>                          
-                        </li>
-                    </ol>
+                        </li> */}
+            </ol>
 
-                    <div className="npButton">
-                        <button onClick={handelPrevious} id="previous">
-                            <img src={arrowLeft} alt="next" />
-                        </button>
-                        <button onClick={handelNext} id="advance">
-                            <img src={arrowRight} alt="next" />
-                        </button>
-                    </div>
-                    </div>  
-                    
-                    <div className="infoBox">
-                        <div  className="infoYear">
-                            <h3>2013</h3>
+            <div className="npButton">
+              <button onClick={handelPrevious} id="previous">
+                <img src={arrowLeft} alt="next" />
+              </button>
+              <button onClick={handelNext} id="advance">
+                <img src={arrowRight} alt="next" />
+              </button>
+            </div>
+          </div>
+
+          <div className="infoBox">
+            {milestone && milestone.length > 0
+              ? milestone.map((item, key) => {
+                  if (item.name == progressPoint) {
+                    console.log("heyyy");
+                    return (
+                      <>
+                        <div className="infoYear">
+                          <h3>{item.name}</h3>
                         </div>
                         <div className="infoContent">
-                            <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</b></p>
-                            <p><em>07 years out… having made a decade of changes. Imagine living the life you want to live.</em></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                          <p>
+                            <b>{item.description[0]}</b>
+                          </p>
+                          <p>
+                            <em>{item.description[1]}</em>
+                          </p>
+                          <p>{item.description[1]}</p>
                         </div>
-                    </div>
-                </div>    
-            </Container>
+                      </>
+                    );
+                  }
+                })
+              : null}
+          </div>
         </div>
-
-    )
-}
+      </Container>
+    </div>
+  );
+};
 
 export default Establishment;
