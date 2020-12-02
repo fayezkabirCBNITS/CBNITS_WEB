@@ -9,6 +9,11 @@ import angularjs from "./../../images/angularjs.png"
 
 import "./techLanguage.css"
 
+const whiteText = "service"
+const blueTxt = "angular js development"
+const paraFirst = "no matter how complex your project is ,at CBNITS, our cutting edge and best in"
+const paraSecond = "class Angular Development Services have predictable outcomes. "
+
 const dummyArr =[
     {
         txt : "custom angular js development",
@@ -78,7 +83,7 @@ const advantageArr =[
 const Angularjs = props => {
     return (
         <div>
-            <Banner bannerImg={bannerImg} />
+            <Banner bannerImg={bannerImg} whiteText={whiteText} blueTxt={blueTxt} paraFirst={paraFirst} paraSecond={paraSecond} />
             <div className="language py-5">
                 <Container className="themed-container" fluid={false}>
                     <Row className="d-flex align-items-center">
