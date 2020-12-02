@@ -16,75 +16,6 @@ const paraSecond = "label real-time application.";
 
 import "./techLanguage.css";
 
-const dummyArr = [
-  {
-    txt: "custom angular js development",
-    img: icon,
-  },
-  {
-    txt: "AJAX development",
-    img: icon,
-  },
-  {
-    txt: "Angular js mobile app development",
-    img: icon,
-  },
-  {
-    txt: "Angular js web app development",
-    img: icon,
-  },
-  {
-    txt: "Angular ecommerce application",
-    img: icon,
-  },
-  {
-    txt: "custom angular plugin module",
-    img: icon,
-  },
-  {
-    txt: "angular CMS/Web protal",
-    img: icon,
-  },
-  {
-    txt: "single page application",
-    img: icon,
-  },
-  {
-    txt: "angular js game development",
-    img: icon,
-  },
-  {
-    txt: "single page application",
-    img: icon,
-  },
-  {
-    txt: "angular js consulting",
-    img: icon,
-  },
-];
-
-const advantageArr = [
-  {
-    txt:
-      "we have talented team of angular js developer who acn offer outstanding solutions for complex angular js projects",
-    img: icon,
-  },
-  {
-    txt:
-      "our development team implements angular js by using only the latest programming technologies and tools available.",
-    img: icon,
-  },
-  {
-    txt:
-      "Adherence to budget and deadline guidelines and deep focus on quality and customer satisfaction",
-    img: icon,
-  },
-  {
-    txt:
-      "We are a leading Angular Js development company  dedicated to offering result-orienred services to our global clients",
-    img: icon,
-  },
-];
 
 const Nodejs = (props) => {
   const [data, setData] = useState({});
@@ -190,7 +121,7 @@ const Nodejs = (props) => {
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
                 <div className="advantages">
                   <h6>
-                    Advantages of hiring React JS dvelopers from{" "}
+                    Why Hire Node.Js Developers from{" "}
                     <span className="skycolor">CBNITS</span>
                   </h6>
                   {response && response.description
