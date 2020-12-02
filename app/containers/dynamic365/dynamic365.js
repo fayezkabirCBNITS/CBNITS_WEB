@@ -1,14 +1,3 @@
-// import React from 'react';
-
-//  class about extends React.Component {
-//   render() {
-//     return (
-//       <div> textInComponent </div>
-//     );
-//   }
-// }
-// export default about
-
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Container } from 'reactstrap';
 
@@ -26,7 +15,7 @@ import CustomerSay from "./../../components/CustomerSay/customarSay"
 
 
 
-const dynamic365= props => {
+const Dynamic365= props => {
     return (
         <div>
             <PageBanner />
@@ -44,7 +33,7 @@ const dynamic365= props => {
     )
 }
 
-export default dynamic365;
+export default Dynamic365;
 
 
 
