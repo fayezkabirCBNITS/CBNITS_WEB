@@ -1,0 +1,70 @@
+
+.skycolor {
+    color: #1dbdfc;
+}
+.head {
+    font-family: 'Poppins', sans-serif;
+}
+.head1{
+    font-family: 'Poppins', sans-serif;   
+    margin: 40px;
+}
+.head1 button{
+    margin: 0 10px ;
+}
+.head h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.head p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.tracks {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.11);
+    padding: 20px;
+    margin-top: 30px;
+    height: 70px;
+}
+.tracks h5{
+    color: #1dbdfc;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.tracks p{
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+/* .tracks-img{
+    height: 50px;
+    padding: 10px;
+} */
+.btn{
+    margin: auto;
+    text-align: center;
+}
+.program{
+    background-color:#1dbdfc ;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 500;
+}
+.framworks{
+    background-color:#DCDCDC;
+    color: #000;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 500;
+}
+.database{
+    background-color:#fff;
+    color: #000;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    font-weight: 500;
+}

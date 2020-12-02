@@ -14,6 +14,9 @@ import AboutUs from "./../containers/AboutUs/about";
 import mobileAppDevelopment from "../containers/MobileAppDevelopment/mobileAppDevelopment";
 // import GlobalStyle from '../global-styles';
 import Dynamic from "../containers/dynamic365/dynamic365";
+import Website from "./../containers/Website/website";
+import SoftwareSupport from "./../containers/SoftwareSupport/software-support";
+
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
   // margin: 0 auto;
@@ -34,8 +37,11 @@ const Routing = (_) => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/aboutus" component={AboutUs} />
+        {/* <Route exact path="/career" component={Career} /> */}
+        <Route exact path="/website" component={Website} />
+        <Route exact path="/software-support" component={SoftwareSupport} />
         <Route exact path="/mobileApp" component={mobileAppDevelopment} />
-        <Route exact path="/dynamic-365" component={Dynamic} />s
+        <Route exact path="/dynamic-365" component={Dynamic} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
@@ -43,5 +49,29 @@ const Routing = (_) => {
     </AppWrapper>
   );
 };
+// const Routing = _ => {
+//     return (
+//         <AppWrapper>
+//             <Helmet
+//                 titleTemplate="%s - CBNITS"
+//                 defaultTitle="CBNITS"
+//             >
+//                 <meta name="description" content="CBNITS" />
+//             </Helmet>
+//             <HeaderComp />
+//             <Switch>
+//                 <Route exact path="/" component={HomePage} />
+//                 <Route exact path="/home" component={HomePage} />
+//                 <Route exact path="/aboutus" component={AboutUs} />
+//                 {/* <Route exact path="/career" component={Career} /> */}
+//                 <Route exact path="/website" component={Website} />
+//                 <Route exact path="/software-support" component={SoftwareSupport} />
+//                 <Route path="" component={NotFound} />
+//             </Switch>
+//             <FooterComp />
+//             {/* <GlobalStyle /> */}
+//         </AppWrapper>
+//     );
+// }
 
 export default Routing;
