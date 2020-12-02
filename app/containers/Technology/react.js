@@ -7,6 +7,12 @@ import icon from "./../../images/list-icon.png"
 import angularcreation from "./../../images/angularcreation.png"
 import angularjs from "./../../images/angularjs.png"
 
+const whiteText = "service"
+const blueTxt = "angular js development"
+const paraFirst = "no matter how complex your project is ,at CBNITS, our cutting edge and best in"
+const paraSecond = "class Angular Development Services have predictable outcomes. "
+
+
 import "./techLanguage.css"
 
 const dummyArr = [
@@ -70,7 +76,7 @@ const advantageArr = [
 const Reactjs = props => {
     return (
         <div>
-            <Banner bannerImg={bannerImg} />
+            <Banner bannerImg={bannerImg} whiteText={whiteText} blueTxt={blueTxt} paraFirst={paraFirst} paraSecond={paraSecond} />
             <div className="language py-5">
                 <Container className="themed-container" fluid={false}>
                     <Row className="d-flex align-items-center">
