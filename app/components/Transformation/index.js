@@ -1,10 +1,32 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Row, Col, Container } from 'reactstrap';
+import Axios from "../../service/axios-config";
 import './style.css';
 
 import careerImg from "./../../images/career-left.png";
 
 const Transformation = props => {
+    const [data, setData] = useState({});
+    useEffect(()=> {
+        _getTransformation();
+    },[])
+    const _getTransformation = async() => {
+        try {
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+              category: "Projects Completed",
+              page: "Career"
+            });
+            console.log("res-- Career --->", res);
+            if(res.status == 200){
+                setData(res.data.data[0]);
+            }
+            else {
+                console.log("Something went wrong");
+            }
+          } catch (error) {
+            console.log("error---->", error);
+          }
+    }
     return (
         <div className="whyCbnits py-5">
             <Container className="themed-container" fluid={false}>
@@ -16,14 +38,18 @@ const Transformation = props => {
                    <Col sm={6}>
                     <div className="whyTitle">
                         <h2>transformation at <span> speed and scale.</span></h2>
-                        <p className="mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                        <p className="mt-4 mb-4">{data && data.subDescription} </p>
                     </div>
                     <ul className="listStyle">
-                        <li>Lorem ipsum dolor sit amet, consectetur</li>
+                        {data && data.description && data.description.length>0?
+                        data.description.map((item, key)=> (
+                            <li key={key}>{item}</li>
+                        )):null}
+                        {/* <li>Lorem ipsum dolor sit amet, consectetur</li>
                         <li>Adipiscing elit, sed do eiusmod tempor incididunt ut labore</li>
                         <li>Quis ipsum suspendisse</li>
                         <li>Viverra maecenas accumsan lacus</li>
-                        <li>Suspendisse ultrices gravida.</li>
+                        <li>Suspendisse ultrices gravida.</li> */}
                     </ul>
                    </Col>
 
