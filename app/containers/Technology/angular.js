@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
 import Banner from "./../../components/TechBanner/techBanner"
 
-import bannerImg from "./../../images/banner2.jpg"
+import bannerImg from "./../../images/angularBnr.jpg"
 import icon from "./../../images/list-icon.png"
 import angularcreation from "./../../images/angularcreation.png"
 import angularjs from "./../../images/angularjs.png"

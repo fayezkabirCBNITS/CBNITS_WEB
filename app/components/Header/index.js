@@ -122,17 +122,17 @@ const Example = (props) => {
         <div className="header">
             <Container className="themed-container"  fluid={false}>
                 <Row className="p15">
-                    <Col xl={2} lg={1} className="d-flex align-items-center">
+                    <Col xl={2} lg={1} md={1} className="d-flex align-items-center">
                     <div className="img-wrapper">
                         <img src={logo} alt="logo" />
                     </div>
                     </Col>
-                    <Col xl={10} lg={11}>
+                    <Col xl={10} lg={11} md={11}>
                             <Row className="d-flex justify-content-md-left justify-content-center head-navigation">
-                                <Col xl={10}>
+                                <Col xl={10} lg={10} md={10} sm={10} xs={10}>
                                     {reactMegaMenu()}
                                 </Col>
-                                <Col xl={2}>
+                                <Col xl={2} lg={2} md={2} sm={2} xs={2}>
                                 <Button color="primary">Get in touch</Button></Col>
                             </Row>
 

@@ -1,9 +1,11 @@
 /*****************************banner section****************************************/
 .tech-img {
     /* margin-top: -73px; */
-    height: 700px;
+    height: 100%;
     width: 100%;
-    background-image: url("./../../images/banner.jpg");
+    /* background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.3)), url("./../../images/banner.jpg"); */
+    
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -50,6 +52,7 @@
 }
 .tech-lang-container {
     margin-top: 80px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

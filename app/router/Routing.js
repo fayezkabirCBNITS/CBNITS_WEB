@@ -18,6 +18,7 @@ import Website from "./../containers/Website/website";
 import SoftwareSupport from "./../containers/SoftwareSupport/software-support";
 
 import TechLanguage from "./../containers/Technology/angular"
+import FullStack from "./../containers/Technology/fullStack"
 
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
@@ -45,6 +46,7 @@ const Routing = (_) => {
         <Route exact path="/mobileApp" component={mobileAppDevelopment} />
         <Route exact path="/dynamic-365" component={Dynamic} />
         <Route exact path="/angular" component={TechLanguage} />
+        <Route exact path="/full-stack" component={FullStack} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
