@@ -1,0 +1,98 @@
+.full-stack {
+    font-family: 'Lato', sans-serif;
+}
+.full-dedicated h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+.full-dedicated h6 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.full-dedicated p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #676767;
+}
+.skycolor {
+    color: #22BBF7;
+}
+
+.why-hire-fullstack{
+    background-color: #22BBF7;
+}
+
+.developer-from-cbnits h6 {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.developer-from-cbnits p {
+    color: #fff;
+    font-size: 20px;
+}
+.developer-from-cbnits p span {
+    margin-right: 12px;
+}
+.organgecolor {
+    color: #F15928;
+}
+
+/***********************************************************************/
+
+.fullstack-tab .nav-tabs .nav-link {
+    border: 1px solid #E0E1E5;
+    background-color: #E0E1E5;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 8px 25px;
+}
+
+.fullstack-tab .nav-tabs .nav-link.active {
+    background-color: #22BBF7;
+    color: #fff;
+}
+.fullstack-tab .nav-tabs {
+    border-bottom: none;
+}
+.fullstack-tab .nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech-logo {
+    background-color: #fff;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    height: 80px;
+    border-radius: 8px;
+}
+.tech-logo-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.tab-container  h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fullstack-tab .btn-primary {
+    margin-top: 80px;
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+}

@@ -18,6 +18,7 @@ import Website from "./../containers/Website/website";
 import SoftwareSupport from "./../containers/SoftwareSupport/software-support";
 
 import TechLanguage from "./../containers/Technology/angular"
+import FullStack from "./../containers/Technology/fullStack"
 import Reactjs from "./../containers/Technology/react"
 import Javajs from "./../containers/Technology/java"
 import Nodejs from "./../containers/Technology/node"
@@ -51,6 +52,7 @@ const Routing = (_) => {
         <Route exact path="/mobileApp" component={mobileAppDevelopment} />
         <Route exact path="/dynamic-365" component={Dynamic} />
         <Route exact path="/angular" component={TechLanguage} />
+        <Route exact path="/full-stack" component={FullStack} />
         <Route exact path="/react" component={Reactjs} />
         <Route exact path="/java" component={Javajs} />
         <Route exact path="/node" component={Nodejs} />
