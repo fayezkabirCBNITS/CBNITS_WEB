@@ -80,7 +80,7 @@ const Expertise = props => {
                 <Row className="d-flex align-items-center justify-content-between">
                     {
                         techArr.map((data, index) => (
-                            <Col xl={3} lg={3} className=" d-flex align-items-center justify-content-center" key={index}>
+                            <Col xl={3} lg={5} className=" d-flex align-items-center justify-content-center" key={index}>
                                 <div className="tect-wrap">
                                 <div className="text-center">
                                     <img src={data.img} />

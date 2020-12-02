@@ -10,6 +10,18 @@
     padding-top: 80px;
     font-family: 'Lato', sans-serif;
 }
+.header-img-about {
+    /* margin-top: -73px; */
+    height: 700px;
+    width: 100%;
+    background-image: url("./../../images/banner365.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: 'Lato', sans-serif;
+}
+
 .title-info {
     color: #fff;
 }
