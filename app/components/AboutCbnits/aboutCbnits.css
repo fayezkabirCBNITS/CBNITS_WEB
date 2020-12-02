@@ -9,7 +9,19 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding-top: 80px;
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.aboutCbnits-1 {
+    /* height: 500px; */
+    width: 100%;
+    
+  
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 30px;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -19,6 +31,13 @@
     height: 166px;
     margin: auto;
     text-align: center;
+}
+.left-party-about  img{
+    width: 250px;
+    height: 200px;
+
+    border-radius: 20px;
+    margin-bottom: 90px;
 }
 .left-party p{
     margin-bottom: 0;
@@ -34,10 +53,27 @@
     width: 205px;
     height: 150px;
     margin-bottom: 25px;
+    
+}
+
+.right-party-1-1  img{
+    width: 150px;
+    height: 140px;
+   
+    border-radius: 10px;
+    margin-right: 50px;
 }
 .right-party-2  img{
     width: 145px;
     height: 110px;
+}
+.right-party-2-2  img{
+    width: 150px;
+    height: 140px;
+   
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-top:50px
 }
 
 .about-desp {

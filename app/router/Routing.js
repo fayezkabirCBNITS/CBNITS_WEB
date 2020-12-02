@@ -12,9 +12,10 @@ import FooterComp from './../components/Footer/index';
 import HomePage from "./../containers/Home/index";
 import NotFound from "./../containers/NotFoundPage/Loadable"
 import AboutUs from "./../containers/AboutUs/about";
-// import Career from "./../containers/AboutSubPages/Career/index";
+ //import Career from "../containers/dynamic365";
+import mobileAppDevelopment from '../containers/MobileAppDevelopment/mobileAppDevelopment';
 // import GlobalStyle from '../global-styles';
-
+import dynamic365 from "../containers/dynamic365/dynamic365";
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
   // margin: 0 auto;
@@ -38,8 +39,9 @@ const Routing = _ => {
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/home" component={HomePage} />
                 <Route exact path="/aboutus" component={AboutUs} />
-                {/* <Route exact path="/career" component={Career} /> */}
+                <Route exact path="/mobileApp" component={mobileAppDevelopment} />
                 <Route path="" component={NotFound} />
+                <Route exact path="/dynamic" component={dynamic365} />
             </Switch>
             <FooterComp />
             {/* <GlobalStyle /> */}
