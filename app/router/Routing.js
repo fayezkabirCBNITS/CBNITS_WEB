@@ -19,6 +19,12 @@ import SoftwareSupport from "./../containers/SoftwareSupport/software-support";
 
 import TechLanguage from "./../containers/Technology/angular"
 import FullStack from "./../containers/Technology/fullStack"
+import Reactjs from "./../containers/Technology/react"
+import Javajs from "./../containers/Technology/java"
+import Nodejs from "./../containers/Technology/node"
+import Golang from "./../containers/Technology/golang"
+import Python from "./../containers/Technology/python"
+
 
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
@@ -47,6 +53,11 @@ const Routing = (_) => {
         <Route exact path="/dynamic-365" component={Dynamic} />
         <Route exact path="/angular" component={TechLanguage} />
         <Route exact path="/full-stack" component={FullStack} />
+        <Route exact path="/react" component={Reactjs} />
+        <Route exact path="/java" component={Javajs} />
+        <Route exact path="/node" component={Nodejs} />
+        <Route exact path="/golang" component={Golang} />
+        <Route exact path="/python" component={Python} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
