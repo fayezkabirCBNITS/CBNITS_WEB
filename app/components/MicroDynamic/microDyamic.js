@@ -19,6 +19,26 @@ const imgArr = [
 ];
 
 const MicroDynamic = props => {
+    const [data, setData] = useState([]);
+  useEffect(() => {
+    _getProduct();
+  }, []);
+  const _getProduct = async () => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "Dynamic 365",
+        category: "Product and Solution",
+      });
+      console.log("Product and Solution---->", res);
+      if (res.status == 200) {
+        setData(res.data.data);
+      } else {
+        console.log("Something went wrong!");
+      }
+    } catch (error) {
+      console.log("error---->", error);
+    }
+  };
   
     return (
         <div className="micro py-5">
@@ -29,13 +49,13 @@ const MicroDynamic = props => {
                 </div>
                 
                 <Row className="d-flex align-items-center justify-content-between">
-                    {
-                        imgArr ? imgArr.map((data, index) => (
+                    { data && data.length>0 ?
+                        data.map((item, index) => (
                             <Col xl={4} lg={4} className=" d-flex align-items-center justify-content-center" key={index}>
                                 <div className="micro-tect-wraps">
                                     <div className="text-center">
-                                        <img src={data.img} />
-                                        <h5>{data.name}</h5>
+                                        <img src={item.image} />
+                                        <h5>{item.name}</h5>
                                     </div>
                                 </div>
                             </Col>
