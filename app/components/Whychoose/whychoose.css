@@ -1,0 +1,52 @@
+.whychoose-cbnits{
+    margin: 20px 0;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.whychoose-cbnits-head {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+.whychoose-cbnits-head h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.whychoose-cbnits-head p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.whychoose {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.11);
+    padding: 20px;
+    margin-top: 30px;
+    height: 350px;
+    border-radius: 4px;
+}
+.whychoose h5{
+    margin-top: 40px;
+}
+.whychoose p{
+    margin-top: 40px;
+    font-weight: 500;
+    color: #4d4d4d;
+}
+.whychoose-header{
+    background-color: #1dbdfc;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    position: absolute;
+    left: 40%;
+    top: 10px;
+}
+.whychoose-header{
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+

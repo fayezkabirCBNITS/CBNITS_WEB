@@ -14,6 +14,8 @@ import NotFound from "./../containers/NotFoundPage/Loadable"
 import AboutUs from "./../containers/AboutUs/about";
 // import Career from "./../containers/AboutSubPages/Career/index";
 // import GlobalStyle from '../global-styles';
+import Website from './../containers/Website/website'
+import SoftwareSupport from './../containers/SoftwareSupport/software-support'
 
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
@@ -39,6 +41,8 @@ const Routing = _ => {
                 <Route exact path="/home" component={HomePage} />
                 <Route exact path="/aboutus" component={AboutUs} />
                 {/* <Route exact path="/career" component={Career} /> */}
+                <Route exact path="/website" component={Website} />
+                <Route exact path="/software-support" component={SoftwareSupport} />
                 <Route path="" component={NotFound} />
             </Switch>
             <FooterComp />
