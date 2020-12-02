@@ -20,10 +20,10 @@ const Example = (props) => {
                     <Col xl={10} lg={11}>
                         <Nav tabs className="d-flex justify-content-end" >
                             <NavItem>
-                                <NavLink href="#">Home</NavLink>
+                                <NavLink href="/">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">About</NavLink>
+                                <NavLink href="/aboutus">About</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">Studios</NavLink>
