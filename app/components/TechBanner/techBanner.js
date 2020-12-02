@@ -21,8 +21,7 @@ const Banner = (props) => {
         background-size: cover;
         padding-top: 80px;
         font-family: 'Lato', sans-serif;
-        ${
-            props => props.bannerimage && css`
+        ${props => props.bannerimage && css`
             background-image: url(${msg});
             `
         }
@@ -69,10 +68,10 @@ const Banner = (props) => {
                     </span>
                 </p>
                 <div className="tech-middle-section">
-                    <h1 className="skycolor">angular js development <span className="whiteColor">service</span></h1>
-                    <p>no matter how complex your project is ,at CBNITS, our cutting edge and best in</p>
-                    <p>class Angular Development Services have predictable outcomes. </p>
-                    
+                    <h1 className="skycolor"> {props.blueTxt} <span className="whiteColor">{props.whiteText}</span></h1>
+                    <p>{props.paraFirst}</p>
+                    <p>{props.paraSecond}</p>
+
                 </div>
                 <div className="tech-lang-container">
                     {images.map((language, idx) => (
