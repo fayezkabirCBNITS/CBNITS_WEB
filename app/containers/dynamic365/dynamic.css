@@ -1,0 +1,100 @@
+/*****************************banner section****************************************/
+.dynamic-header-img{
+    /* margin-top: -73px; */
+    height: 640px;
+    width: 100%;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.50), 
+      rgba(0, 0, 0, 0.50)
+    ), url("./../../images/website/webBnr.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: 'Lato', sans-serif;
+}
+.title-info {
+    color: #fff;
+}
+.title-info abbr {
+    margin-right: 20px;
+}
+.title-info span {
+    margin-right: 20px;
+}
+.dynamic-middle-section {
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+}
+.dynamic-middle-section h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.dynamic-middle-section h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.dynamic-middle-section p {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.dynamic-middle-section h2 span{
+    color: #fff;
+}
+.dynamic-middle-section .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.dyanmic-lang-container {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dyanmic-lang-wrapper {
+    color: #fff;
+}
+.dyanmic-lang-wrapper span {
+    margin-left: 12px;
+}
+/*****************************end****************************************/
+
+.dyanamicCbnits {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    margin: 50px 0;
+}
+.dyanamicCbnits-img img{
+    width: 100%;
+    height: 350px;
+}
+
+.dyanamicCbnits-Text{
+    text-align: justify;
+    margin-left: 30px;
+}
+.dyanamicCbnits-Text span {
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.dynamic-bottamBanner{
+    background: #ff5c33;
+    height: 180px;
+    padding:40px;
+    margin: 50px 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
