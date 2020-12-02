@@ -1,0 +1,40 @@
+
+.skycolor {
+    color: #1dbdfc;
+}
+.seam-head {
+    font-family: 'Poppins', sans-serif;
+}
+.seam-head h2{
+    font-size: 50px;
+    
+    font-weight: 600;
+}
+.seam-head p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 60px;
+    color: #4d4d4d;
+    margin-top: 20px;
+}
+
+.seamCbnits {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+.seamCbnits-img img{
+    width: 100%;
+    height: 350px;
+}
+
+.seamCbnits-Text{
+    margin: 30px;
+}
+.seamCbnits-Text span {
+    font-weight: 600;   
+}
+.seamCbnits-pText{
+    margin: 30px;
+    font-weight: 500;
+    color: #4d4d4d;
+}

@@ -29,11 +29,6 @@ const imgArr = [
 ];
 
 const Website = props => {
-    useState(()=>{
-        fetch('/blogs').then(res=>{
-            console.log(res)
-        })
-    },[])
     return (
         <div>
             <div className="website-header-img">
