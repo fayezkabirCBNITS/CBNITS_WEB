@@ -1,0 +1,58 @@
+.language {
+    font-family: 'Lato', sans-serif;
+
+}
+
+.develpment h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.develpment p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.develpment p span {
+    margin-right: 12px;
+}
+
+.hire-req {
+    background-color: #F25A29;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px 0 50px 0 ;
+}
+.hire-req p {
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.advantages {
+    background-color: #F8F9FD;
+}
+.darkbg {
+    background-color: #F8F9FD;
+    padding: 50px 0;
+}
+
+.advantages h6{
+    font-size: 38px;
+    font-weight: 700;
+}
+.advantages p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.advantages p span {
+    margin-right: 12px;
+}
+
+.darkbg .btn-primary {
+    margin-top: 80px;
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+}
