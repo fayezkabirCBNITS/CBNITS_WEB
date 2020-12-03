@@ -7,27 +7,27 @@ const CloudPortfolio = props => {
     const [responseData, setResponseData] = useState([]);
 
     useEffect(() => {
-        _getWhoWeAre();   // Fetch Pogramming Languages images
-      }, []);
+        _getWhoWeAre();   // Fetch Our Cloud Development Services images
+    }, []);
 
-      const _getWhoWeAre = async () => {
+    const _getWhoWeAre = async () => {
         try {
-          let res = await Axios.post("/getPageWiseDatabyCategory", {
-            page: "Web Development",
-            category: "Pogramming Languages",
-          });
-          console.log("res-- Programming Languages --->", res.data.data);
-          if (res.status == 200) {
-            setResponseData(res.data.data);
-          }
-          else{
-              console.log("Something went wrong!");
-          }
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Cloud Development",
+                category: "Our Cloud Development Services",
+            });
+            console.log("res-- Our Cloud Development Services --->", res.data.data[0]);
+            if (res.status == 200) {
+                setResponseData(res.data.data[0]);
+            }
+            else {
+                console.log("Something went wrong!");
+            }
         } catch (error) {
-          console.log("error---->", error);
+            console.log("error---->", error);
         }
-      };
-     console.log('Programming Languages=====> ',responseData ) 
+    };
+    console.log('Programming Languages=====> ', responseData.description)
 
     return (
         <div className="portfolio-bnits py-5">
@@ -36,22 +36,21 @@ const CloudPortfolio = props => {
                     <h2>Our cloud Development services <span className="skycolor">Portfolio includes:</span></h2>
                 </div>
                 <Row className="d-flex align-items-center">
-                    {
-                       responseData ? responseData.map((data, idx) => (
-                            <Col xl={3} lg={3} key={idx}>
-                                <div className="portfolio-tracks">
-                                    <Row className="d-flex align-items-center">
-                                        {/* <Col lg={3}> <div className="tracks-img"><img src={data.image} alt="image" /></div></Col> */}
-                                        <Col lg={3}> <div className="portfolio-tracks-img">{idx}</div></Col>
-                                        <Col lg={9}>
-                                            <p>{data.name}</p>
-                                        </Col>
-                                    </Row>
-
+                    {responseData.description && responseData.description.length > 0
+                        ? responseData.description.map((data, idx) => (
+                            <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>
+                                <div className="deliverOptn mt-4">
+                                    <div className="deliverOptnNo">
+                                        <div className="dashBorder">
+                                            <span>{idx + 1}</span>
+                                        </div>
+                                    </div>
+                                    <div className="deliverDetails">
+                                        <span>{data}</span>
+                                    </div>
                                 </div>
                             </Col>
-                        )) : ''
-                    }
+                        )) : ''}
                 </Row>
             </Container>
         </div>
