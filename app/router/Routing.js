@@ -24,6 +24,7 @@ import Javajs from "./../containers/Technology/java"
 import Nodejs from "./../containers/Technology/node"
 import Golang from "./../containers/Technology/golang"
 import Python from "./../containers/Technology/python"
+import Hadoop from "./../containers/Technology/hadoop"
 
 
 const AppWrapper = styled.div`
@@ -58,6 +59,7 @@ const Routing = (_) => {
         <Route exact path="/node" component={Nodejs} />
         <Route exact path="/golang" component={Golang} />
         <Route exact path="/python" component={Python} />
+        <Route exact path="/hadoop" component={Hadoop} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />

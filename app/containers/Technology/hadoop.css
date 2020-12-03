@@ -1,0 +1,297 @@
+.language {
+  font-family: 'Lato', sans-serif;
+}
+.develpment {
+  width: 100%;
+}
+.develpment h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.develpment p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.develpment p span {
+  margin-right: 12px;
+}
+
+.hire-req {
+  background-color: #f25a29;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 30px 0 50px 0;
+}
+.hire-req p {
+  margin-bottom: 0px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.advantages {
+  background-color: #f8f9fd;
+}
+.darkbg {
+  background-color: #f8f9fd;
+  padding: 50px 0;
+}
+.skybg {
+  background-color: #22bbf7;
+  padding: 70px 0 60px 0;
+}
+
+.advantages h6 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.advantages p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.advantages p span {
+  margin-right: 12px;
+}
+
+.darkbg .btn-primary {
+  margin-top: 80px;
+  background-color: #009444;
+  border-color: #009444;
+  text-transform: uppercase;
+  padding: 10px 36px;
+  font-size: 18px;
+}
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}
+.white {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+}
+.red {
+  color: #f15a29;
+  font-size: 45px;
+  font-weight: 700;
+}
+.trans {
+  background-color: #0000;
+}
+.Cloudera {
+  background-color: #0000;
+}
+.bigdata h6 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.bigdata p {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.bigdata p span {
+  margin-right: 12px;
+}
+.cloudera {
+  background-color: #0000;
+}
+.cloudera h6 {
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cloudera p {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.cloudera p span {
+  margin-right: 12px;
+}
+.expertise {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.expertiseimg {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.expertiseimg img {
+  width: 100%;
+  height: 100%;
+}
+.expertise span {
+  line-height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  .develpment h2 {
+    font-size: 20px;
+  }
+  .develpment p {
+    font-size: 13px;
+  }
+  .bigdata h6 {
+    font-size: 20px;
+  }
+  .red {
+    font-size: 20px;
+  }
+  .bigdata p {
+    font-size: 13px;
+  }
+  .cloudera h6 {
+    font-size: 20px;
+  }
+  .cloudera p {
+    font-size: 13px;
+  }
+  .expertise {
+    height: 125px;
+  }
+  .expertiseimg {
+    height: 90px;
+  }
+  .expertise span {
+    line-height: 35px;
+    font-size: 10px;
+  }
+  .darkbg .btn-primary {
+    padding: 4px 28px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .develpment h2 {
+    font-size: 20px;
+  }
+  .develpment p {
+    font-size: 13px;
+  }
+  .bigdata h6 {
+    font-size: 20px;
+  }
+  .red {
+    font-size: 20px;
+  }
+  .bigdata p {
+    font-size: 13px;
+  }
+  .cloudera h6 {
+    font-size: 20px;
+  }
+  .cloudera p {
+    font-size: 13px;
+  }
+  .expertise {
+    height: 155px;
+  }
+  .expertiseimg {
+    height: 115px;
+  }
+  .expertise span {
+    line-height: 40px;
+    font-size: 12px;
+  }
+  .darkbg .btn-primary {
+    padding: 5px 30px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 575px) {
+  .develpment h2 {
+    font-size: 28px;
+  }
+  .develpment p {
+    font-size: 16px;
+  }
+  .bigdata h6 {
+    font-size: 28px;
+  }
+  .red {
+    font-size: 28px;
+  }
+  .bigdata p {
+    font-size: 13px;
+  }
+  .cloudera h6 {
+    font-size: 28px;
+  }
+  .cloudera p {
+    font-size: 13px;
+  }
+  .darkbg .btn-primary {
+    padding: 6px 30px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .develpment h2 {
+    font-size: 22px;
+  }
+  .develpment p {
+    font-size: 13px;
+  }
+  .bigdata h6 {
+    font-size: 22px;
+  }
+  .red {
+    font-size: 22px;
+  }
+  .bigdata p {
+    font-size: 13px;
+  }
+  .cloudera h6 {
+    font-size: 22px;
+  }
+  .cloudera p {
+    font-size: 13px;
+  }
+  .darkbg .btn-primary {
+    padding: 8px 32px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .develpment h2 {
+    font-size: 25px;
+  }
+  .develpment p {
+    font-size: 14px;
+  }
+  .bigdata h6 {
+    font-size: 25px;
+  }
+  .red {
+    font-size: 25px;
+  }
+  .bigdata p {
+    font-size: 14px;
+  }
+  .cloudera h6 {
+    font-size: 25px;
+  }
+  .cloudera p {
+    font-size: 14px;
+  }
+  .darkbg .btn-primary {
+    padding: 9px 34px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .develpment h2 {
+    font-size: 38px;
+  }
+}
