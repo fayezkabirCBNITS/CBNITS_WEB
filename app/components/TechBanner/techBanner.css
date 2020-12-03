@@ -56,6 +56,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .tech-lang-wrapper {
     color: #fff;
@@ -67,3 +68,31 @@
     color: #fff;
 }
 /*****************************end****************************************/
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 600px) {
+    .tech-middle-section h1 {
+        font-size: 35px;
+    }
+    .tech-middle-section p {
+        font-size: 16px;
+    }
+    .tech-lang-wrapper {
+        margin-bottom: 8px;
+    }
+    .tech-lang-wrapper img {
+        width: 33%;
+    }
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    } 
+    
+    /* Desktops and laptops ----------- */
+    @media only screen  and (min-width : 1100px) {
+    }
+    
+    /* Large screens ----------- */
+    @media only screen  and (min-width : 1440px) {
+    }

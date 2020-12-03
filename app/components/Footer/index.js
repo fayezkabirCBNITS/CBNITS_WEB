@@ -21,7 +21,7 @@ const Example = (props) => {
             </div>
             <Container className="themed-container" fluid={false}>
                 <div className="haveproject text-center">
-                    <p>Have a project</p>
+                    <p>Have a project?</p>
                     <Button color="primary">Contact us</Button>
                 </div>
 
@@ -60,7 +60,7 @@ const Example = (props) => {
                         <div className="img-wrapper">
                             <img src={logo} alt="logo" />
                         </div></Col>
-                    <Col xl={4} className="d-flex justify-content-between">
+                    <Col xl={4} className="socialsec d-flex justify-content-between">
                         <div className="social">
                             <img src={fb} alt="fb" />
                         </div>
@@ -74,7 +74,7 @@ const Example = (props) => {
                             <img src={linkedin} alt="linke" />
                         </div>
                     </Col>
-                    <Col xl={4} className="d-flex justify-content-end">
+                    <Col xl={4} className="copyrights">
                         <span className="copy">&copy; 2020 copyright CBNITS</span>
                     </Col>
 
