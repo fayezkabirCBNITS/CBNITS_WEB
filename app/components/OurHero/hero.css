@@ -1,0 +1,36 @@
+.heroes{
+    background-color: #f8f9fc;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-heads{
+    margin-bottom: 30px;
+}
+.hero-heads h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+.skycolor{
+    color: #19a3d9;
+}
+.hero-heads p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-img  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.hero-img {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 185px;
+}   
+.txthead{
+    line-height: 7px;
+}
