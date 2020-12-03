@@ -77,10 +77,13 @@
     background-color: #f15a29;
     border-color: #f15a29;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
+    border-radius: 4px;
 }
-
+.sub-header-nav .nav-link{
+    margin: 0 20px;
+}
 .sub-header {
     /* border: 1px solid red; */
     /* position: absolute;
@@ -98,7 +101,7 @@
 .sub-header .nav-tabs .nav-link {
     color: #000;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
@@ -107,8 +110,9 @@
     background-color: #f15a29;
     border-color: #f15a29;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
+    border-radius: 4px;
 }
 .active-nav-link {
     background-color: #f15a29;

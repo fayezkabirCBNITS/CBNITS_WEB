@@ -1,0 +1,69 @@
+.contact{
+    font-family: 'poppins', sans-serif;
+    /* margin: 30px 0; */
+}
+.contact-head h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.skycolor{
+    color: #1dbdfc;
+}
+
+.contact-head h3{
+    font-weight: 600;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.contact-head h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+.contact-head p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left:-10px;
+}
+.fontIcon{
+    color: #1dbdfc;
+    font-size: 16px;
+}
+.form-head h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.formDiv{
+    background-image: url("./../../images/contactUsMain.png");
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 50px;
+}
+.formDiv label{
+    font-size: 16px;
+    font-weight: 500;
+}
+.formDiv input{
+    padding: 20px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+.formDiv textarea{
+    /* height: 120px; */
+    border: none;
+    padding: 20px 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.formDiv button{
+    margin-top: 20px;
+    background-color: #009444;
+    border-color: #009444;
+    padding: 10px 36px;
+    font-size: 16px;
+}

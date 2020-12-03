@@ -11,6 +11,10 @@ import Establishment from "./../../components/Establistment/establishment";
 import Transformation from "./../../components/Transformation";
 import FourReasons from "./../../components/FourReasons";
 import Opertunities from "./../../components/Opportunities";
+
+import ManagementTeam from '../../components/ManagementTeam/management';
+import OurHero from '../../components/OurHero/ourhero';
+
 import react from "./../../images/react.png"
 import angular from "./../../images/angular.png"
 import vue from "./../../images/vue.png"
@@ -65,10 +69,10 @@ const AboutUs = props => {
             </div>
             <div className="sub-header">
                 <Nav tabs>
-                    <Container className="themed-container" fluid={false}>
-                        <Row className="d-flex justify-content-center">
+                    <Container className="themed-container d-flex justify-content-center" fluid={false}>
+                        <Row className="">
                             <Col xl={12} lg={12}>
-                                <div className="d-flex">
+                                <div className="d-flex sub-header-nav">
                                     <NavItem>
                                         <NavLink
                                             className={classnames({ active: activeTab === '1' })}
@@ -85,12 +89,20 @@ const AboutUs = props => {
                                             Career
                                     </NavLink>
                                     </NavItem>
+                                    <NavItem>
+                                        <NavLink
+                                            className={classnames({ active: activeTab === '3' })}
+                                            onClick={() => { toggle('3'); }}
+                                        >
+                                            Our Team
+                                    </NavLink>
+                                    </NavItem>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </Nav>
-                <Container className="themed-container" fluid={false}>
+                <Container className="themed-container" fluid={true}>
                     <Row className="d-flex justify-content-center">
                         <Col xl={12} lg={12}><div>
                             <TabContent activeTab={activeTab}>
@@ -113,6 +125,14 @@ const AboutUs = props => {
                                             <ImageGallery />
                                             <FourReasons />
                                             <Opertunities />                                            
+                                        </Col>
+                                    </Row>
+                                </TabPane>
+                                <TabPane tabId="3">
+                                    <Row>
+                                        <Col sm="12">
+                                            <ManagementTeam />
+                                            <OurHero />                                        
                                         </Col>
                                     </Row>
                                 </TabPane>
