@@ -35,32 +35,28 @@ const ContactUs = (props) => {
   const [contact, setContact] = useState(0);
   const [email, setEmail] = useState("");
   const [txtArea, setTxtArea] = useState("");
-  const [isValid, setIsValid] = useState(false);
 
   const _validation = () => {
     if (firstName.length == 0) {
-      setIsValid(false);
+      return false
     } else if (lastName.length == 0) {
-      setIsValid(false);
+      return false
     } else if (email.length == 0) {
-      setIsValid(false);
+      return false
     } else if (contact.length == 0) {
-      setIsValid(false);
+      return false
     } else if (txtArea.length == 0) {
-      setIsValid(false);
+      return false
     } else {
-      setIsValid(true);
+      return true
     }
   };
 
   const onSubmit = async (e) => {
-    if (e) {
+    if (_validation()) {
       e.preventDefault();
-    }
-    await _validation();
-    if (isValid) {
       try {
-        let res = await Axios.post("/contactMail", {
+        let res = await Axios.post("/contactMai", {
           name: firstName + " " + lastName,
           contactNo: contact,
           emailAddress: email,
