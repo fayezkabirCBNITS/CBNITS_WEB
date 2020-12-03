@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Nav, NavItem, Button , NavLink, Row, Col, Container } from 'reactstrap';
+import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
 import './herder.css';
 import logo from "./../../images/logo.png";
 import { ReactMegaMenu } from "react-mega-menu";
@@ -7,14 +7,14 @@ import { ReactMegaMenu } from "react-mega-menu";
 
 const Example = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const [showAboutMenu , setshowAboutMenu] = useState(false)
-   const  handleHover = () => {
-    setshowAboutMenu(true );
-      };
-      
-      const handleLeave = () => {
-        setshowAboutMenu(false );
-      };
+    const [showAboutMenu, setshowAboutMenu] = useState(false)
+    const handleHover = () => {
+        setshowAboutMenu(true);
+    };
+
+    const handleLeave = () => {
+        setshowAboutMenu(false);
+    };
 
     const toggle = () => setDropdownOpen(!dropdownOpen);
 
@@ -45,7 +45,7 @@ const Example = (props) => {
                         // border: "2px solid yellow",
                         padding: "2px",
                         zIndex: "9",
-                        left: "0"
+                        left: "-83%"
                         // backgroundColor:"#6c5ce7"
                     }
                 },
@@ -83,20 +83,79 @@ const Example = (props) => {
             }}   // defaults to an empty object. not recommended to be left blank.
             onExit={() => { }}  // a function to be called when a mouse leaves the container
             data={[
-                {
-                    label: "Home",
-                    key: 1,
-                    items: <p>the the world</p>
-                },
-                {
-                    label: "About",
-                    key: 2,
-                    items: <p>the  world</p>
-                },
+                // {
+                //     label: "Home",
+                //     key: 1,
+                //     items: <p>the the world</p>
+                // },
+                // {
+                //     label: "About",
+                //     key: 2,
+                //     items: <p>the  world</p>
+                // },
                 {
                     label: "Studio",
-                    key: 3,
-                    items: <p> world</p>
+                    key: 1,
+                    items: <div>
+                        <Row>
+                            <Col className="mega-link" >
+                                <h6 className="text-center">front end</h6>
+                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                    <NavItem >
+                                        <NavLink href="/angular">angular</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/react">react</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
+                            <Col className="mega-link">
+                                <h6 className="text-center">back end</h6>
+                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                    <NavItem >
+                                        <NavLink href="/node">node</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/golang">golang</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/python">python</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/hadoop">hadoop</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="#">dynamic-365</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
+                            <Col className="mega-link">
+                                <h6 className="text-center">Full stack</h6>
+                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                    <NavItem >
+                                        <NavLink href="/full-stack">full-stack</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
+                            <Col className="mega-link">
+                                <h6 className="text-center">others</h6>
+                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                    <NavItem >
+                                        <NavLink href="/cloud-development">cloud-development</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/cloud-development">cloud-development</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/software-support">software-support</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/mobileApp">mobileApp</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
+                        </Row>
+                    </div>
                 },
                 {
                     label: "Dedicated Hiring",
@@ -108,11 +167,11 @@ const Example = (props) => {
                     key: 5,
                     items: <p> news  world</p>
                 },
-                {
-                    label: "Conatact Us",
-                    key: 6,
-                    items: <p>contact world</p>
-                },
+                // {
+                //     label: "Conatact Us",
+                //     key: 6,
+                //     items: <p>contact world</p>
+                // },
             ]
             }        // array of data to be rendered
         />
@@ -120,30 +179,43 @@ const Example = (props) => {
     )
     return (
         <div className="header">
-            <Container className="themed-container"  fluid={false}>
-                <Row className="p15">
-                    <Col xl={2} lg={1} md={1} className="d-flex align-items-center">
-                    <div className="img-wrapper">
-                        <img src={logo} alt="logo" />
-                    </div>
+            <Container className="themed-container" fluid={false}>
+                <Row className="p15 d-flex align-items-center">
+                    <Col xl={2} lg={1} md={1} className="d-flex align-items-center p-0">
+                        <div className="img-wrapper-head m-0">
+                            <img src={logo} alt="logo" />
+                        </div>
                     </Col>
-                    <Col xl={10} lg={11} md={11}>
-                            <Row className="d-flex justify-content-md-left justify-content-center head-navigation">
-                                <Col xl={10} lg={10} md={10} sm={10} xs={10}>
-                                    {reactMegaMenu()}
-                                </Col>
-                                <Col xl={2} lg={2} md={2} sm={2} xs={2}>
+                    <Col xl={10} lg={11} md={11} className="p-0">
+                        <Row className="d-flex justify-content-md-left justify-content-center head-navigation">
+                            <Col xl={4} lg={4} md={4} sm={4} className="p-0">
+                                <Nav tabs className="d-flex justify-content-end" >
+                                    <NavItem>
+                                        <NavLink href="/">Home</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/aboutus">About</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/contact">Contact</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Col>
+                            <Col xl={6} lg={6} md={6} sm={6} xs={6} className="p-0">
+                                {reactMegaMenu()}
+                            </Col>
+                            <Col xl={2} lg={2} md={2} sm={2} xs={2} className="p-0">
                                 <Button color="primary">Get in touch</Button></Col>
-                            </Row>
+                        </Row>
 
                     </Col>
                 </Row>
             </Container>
-                <div style={{display: "flex"}}>
-                    <div style={{backgroundColor : "#009444" , width : "33%" , height : "2px"}}></div>
-                    <div style={{backgroundColor : "#7f3f98" , width : "34%" , height : "2px"}}></div>
-                    <div style={{backgroundColor : "#1dbdfc" , width : "33%" , height : "2px"}}></div>
-                </div>
+            <div style={{ display: "flex" }}>
+                <div style={{ backgroundColor: "#009444", width: "33%", height: "2px" }}></div>
+                <div style={{ backgroundColor: "#7f3f98", width: "34%", height: "2px" }}></div>
+                <div style={{ backgroundColor: "#1dbdfc", width: "33%", height: "2px" }}></div>
+            </div>
         </div>
     );
 }
@@ -152,7 +224,7 @@ export default Example;
 
 
 
-    {/* <Nav tabs className="d-flex justify-content-end" >
+{/* <Nav tabs className="d-flex justify-content-end" >
         <NavItem>
             <NavLink href="/">Home</NavLink>
         </NavItem>
