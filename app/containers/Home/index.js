@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Button, Row, Col, Container } from 'reactstrap';
+import { Button, Row, Col, Container } from "reactstrap";
+import Banner from "./../../components/TechBanner/techBanner";
+import bannerImg from "../../images/banner.jpg";
 
 import "./home.css";
 import WhatWeDo from "./../../components/WhatWeDo/index";
@@ -10,30 +12,36 @@ import Specialised from "./../../components/SpecilalisedDomain/specialisec";
 import WhyCbnits from "./../../components/WhyCbnits/whycbnits";
 import AboutCbnits from "./../../components/AboutCbnits/aboutCbnits";
 import WorkingWithUs from "./../../components/Caroousel/carousel";
-import CustomerSay from "./../../components/CustomerSay/customarSay"
+import CustomerSay from "./../../components/CustomerSay/customarSay";
 
+const whiteText = "STARTUP EXPERTS";
+const blueTxt = "WE BUILD";
+const paraFirst =
+  "With Our Innovation And Expertise In Cutting-Edge Technology. We Help To Achieve";
+const paraSecond = "Optimal Buisness Growth ";
 
-
-
-const HomePage = props => {
-    return (
-        <div>
-            <PageBanner />
-            <WhatWeDo />
-            <Experience />
-            <Expertise />
-            <Specialised />
-            <WhyCbnits />
-            <AboutCbnits />
-            <WorkingWithUs />
-            <CustomerSay />
-
-
-        </div>
-    )
-}
+const HomePage = (props) => {
+  return (
+    <div>
+      {/* <PageBanner /> */}
+      <Banner
+        bannerImg={bannerImg}
+        whiteText={whiteText}
+        blueTxt={blueTxt}
+        paraFirst={paraFirst}
+        paraSecond={paraSecond}
+        requiredButton={true}
+      />
+      <WhatWeDo />
+      <Experience />
+      <Expertise />
+      <Specialised />
+      <WhyCbnits />
+      <AboutCbnits />
+      <WorkingWithUs />
+      <CustomerSay />
+    </div>
+  );
+};
 
 export default HomePage;
-
-
-
