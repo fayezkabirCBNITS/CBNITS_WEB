@@ -1,0 +1,111 @@
+
+
+.hirre {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.user-hire-form .form-control {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.hirre .form-check-label {
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.hirre .form-check {
+    margin-bottom: 8px;
+}
+.user-hire-form label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.user-hire-form .form-check-label {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.hirre-container h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.submit-btn .btn-primary {
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 8px 32px;
+    margin-top: 50px;
+}
+
+.hiring-process {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+.hire-process-li {
+    position: relative;
+}
+.re-reverse{
+    flex-direction: row-reverse;
+}
+
+.hire-process-li::after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: -29px;
+    height: 2px;
+    width: 111px;
+    background-color: green;
+    width: 100%;
+}
+
+
+.hire-process-li::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid green;
+}
+
+
+.hire-process-wrapper ul li {
+    list-style-type  : none;
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.hire-process-wrapper ul li:nth-child(4) .hire-process-li::after {
+    height: 111px;
+    width: 2px;
+    
+}
+.hire-process-wrapper ul li:nth-child(5) .hire-process-li::before ,
+.hire-process-wrapper ul li:nth-child(6) .hire-process-li::before {
+    transform: rotate(182deg);
+
+}
+.hire-process-wrapper ul li:nth-child(7) .hire-process-li::after ,.hire-process-wrapper ul li:nth-child(7) .hire-process-li::before  {
+    display: none;
+    
+}

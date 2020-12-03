@@ -1,59 +1,209 @@
-.footer .nav-tabs{
+.footer .nav-tabs {
     border-bottom: none;
     padding: 15px 0;
-}
-.footer .nav-tabs .nav-link.active{
+  }
+  .footer .nav-tabs .nav-link.active {
     border-color: transparent;
     background: transparent;
-}
-
-.footer {
+  }
+  
+  .footer {
     padding: 110px 0 50px 0;
     background-color: #082a37;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     position: relative;
-}
-.moon {
+  }
+  .moon {
     position: absolute;
     top: -2px;
     left: 0px;
     width: 100%;
-}
-.moon img{
+  }
+  .moon img {
     width: 100%;
     height: auto;
-}
-.footer .container-fluid{
+  }
+  .footer .container-fluid {
     margin: 0;
     /* padding: 0; */
-}
-.footer .nav-tabs .nav-link {
+  }
+  .footer .nav-tabs .nav-link {
     color: #fff;
     text-transform: capitalize;
     font-size: 12px;
-}
-
-.img-wrapper img {
+  }
+  
+  .img-wrapper img {
     width: 100px;
     height: 30px;
-}
-.copy {
+  }
+  .copy {
     color: #fff;
     text-align: right;
     font-size: 12px;
-}
-.haveproject p{
+  }
+  .haveproject p {
     font-size: 32px;
     font-weight: 600;
     color: #fff;
     text-align: center;
-
-}
-.haveproject .btn-primary {
+  }
+  .haveproject .btn-primary {
     background-color: #009444;
     border-color: #009444;
     text-transform: uppercase;
     font-size: 15px;
     text-align: center;
     margin: 0 auto;
-}
+  }
+  .copyrights {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .copyrights span {
+    font-size: 14px;
+    color: "#fff";
+    text-align: right;
+  }
+  
+  @media (max-width: 425px) {
+    .footer {
+      padding: 60px 0 50px 0;
+    }
+    .moon {
+      top: -11px;
+    }
+    .footer .nav-tabs .nav-link {
+      font-size: 16px;
+    }
+    .footer .nav-tabs .nav-item {
+      margin-bottom: 0;
+    }
+    .img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .copyrights {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .socialsec {
+      padding: 0 50px;
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 575px) {
+    .footer {
+      padding: 60px 0 50px 0;
+    }
+    .moon {
+      top: -11px;
+    }
+    .footer .nav-tabs .nav-link {
+      font-size: 16px;
+    }
+    .footer .nav-tabs .nav-item {
+      margin-bottom: 0;
+    }
+    .img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .copyrights {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .socialsec {
+      padding: 0 100px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .footer {
+      padding: 80px 0 70px 0;
+    }
+    .moon {
+      top: -6px;
+    }
+    .footer .nav-tabs .nav-link {
+      font-size: 16px;
+    }
+    .footer .nav-tabs .nav-item {
+      margin-bottom: 0;
+    }
+    .img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .copyrights {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .socialsec {
+      padding: 0 150px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer {
+      padding: 100px 0 90px 0;
+    }
+    .moon {
+      top: -8px;
+    }
+    .footer .nav-tabs .nav-link {
+      font-size: 16px;
+    }
+    .footer .nav-tabs .nav-item {
+      margin-bottom: 0;
+    }
+    .img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .copyrights {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .socialsec {
+      padding: 15px 200px;
+    }
+    .haveproject .btn-primary {
+      margin: 20px 0;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    .footer {
+      padding: 100px 0 90px 0;
+    }
+    .moon {
+      top: -8px;
+    }
+    .footer .nav-tabs .nav-link {
+      font-size: 16px;
+    }
+    .footer .nav-tabs .nav-item {
+      margin-bottom: 0;
+    }
+    .img-wrapper {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .copyrights {
+      margin-top: 20px;
+      justify-content: center;
+    }
+    .socialsec {
+      padding: 15px 200px;
+    }
+    .haveproject .btn-primary {
+      margin: 20px 0;
+    }
+  }
+  @media (min-width: 1200) and (max-width: 1440) {
+    .socialsec {
+      padding: 15px 250px;
+    }
+  }
+  

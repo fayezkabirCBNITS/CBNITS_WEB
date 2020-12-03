@@ -25,6 +25,8 @@ import Nodejs from "./../containers/Technology/node"
 import Golang from "./../containers/Technology/golang"
 import Python from "./../containers/Technology/python"
 import Hadoop from "./../containers/Technology/hadoop"
+import Hireus from "../containers/HireUs/hireUs";
+import AboutUsV2 from "../containers/AboutUsV2/about";
 
 
 const AppWrapper = styled.div`
@@ -46,7 +48,7 @@ const Routing = (_) => {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={HomePage} />
-        <Route exact path="/aboutus" component={AboutUs} />
+        <Route exact path="/aboutus--" component={AboutUs} />
         {/* <Route exact path="/career" component={Career} /> */}
         <Route exact path="/website" component={Website} />
         <Route exact path="/software-support" component={SoftwareSupport} />
@@ -60,6 +62,8 @@ const Routing = (_) => {
         <Route exact path="/golang" component={Golang} />
         <Route exact path="/python" component={Python} />
         <Route exact path="/hadoop" component={Hadoop} />
+        <Route exact path="/hireus" component={Hireus} />
+        <Route exact path="/aboutus" component={AboutUsV2} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />

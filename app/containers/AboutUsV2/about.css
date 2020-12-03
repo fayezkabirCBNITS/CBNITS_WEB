@@ -1,0 +1,122 @@
+
+/* .re{
+    position: relative;
+    z-index: 5;
+    background-color: #cdcdcd;
+} */
+.about-v2 {
+    font-family: 'Lato', sans-serif;
+
+}
+.v2-discovery {
+    background-color: #eff0f3;
+}
+/*********************************************treee design********************/
+.reason-pick {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #eff0f3;
+    z-index: 9;
+}
+.reason-pick::after {
+    content: "";
+    top: 0px;
+    left: 94px;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #eff0f3;
+    z-index: 1;
+}
+
+.rignt::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 58px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 13px solid #eff0f3;
+}
+.left::before {
+    content: "";
+    position: absolute;
+    transform: rotate(178deg);
+    top: 27px;
+    left: 60px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 13px solid #eff0f3;
+}
+.cusrow.reason-pick::after {
+    display: none;
+}
+/**********************************************end***********************************/
+.your-it-partner h6{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.v2-tree {
+    background-color: #f8f9fc;
+
+}
+.your-it-partner p {
+    font-size: 14px;
+}
+
+.v2-xfactor h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.v2-xfactor p{
+    font-size: 18px;
+}
+
+.v2-discovery h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.v2-discovery p{
+    font-size: 18px;
+}
+.v2-tree h2 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.v2-discovery p{
+    font-size: 18px;
+}
+
+.v2-cbnits-left h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.v2-cbnits-left p {
+    font-size: 16px;
+}
+.v2-cbnits-right p {
+    font-size: 16px;
+
+}
+.v2-cbnits-right p span {
+    margin-right: 15px;
+}

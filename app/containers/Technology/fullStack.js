@@ -205,7 +205,7 @@ const FullStack = props => {
                                 <TabPane tabId="1">
                                     <Row className="mt-5 ">
                                         {techArr.map((data, idx) => (
-                                            <Col xl={3} lg={4} md={6} xs={12} sm={12} >
+                                            <Col xl={3} lg={4} md={6} xs={12} sm={12} className="" >
                                                 <div className="tech-logo">
                                                     <div className="tech-logo-img">{<img src={data.img} alt="" />}</div>
                                                     <div className="tech-logo-name">{data.techname}</div>
