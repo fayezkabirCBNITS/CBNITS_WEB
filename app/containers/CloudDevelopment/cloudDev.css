@@ -1,0 +1,39 @@
+.head-para{
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+}
+
+.cloudCbnits {
+    font-family: 'poppins', sans-serif;
+    background-color: #fff;
+}
+.cloudCbnits-img img{
+    width: 100%;
+    height: 350px;
+}
+
+.cloudCbnits-Text{
+    text-align: justify;
+    margin-left: 30px;
+}
+.cloudCbnits-Text span {
+    font-size: 40px;
+    font-weight: 600;
+}
+.cloudCbnits-Text p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.cloudCbnits-btn button{
+    background: #ff5c33;
+    border: none;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    border-radius: 40px 40px 40px 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.cloudCbnits-btn :hover{
+    background: #ff5c33;
+}

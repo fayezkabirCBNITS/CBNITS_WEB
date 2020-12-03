@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Container } from 'reactstrap';
 import Banner from "./../../components/TechBanner/techBanner"
+import Axios from "../../service/axios-config";
 
 import bannerImg from "./../../images/fullStackBnr.png"
 import icon from "./../../images/tick-white.png"
@@ -90,9 +91,67 @@ const advantageArr = [
 
 const FullStack = props => {
     const [activeTab, setActiveTab] = useState('1');
+    const [data, setData] = useState({});
+    const [response, setResponse] = useState({});
+    const [skills, setSkills] = useState([]);
+    useEffect(() => {
+        _getData();
+        _getResponse();
+        _getTechnicalSkills();
+    }, []);
+    const _getData = async () => {
+        try {
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Full Stack Developer",
+                category: "Dedicated Full Stack Developer",
+            });
+            console.log("res--- Full-Stack----->", res);
+            if (res.status == 200) {
+                setData(res.data.data[0]);
+            } else {
+                console.log("Something went wrong!");
+            }
+        } catch (error) {
+            console.log("error---->", error);
+        }
+    };
 
-    const toggle = tab => {
+    const _getResponse = async () => {
+        try {
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Full Stack Developer",
+                category: "Advantages of Hiring Full-Stack Developers",
+            });
+            if (res.status == 200) {
+                setResponse(res.data.data[0]);
+            } else {
+                console.log("Something went wrong!");
+            }
+        } catch (error) {
+            console.log("error---->", error);
+        }
+    };
+
+    const _getTechnicalSkills = async(skill="Backend") => {
+        console.log("skill is --->", skill);
+        try {
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Full Stack Developer",
+                category: skill,
+            });
+            if (res.status == 200) {
+                setSkills(res.data.data);
+            } else {
+                console.log("Something went wrong!");
+            }
+        } catch (error) {
+            console.log("error---->", error);
+        }
+    }
+
+    const toggle = (tab, skill) => {
         if (activeTab !== tab) setActiveTab(tab);
+        _getTechnicalSkills(skill);
     }
 
     const language = [
@@ -108,13 +167,13 @@ const FullStack = props => {
                         <Col xl={6} lg={6} md={6} xs={12} sm={12}>
                             <div className="full-stack-dedicated">
                                 <h2>Dedicated <span className="skycolor">Full-stack developer</span></h2>
-                                <h6>hiring model geared to deliver result that you expect from a top IT company</h6>
-                                <p>high qualified full-stack programmer skilled with java,python,React Js , Angular Js , node Js, MEAN Js to echance the development process.Full-stack development of CBNITS holds skills across every state of quality software development.</p>
+                                <h6>{data && data.description && data.description[0]}</h6>
+                                <p>{data && data.description && data.description[1]}</p>
                             </div>
                         </Col>
                         <Col xl={6} lg={6} md={6} xs={12} sm={12}>
                             <div className="full-stack-img">
-                                <img src={fullstackcreation} alt="" />
+                                <img src={data && data.image} alt="" />
                             </div>
                         </Col>
                     </Row>
@@ -125,19 +184,19 @@ const FullStack = props => {
                     <Row className="d-flex align-items-center">
                         <Col xl={6} lg={6} md={6} xs={12} sm={12}>
                             <div className="full-stack-img">
-                                <img src={fulljs} alt="" />
+                                <img src={response && response.image} alt="" />
                             </div>
                         </Col>
                         <Col xl={6} lg={6} md={6} xs={12} sm={12}>
                             <div className="developer-from-cbnits">
                                 <h6>why hire Full-stack <span className="organgecolor">developers from CBNITS ?</span></h6>
-                                {
-                                    advantageArr.map((data, ibx) => (
+                                { response && response.description?
+                                    response.description.map((item, ibx) => (
                                         <p key={ibx}>
-                                            <span><img src={data.img} alt={data.img} /></span>
-                                            {data.txt}
+                                            <span><img src={icon} alt={icon} /></span>
+                                            {item}
                                         </p>
-                                    ))
+                                    )): null
                                 }
                             </div>
                         </Col>
@@ -155,65 +214,66 @@ const FullStack = props => {
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: activeTab === '1' })}
-                                        onClick={() => { toggle('1'); }}
+                                        onClick={() => { toggle('1', 'Backend'); }}
                                     >
-                                        back-end
+                                        Back-End
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: activeTab === '2' })}
-                                        onClick={() => { toggle('2'); }}
+                                        onClick={() => { toggle('2', "Frontend"); }}
                                     >
-                                        back end
+                                        Front-End
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: activeTab === '3' })}
-                                        onClick={() => { toggle('3'); }}
+                                        onClick={() => { toggle('3', "Mobile App Development"); }}
                                     >
-                                        mobile app development
+                                        Mobile App Development
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: activeTab === '4' })}
-                                        onClick={() => { toggle('4'); }}
+                                        onClick={() => { toggle('4', "Database"); }}
                                     >
-                                        database
+                                        Database
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: activeTab === '5' })}
-                                        onClick={() => { toggle('5'); }}
+                                        onClick={() => { toggle('5', "Project Management Tools"); }}
                                     >
-                                        project management tools
+                                        Project Management Tools
                                 </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink
-                                        className={classnames({ active: activeTab === '2' })}
-                                        onClick={() => { toggle('2'); }}
+                                        className={classnames({ active: activeTab === '6' })}
+                                        onClick={() => { toggle('6', "Technical Skill"); }}
                                     >
-                                        technical skill
+                                        Technical Skill
                                 </NavLink>
                                 </NavItem>
                             </Nav>
                             <TabContent activeTab={activeTab}>
-                                <TabPane tabId="1">
+                                <TabPane tabId={activeTab}>
                                     <Row className="mt-5 ">
-                                        {techArr.map((data, idx) => (
-                                            <Col xl={3} lg={4} md={6} xs={12} sm={12} className="" >
+                                        { skills && skills.length >0?
+                                        skills.map((item, idx) => (
+                                            <Col xl={3} lg={4} md={6} xs={12} sm={12} key={idx}>
                                                 <div className="tech-logo">
-                                                    <div className="tech-logo-img">{<img src={data.img} alt="" />}</div>
-                                                    <div className="tech-logo-name">{data.techname}</div>
+                                                    <div className="tech-logo-img">{<img src={item.image} alt="" />}</div>
+                                                    <div className="tech-logo-name">{item.name}</div>
 
                                                 </div>
                                             </Col>
 
-                                        ))
+                                        )): null
                                         }
                                     </Row>
                                 </TabPane>

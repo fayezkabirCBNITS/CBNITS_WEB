@@ -33,16 +33,16 @@ const Expertise = props => {
                             <div className="customer-img">
                                 {/* <img src={v1} alt="" /> */}
                                 <video width="100%" height="100%" poster={v1} controls>
-                                    <source src="movie.mp4" type="video/mp4" />
-                                        <source src="movie.ogg" type="video/ogg"  />
+                                    <source src="https://api.cbnits.com/uploads/Madhukar-CBNITS-2.mp4" type="video/mp4" />
+                                    <source src="movie.ogg" type="video/ogg" />
                                             Your browser does not support the video tag.
                                 </video>
                             </div>
-                                    <div className="customer-details">
-                                        <h4>James Walsh</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <div className="customer-details">
+                                <h4>James Walsh</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. </p>
-                                    </div>
+                            </div>
                         </div>
                     </Col>
                     <Col xl={4} lg={4}>
@@ -50,33 +50,33 @@ const Expertise = props => {
                             <div className="customer-img">
                                 {/* <img src={v1} alt="" /> */}
                                 <video width="100%" height="240" poster={v2} controls>
-                                    <source src="movie.mp4" type="video/mp4" />
-                                        <source src="movie.ogg" type="video/ogg" />
+                                    <source src="https://api.cbnits.com/uploads/ShuoYang.mp4" type="video/mp4" />
+                                    <source src="movie.ogg" type="video/ogg" />
                                             Your browser does not support the video tag.
                                 </video>
                             </div>
-                                    <div className="customer-details">
-                                        <h4>Saraha Johnson</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <div className="customer-details">
+                                <h4>Saraha Johnson</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. </p>
-                                    </div>
+                            </div>
                         </div>
                     </Col>
                     <Col xl={4} lg={4}>
                         <div className="each-customer">
                             <div className="customer-img">
                                 {/* <img src={v1} alt="" /> */}
-                                <video width="100%" height="240" poster={v3} controls>
-                                    <source src="movie.mp4" type="video/mp4" />
-                                        <source src="movie.ogg" type="video/ogg" />
-                                            Your browser does not support the video tag.
+                                <video width="100%" height="100%" poster={v1} controls>
+                                    <source src="https://api.cbnits.com/uploads/Madhukar-CBNITS-2.mp4" type="video/mp4" />
+                                    <source src="movie.ogg" type="video/ogg" />
+                                        Your browser does not support the video tag.
                                 </video>
                             </div>
-                                    <div className="customer-details">
-                                        <h4>tom Martin</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            <div className="customer-details">
+                            <h4>James Walsh</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua. </p>
-                                    </div>
+                            </div>
                         </div>
                     </Col>
                 </Row>
