@@ -26,6 +26,7 @@ import Golang from "./../containers/Technology/golang"
 import Python from "./../containers/Technology/python"
 import ContactUs from "./../containers/ContactUs/contact"
 import Hadoop from "./../containers/Technology/hadoop"
+import CloudDevelopment from './../containers/CloudDevelopment/cloud-development'
 
 
 const AppWrapper = styled.div`
@@ -62,6 +63,7 @@ const Routing = (_) => {
         <Route exact path="/python" component={Python} />
         <Route exact path="/contact" component={ContactUs} />
         <Route exact path="/hadoop" component={Hadoop} />
+        <Route exact path="/cloud-development" component={CloudDevelopment} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
