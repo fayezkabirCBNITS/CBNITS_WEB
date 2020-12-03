@@ -3,90 +3,104 @@ import { Button, Container } from "reactstrap";
 import axios from "axios";
 import styled from "styled-components";
 
-
 import "./techBanner.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
 
 const Banner = (props) => {
-    const [images, setImages] = useState([]);
+  const [images, setImages] = useState([]);
 
+  const bannerDiv = styled.div`
+    height: 700px;
+    width: 100%;
+    background-image: url(${"./../../images/banner2.jpg"});
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: "Lato", sans-serif;
+    ${(props) =>
+      props.bannerimage &&
+      css`
+        background-image: url(${msg});
+      `}
+  `;
 
-    const bannerDiv = styled.div`        
-        height: 700px;
-        width: 100%;
-        background-image: url(${"./../../images/banner2.jpg"});
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        padding-top: 80px;
-        font-family: 'Lato', sans-serif;
-        ${props => props.bannerimage && css`
-            background-image: url(${msg});
-            `
+  useEffect(() => {
+    getImageArray();
+  }, []);
+
+  const getImageArray = () => {
+    axios({
+      method: "POST",
+      url: "https://api.cbnits.com/getHomePageImagebyCategory",
+      data: {
+        category: "Languages",
+      },
+    })
+      .then((res) => {
+        if (res) {
+          setImages(res.data.data);
+          console.log(res.data.data);
         }
-    `
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
-    useEffect(() => {
-        getImageArray();
-    }, []);
-
-    const getImageArray = () => {
-        axios({
-            method: "POST",
-            url: "https://api.cbnits.com/getHomePageImagebyCategory",
-            data: {
-                category: "Languages",
-            },
-        })
-            .then((res) => {
-                if (res) {
-                    setImages(res.data.data);
-                    console.log(res.data.data)
-                }
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    };
-
-    return (
-        // <div bannerimage="./../../images/banner.jpg" className="tech-img">
-        <div style={{backgroundImage :`linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url(${props.bannerImg}`}} className="tech-img">
-            <Container className="themed-container" fluid={false}>
-                <p className="tech-title-info">
-                    <span>
-                        <abbr>
-                            <img src={msg} alt="msg" />{" "}
-                        </abbr>
-                        info@cbnits.com
-                    </span>
-                    <span>
-                        <abbr>
-                            <img src={ph} alt="phone" />{" "}
-                        </abbr>
-                        +1699-213-8574
-                    </span>
-                </p>
-                <div className="tech-middle-section">
-                    <h1 className="skycolor"> {props.blueTxt} <span className="whiteColor">{props.whiteText}</span></h1>
-                    <p>{props.paraFirst}</p>
-                    <p>{props.paraSecond}</p>
-
-                </div>
-                <div className="tech-lang-container">
-                    {images.map((language, idx) => (
-                        <div key={idx} className="tech-lang-wrapper">
-                            <abbr>
-                                <img src={language.logoPic} alt={language.category} />
-                            </abbr>
-                            <span>{language.name}</span>
-                        </div>
-                    ))}
-                </div>
-            </Container>
+  return (
+    // <div bannerimage="./../../images/banner.jpg" className="tech-img">
+    <div
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url(${
+          props.bannerImg
+        }`,
+      }}
+      className="tech-img"
+    >
+      <Container className="themed-container" fluid={false}>
+        <p className="tech-title-info">
+          <span>
+            <abbr>
+              <img src={msg} alt="msg" />{" "}
+            </abbr>
+            info@cbnits.com
+          </span>
+          <span>
+            <abbr>
+              <img src={ph} alt="phone" />{" "}
+            </abbr>
+            +1699-213-8574
+          </span>
+        </p>
+        <div className="tech-middle-section">
+          <h1 className="skycolor">
+            {" "}
+            {props.blueTxt}{" "}
+            <span className="whiteColor">{props.whiteText}</span>
+          </h1>
+          <p>{props.paraFirst}</p>
+          <p>{props.paraSecond}</p>
+          {props.requiredButton ? (
+            <Button type="button" color="primary">
+              Hire us
+            </Button>
+          ) : null}
         </div>
-    );
+        <div className="tech-lang-container">
+          {images.map((language, idx) => (
+            <div key={idx} className="tech-lang-wrapper">
+              <abbr>
+                <img src={language.logoPic} alt={language.category} />
+              </abbr>
+              <span>{language.name}</span>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
 };
 
 export default Banner;
