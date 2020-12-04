@@ -8,6 +8,8 @@ import twitter from "./../../images/twitter.png";
 import linkedin from "./../../images/link.png";
 import footer from "./../../images/design.png";
 
+import { withRouter } from "react-router-dom";
+
 const Example = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -22,36 +24,36 @@ const Example = (props) => {
             <Container className="themed-container" fluid={false}>
                 <div className="haveproject text-center">
                     <p>Have a project?</p>
-                    <Button color="primary">Contact us</Button>
+                    <Button color="primary" onClick={() => props.history.push("/contact")}>Contact us</Button>
                 </div>
 
                 <Row className="d-flex justify-content-center mb-4">
                     <Col xl={9}>
                         <Nav tabs className="d-flex justify-content-between" >
                             <NavItem>
-                                <NavLink href="#">Home</NavLink>
+                                <NavLink href="/home">Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">About</NavLink>
+                                <NavLink href="/aboutus">About</NavLink>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLink href="#">Blog</NavLink>
+                            </NavItem> */}
+                            <NavItem>
+                                <NavLink href="/hire-us">dedicated Hiring</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">dedicated Hiring</NavLink>
+                                <NavLink href="/career">Career</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Career</NavLink>
+                                <NavLink href="/contact">Contact</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink href="#">Contact</NavLink>
-                            </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <NavLink href="#">Terms and Conditions</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">Privacy Policy</NavLink>
-                            </NavItem>
+                            </NavItem> */}
                         </Nav>
                     </Col>
                 </Row>
@@ -85,4 +87,4 @@ const Example = (props) => {
     );
 }
 
-export default Example;
+export default withRouter(Example);

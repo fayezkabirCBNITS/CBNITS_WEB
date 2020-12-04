@@ -7,6 +7,7 @@ import bannerImg from "./../../images/banner2.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "service";
 const blueTxt = "Golang development";
@@ -208,9 +209,9 @@ const Golang = (props) => {
                 </div>
               </Col>
             </Row>
-            <div className="text-center">
-              <Button color="primary">Hire Us</Button>
-            </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
           </Container>
         </div>
       </div>
@@ -218,4 +219,4 @@ const Golang = (props) => {
   );
 };
 
-export default Golang;
+export default withRouter(Golang);

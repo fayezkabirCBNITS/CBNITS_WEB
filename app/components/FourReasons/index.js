@@ -46,19 +46,19 @@ const FourReasons = (props) => {
     },
   ];
   return (
-    <div className="content-wrapper">
+    <div className="fourReacson-wrapper">
       <Container className="themed-container py-5" fluid={false}>
-        <div className="whyTitle text-center">
-          <h2>
+        <div className="fourReacson text-center">
+          <h2 className="mb-5">
             Four reasons why you should <br />
-            <span>choose our service</span>
+            <span className="skycolor">choose our service</span>
           </h2>
-          <p className="mt-4">
+          {/* <p className="mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
             accumsan lacus vel facilisis.{" "}
-          </p>
+          </p> */}
         </div>
         <Form>
           <Row className="d-flex justify-content-between">

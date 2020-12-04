@@ -37,7 +37,8 @@ import SAP from './../containers/SAP/sap';
 import Hrtech from './../containers/HR-Tech/hr-tech';
 import Csitwochain from './../containers/CSI2Chain/csitwochain'
 import CSHealth from './../containers/CSHealth/cshealth'
-import Csecommerce from './../containers/CSEcommerce/csecommerce'
+import Csecommerce from './../containers/CSEcommerce/csecommerce';
+import CSEducation from './../containers/CSEducation/cseducation'
 
 
 const AppWrapper = styled.div`
@@ -74,7 +75,7 @@ const Routing = (_) => {
         <Route exact path="/python" component={Python} />
         <Route exact path="/contact" component={ContactUs} />
         <Route exact path="/hadoop" component={Hadoop} />
-        <Route exact path="/hireus" component={Hireus} />
+        <Route exact path="/hire-us" component={Hireus} />
         <Route exact path="/blockchain" component={BlockChain} />
         <Route exact path="/ui-ux" component={UiUx} />
         <Route exact path="/aboutus" component={AboutUsV2} />
@@ -82,10 +83,11 @@ const Routing = (_) => {
         <Route exact path="/cloud-devops" component={CloudDevOps} />
         <Route exact path="/quality-engineering" component={QualityEngineer} />
         <Route exact path="/sap" component={SAP} />
-        <Route exact path="/hr-tech" component={Hrtech} />
+        <Route exact path="/cs-hr-tech" component={Hrtech} />
         <Route exact path="/cs-i-two-chain" component={Csitwochain} />
         <Route exact path="/cs-Health" component={CSHealth} />
-        <Route exact path="/cs-ecommerce" component={Csecommerce} />
+        <Route exact path="/cs-ed-tech" component={Csecommerce} />
+        <Route exact path="/cs-education" component={CSEducation} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />

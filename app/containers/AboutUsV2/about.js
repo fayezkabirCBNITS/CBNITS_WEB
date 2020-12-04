@@ -49,6 +49,7 @@ const AboutUs = (props) => {
     _getXFactor();
     _getTeam();
     _getResponse();
+    window.scrollTo({ top: 0 });
   }, []);
   const _getData = async () => {
     try {

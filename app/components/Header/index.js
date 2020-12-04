@@ -189,6 +189,16 @@ const Example = (props) => {
                       </NavLink>
                     </NavItem>
                     <NavItem>
+                      <NavLink href="/cloud-devops">
+                        cloud-devOps
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/quality-engineering">
+                        quality-engineering
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
                       <NavLink href="/software-support">
                         software-support
                       </NavLink>
@@ -315,7 +325,7 @@ const Example = (props) => {
                   <UncontrolledDropdown nav inNavbar>
                     {/* <Dropdown isOpen={firstDrop} toggle={toggleFirst}> */}
                     <DropdownToggle nav caret>
-                      FRONT END
+                      Front End
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem href="/angular">Angular</DropdownItem>
@@ -325,7 +335,7 @@ const Example = (props) => {
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                      BACK END
+                      Back End
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem href="/node">Node</DropdownItem>
@@ -340,7 +350,7 @@ const Example = (props) => {
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                      FULL STACK
+                      Full-Stack
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem href="/full-stack">full-stack</DropdownItem>
@@ -348,24 +358,30 @@ const Example = (props) => {
                   </UncontrolledDropdown>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
-                      OTHERS
+                      Others
                     </DropdownToggle>
                     <DropdownMenu right>
                       <DropdownItem href="/cloud-development">
                         Cloud-Development
                       </DropdownItem>
-                      <DropdownItem href="/mobileApp">Mobile App</DropdownItem>
                       <DropdownItem href="/software-support">
                         Software-Support
                       </DropdownItem>
+                      <DropdownItem href="/cloud-devops">
+                      cloud-devops
+                      </DropdownItem>
+                      <DropdownItem href="/quality-engineering">
+                        quality-engineering
+                      </DropdownItem>
+                      <DropdownItem href="/mobileApp">Mobile App</DropdownItem>
                       <DropdownItem href="/ui-ux">Ui/Ux</DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                   <NavItem>
-                    <NavLink href="#">DEDICATED HIRING</NavLink>
+                    <NavLink href="/hire-us">Dedicated Hiring</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="#">INSIGHTS & NEWS</NavLink>
+                    <NavLink href="#">Insights & News</NavLink>
                   </NavItem>
                 </Nav>
               </Collapse>

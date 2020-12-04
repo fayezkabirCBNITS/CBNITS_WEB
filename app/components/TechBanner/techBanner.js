@@ -53,7 +53,7 @@ const Banner = (props) => {
     // <div bannerimage="./../../images/banner.jpg" className="tech-img">
     <div
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${
           props.bannerImg
         }`,
       }}

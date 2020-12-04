@@ -5,6 +5,7 @@ import Axios from "../../service/axios-config";
 
 import bannerImg from "./../../images/banner2.jpg"
 import icon from "./../../images/list-icon.png"
+import { withRouter } from "react-router-dom";
 
 const whiteText = "service"
 const blueTxt = "Python development"
@@ -148,7 +149,7 @@ const Python = props => {
                             </Col>
                         </Row>
                         <div className="text-center">
-                            <Button color="primary">Hire Us</Button>
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
                         </div>
                     </Container>
 
@@ -158,4 +159,4 @@ const Python = props => {
     )
 }
 
-export default Python;
+export default withRouter(Python);

@@ -7,6 +7,7 @@ import bannerImg from "./../../images/banner2.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "service";
 const blueTxt = "react js development";
@@ -74,24 +75,24 @@ const Reactjs = (props) => {
                 <h2 className="skycolor mb-5">development</h2>
                 {data && data.description
                   ? data.description.map((item, key) => (
-                      <Row key={key}>
-                        <Col xl={1} lg={1}>
-                          <img
-                            src={icon}
-                            alt={icon}
-                            style={{
-                              marginRight: "2px",
-                              fontSize: "18px",
-                              marginTop: "5px",
-                              marginLeft: "10px",
-                            }}
-                          />
-                        </Col>
-                        <Col xl={11} lg={11}>
-                          <p>{item}</p>
-                        </Col>
-                      </Row>
-                    ))
+                    <Row key={key}>
+                      <Col xl={1} lg={1}>
+                        <img
+                          src={icon}
+                          alt={icon}
+                          style={{
+                            marginRight: "2px",
+                            fontSize: "18px",
+                            marginTop: "5px",
+                            marginLeft: "10px",
+                          }}
+                        />
+                      </Col>
+                      <Col xl={11} lg={11}>
+                        <p>{item}</p>
+                      </Col>
+                    </Row>
+                  ))
                   : null}
               </div>
             </Col>
@@ -125,30 +126,30 @@ const Reactjs = (props) => {
                   </h6>
                   {response && response.description
                     ? response.description.map((item, key) => (
-                        <Row key={key}>
-                          <Col xl={1} lg={1}>
-                            <img
-                              src={icon}
-                              alt={icon}
-                              style={{
-                                marginRight: "2px",
-                                fontSize: "18px",
-                                marginTop: "5px",
-                                marginLeft: "10px",
-                              }}
-                            />
-                          </Col>
-                          <Col xl={11} lg={11}>
-                            <p>{item}</p>
-                          </Col>
-                        </Row>
-                      ))
+                      <Row key={key}>
+                        <Col xl={1} lg={1}>
+                          <img
+                            src={icon}
+                            alt={icon}
+                            style={{
+                              marginRight: "2px",
+                              fontSize: "18px",
+                              marginTop: "5px",
+                              marginLeft: "10px",
+                            }}
+                          />
+                        </Col>
+                        <Col xl={11} lg={11}>
+                          <p>{item}</p>
+                        </Col>
+                      </Row>
+                    ))
                     : null}
                 </div>
               </Col>
             </Row>
             <div className="text-center">
-              <Button color="primary">Hire Us</Button>
+              <Button color="primary" onClick={() => props.history.push("/hire-us")}>Hire Us</Button>
             </div>
           </Container>
         </div>
@@ -157,4 +158,4 @@ const Reactjs = (props) => {
   );
 };
 
-export default Reactjs;
+export default withRouter(Reactjs);

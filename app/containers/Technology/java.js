@@ -7,6 +7,7 @@ import bannerImg from "./../../images/banner2.jpg";
 import icon from "./../../images/list-icon.png";
 import node from "./../../images/javaa.png";
 import angularjs from "./../../images/angularjs.png";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "service";
 const blueTxt = "Java development";
@@ -207,9 +208,9 @@ const Javajs = (props) => {
                 </div>
               </Col>
             </Row>
-            <div className="text-center">
-              <Button color="primary">Hire Us</Button>
-            </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
           </Container>
         </div>
       </div>
@@ -217,4 +218,4 @@ const Javajs = (props) => {
   );
 };
 
-export default Javajs;
+export default withRouter(Javajs);

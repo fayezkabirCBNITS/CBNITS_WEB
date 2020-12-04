@@ -403,13 +403,13 @@ const HireUs = (props) => {
         </Container>
       </div>
 
-      <div>
+      {/* <div>
         <Container className="themed-container" fluid={false}>
           <h2>
             monthly-basic <span className="skycolor">hiring process</span>
           </h2>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 };
