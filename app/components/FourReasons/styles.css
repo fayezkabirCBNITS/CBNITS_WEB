@@ -27,7 +27,7 @@
     line-height: 1;
     margin-right: 8px;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 400;
     color: #b8b9bb;
 }
 .desp {
@@ -55,3 +55,4 @@
     height: 170px;
     padding: 10px;
 }
+
