@@ -109,3 +109,14 @@
     display: none;
     
 }
+
+
+.hire-process-wrapper {
+    background-color: #F8F9FC;
+}
+
+.hire-process-wrapper h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+}
