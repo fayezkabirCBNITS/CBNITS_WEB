@@ -33,44 +33,67 @@ const paraFirst = "Get in touch with our help team & get instant response";
 const ContactUs = (props) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [contact, setContact] = useState(0);
+  const [contact, setContact] = useState("");
   const [email, setEmail] = useState("");
   const [txtArea, setTxtArea] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const _validation = () => {
-    if (firstName.length == 0) {
-      return false
-    } else if (lastName.length == 0) {
-      return false
-    } else if (email.length == 0) {
-      return false
-    } else if (contact.length == 0) {
-      return false
-    } else if (txtArea.length == 0) {
-      return false
-    } else {
-      return true
-    }
+    return new Promise((resolve) => {
+      const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+      if (
+        firstName.length == 0 ||
+        lastName.length == 0 ||
+        (email.length == 0 || !emailRegex.test(email)) ||
+        contact.length == 0 ||
+        txtArea.length == 0
+      ) {
+        resolve(false);
+      } else {
+        resolve(true);
+      }
+    });
+  };
+
+  const resetValue = () => {
+    setFirstName("");
+    setLastName("");
+    setContact("");
+    setEmail("");
+    setTxtArea("");
+    setIsLoading(false);
   };
 
   const onSubmit = async (e) => {
-    if (_validation()) {
-      e.preventDefault();
-      try {
+    try {
+      if (!isLoading) {
+        const validationStatus = await _validation();
+
+        if (!validationStatus) {
+          return;
+        }
+        e.preventDefault();
+        setIsLoading(true);
+
         let res = await Axios.post("/contactMail", {
           name: firstName + " " + lastName,
           contactNo: contact,
           emailAddress: email,
           message: txtArea,
         });
+
         if (res.status == 200) {
+          resetValue();
           alert("Successful!");
         } else {
+          setIsLoading(false);
           alert("Something went wrong!");
         }
-      } catch (error) {
-        console.log("error---->", error);
       }
+    } catch (error) {
+      setIsLoading(false);
+      console.log("error---->", error);
     }
   };
 
@@ -186,8 +209,9 @@ const ContactUs = (props) => {
                           <Input
                             type="text"
                             name="firstname"
-                            placeholder="Enter yoy first name"
+                            placeholder="Enter your first name"
                             required
+                            value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
                           />
                         </FormGroup>
@@ -200,6 +224,7 @@ const ContactUs = (props) => {
                             name="lastname"
                             placeholder="Enter your last name"
                             required
+                            value={lastName}
                             onChange={(e) => setLastName(e.target.value)}
                           />
                         </FormGroup>
@@ -214,6 +239,8 @@ const ContactUs = (props) => {
                             name="contact"
                             placeholder="Enter your contact number"
                             required
+                            min={0}
+                            value={contact}
                             onChange={(e) => setContact(e.target.value)}
                           />
                         </FormGroup>
@@ -226,6 +253,7 @@ const ContactUs = (props) => {
                             name="email"
                             placeholder="Enter your email address"
                             required
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)}
                           />
                         </FormGroup>
@@ -234,12 +262,13 @@ const ContactUs = (props) => {
                     <Row style={{ marginBottom: "10px" }}>
                       <Col md={12} lg={12} xl={12} sm={12} xs={12}>
                         <FormGroup>
-                          <Label>Text Area</Label>
+                          <Label>Message</Label>
                           <Input
                             type="textarea"
                             name="text"
                             rows={4}
                             required
+                            value={txtArea}
                             onChange={(e) => setTxtArea(e.target.value)}
                           />
                         </FormGroup>
@@ -248,7 +277,11 @@ const ContactUs = (props) => {
                     <Row>
                       <Col>
                         <div className="text-center">
-                          <Button type="submit" onClick={onSubmit}>
+                          <Button
+                            type="submit"
+                            onClick={onSubmit}
+                            disabled={isLoading}
+                          >
                             Submit
                           </Button>
                         </div>
