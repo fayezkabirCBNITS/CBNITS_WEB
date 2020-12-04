@@ -57,7 +57,7 @@ const ContactUs = (props) => {
     if (_validation()) {
       e.preventDefault();
       try {
-        let res = await Axios.post("/contactMai", {
+        let res = await Axios.post("/contactMail", {
           name: firstName + " " + lastName,
           contactNo: contact,
           emailAddress: email,

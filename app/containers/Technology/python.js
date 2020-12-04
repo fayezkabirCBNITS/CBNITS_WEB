@@ -101,7 +101,7 @@ const Python = props => {
                         </Col>
                     </Row>
                     <div className="text-center hire-req">
-                        <p> Hire the best in the industry React Js developer from CBNITS
+                        <p> Hire the best in the industry Python developer from CBNITS
                         to secure outstanding software development services according
                         to your buisness requirements.
                         </p>

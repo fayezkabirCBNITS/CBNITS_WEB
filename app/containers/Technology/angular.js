@@ -92,7 +92,7 @@ const Angularjs = (props) => {
                     </Row>
                     <div className="text-center hire-req">
                         <p>
-                            Hire the best in the industry React Js developer from CBNITS to
+                            Hire the best in the industry Angular Js developer from CBNITS to
                             secure outstanding software development services according to your
                             buisness requirements.
             </p>
