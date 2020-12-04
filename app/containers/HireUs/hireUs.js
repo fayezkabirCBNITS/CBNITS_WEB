@@ -6,7 +6,7 @@ import Axios from "./../../service/axios-config";
 import bannerImg from "./../../images/hireUsBnr.jpg"
 // import icon from "./../../images/list-icon.png"
 // import angularcreation from "./../../images/angularcreation.png"
-// import angularjs from "./../../images/angularjs.png"
+import tree from "./../../images/lineArrowRound.png"
 
 import "./hireus.css";
 
@@ -180,26 +180,29 @@ const HireUs = (props) => {
                 </Container>
             </div>
 
-            <div className="hire-process-wrapper">
+            <div className="hire-process-wrapper py-5">
                 <Container className="themed-container" fluid={false}>
+                    <h2>monthly-basic <span className="skycolor">hiring process</span></h2>
                     <Row className="d-flex align-items-center">
-                        <ul className="w-100 ">
-                            {/* <Row className=" re-reverse"> */}
+                        {/* <ul className="w-100 ">
                             {
                                 new Array(7).fill({ "hello": 12 }).map((data, index) => (
-                                    // <Col xl={3}>
                                     <li >
                                         <div className="hire-process-li">
                                             <div className="hiring-process">{index + 1}</div>
                                             <p>jibon hell</p>
                                         </div>
                                     </li>
-
-                                    // </Col>
                                 ))
                             }
-                            {/* </Row> */}
-                        </ul>
+                        </ul> */}
+
+
+                        <Col>
+                            <div className="imgSec">
+                                <img src={tree} />
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </div>
