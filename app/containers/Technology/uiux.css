@@ -565,4 +565,17 @@
       height: 160px;
     }
   }
-  
+  @media only screen and (max-width : 767px) {
+
+    .advantages h6 {
+      font-size: 29px;
+      font-weight: 600;
+      margin-top: 20px;
+  }
+  .advantages p {
+    font-size: 18px;
+}
+.hire-req p {
+  font-size: 20px;
+}
+  }

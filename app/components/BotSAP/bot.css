@@ -1,0 +1,33 @@
+.botSap-bnits{
+    background-color: #1dbdfc;
+    font-family: 'Poppins', sans-serif;
+}
+.botSap-head h4{
+    font-weight: 600;
+}
+.botSap-head h6{
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+.botSap-head h2 span{
+    color: #f15a29;
+}
+.stDiv{
+    background-image: url("./../../images/sap/sapBox.png");
+    width: 100%;
+    min-height: 250px;
+    height: 100%;
+    border-radius: 6px;
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+.stDiv h6{
+    color: #f15a29;
+    font-weight: 600;
+}
+.stDiv p{
+    margin-top: 15px;
+    text-align: justify;
+}
+

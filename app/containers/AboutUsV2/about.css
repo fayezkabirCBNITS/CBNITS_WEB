@@ -120,3 +120,23 @@
 .v2-cbnits-right p span {
     margin-right: 15px;
 }
+
+@media only screen and (max-width : 767px) {
+
+    .v2-discovery h2{
+        margin-top: 20px;
+        font-size: 32px !important;
+    } 
+    .v2-xfactor h2 { font-size: 32px !important;} 
+    .v2-tree h2 {font-size: 32px !important;}
+    .your-it-partner h6 {
+
+        text-align: center;
+    }
+
+    .your-it-partner p {
+        text-align: center;
+    }
+    .reason-pick::after {background: none;}
+    .reason-pick { margin-bottom: 20px;}
+}
