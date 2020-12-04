@@ -1,0 +1,193 @@
+.language {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .technology {
+    width: 100%;
+  }
+  .technology h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+  }
+  .topDetails {
+    width: 100%;
+    margin: 100px 0;
+    padding: 0 150px;
+  }
+  .topDetails p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+  .detailsBox {
+    width: 100%;
+    margin: 100px 0;
+    padding: 40px 50px;
+    background-color: #f15a29;
+  }
+  .detailsBox p {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  .hireUs .btn-secondary {
+    width: 150px;
+    height: 50px;
+    margin-bottom: 50px;
+    color: #fff !important;
+    background-color: #f15a29 !important;
+    border-color: #f15a29 !important;
+  }
+  
+  @media (max-width: 375px) {
+    .topDetails {
+      margin: 20px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 20px;
+    }
+    .morethan h2 span {
+      font-size: 20px;
+    }
+    .technology h2 {
+      font-size: 20px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  
+  @media (min-width: 376px) and (max-width: 425px) {
+    .topDetails {
+      margin: 25px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 25px;
+    }
+    .morethan h2 span {
+      font-size: 25px;
+    }
+    .technology h2 {
+      font-size: 25px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 575px) {
+    .topDetails {
+      margin: 25px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 14px;
+    }
+    .morethan h2 {
+      font-size: 25px;
+    }
+    .morethan h2 span {
+      font-size: 25px;
+    }
+    .technology h2 {
+      font-size: 25px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .topDetails {
+      margin: 27px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 27px;
+    }
+    .morethan h2 span {
+      font-size: 27px;
+    }
+    .technology h2 {
+      font-size: 27px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .topDetails {
+      margin: 27px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 30px;
+    }
+    .morethan h2 span {
+      font-size: 30px;
+    }
+    .technology h2 {
+      font-size: 30px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .topDetails {
+      margin: 30px 0;
+      padding: 0 10px;
+    }
+    .topDetails p {
+      font-size: 16px;
+    }
+    .morethan h2 {
+      font-size: 35px;
+    }
+    .morethan h2 span {
+      font-size: 35px;
+    }
+    .technology h2 {
+      font-size: 35px;
+    }
+    .detailsBox {
+      width: 100%;
+      margin: 50px 0;
+      padding: 40px 50px;
+      background-color: #f15a29;
+    }
+  }
+  

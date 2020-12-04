@@ -13,6 +13,7 @@ import WhyCbnits from "./../../components/WhyCbnits/whycbnits";
 import AboutCbnits from "./../../components/AboutCbnits/aboutCbnits";
 import WorkingWithUs from "./../../components/Caroousel/carousel";
 import CustomerSay from "./../../components/CustomerSay/customarSay";
+import YearsOfExperience from "./../../components/homeExperienceYear/exp"
 
 const whiteText = "STARTUP EXPERTS";
 const blueTxt = "WE BUILD";
@@ -33,7 +34,8 @@ const HomePage = (props) => {
         requiredButton={true}
       />
       <WhatWeDo />
-      <Experience />
+      <YearsOfExperience />
+      {/* <Experience /> */}
       <Expertise />
       <Specialised />
       <WhyCbnits />
