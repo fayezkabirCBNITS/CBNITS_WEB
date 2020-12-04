@@ -21,6 +21,8 @@
     align-items: flex-start;
     margin-bottom: 25px;
 }
+
+.num-txt h4{font-family: 'Poppins', sans-serif; font-size: 22px; color:#222222;}
 .num-txt span {
     line-height: 1;
     margin-right: 8px;

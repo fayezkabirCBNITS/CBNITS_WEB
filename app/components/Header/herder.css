@@ -20,7 +20,7 @@
     left: 0;
 
     width: 100%;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(255,255,255,0.1);
 }
 .header .container-fluid{
     margin: 0;
@@ -30,7 +30,7 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Lato', sans-serif;
     padding: 6px 15px;
 }
@@ -64,10 +64,11 @@
 .css-1owbun0 ul li{
         padding: 1px 15px;
         color: #fff ;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 15px;
         text-transform: uppercase;
         cursor: pointer;
+        font-family: 'Lato', sans-serif;
 }
 .css-13azwyo {   
     /* // border: 5px solid red  !important; */
@@ -161,12 +162,15 @@
             font-size: 14px !important;
     }
     .img-wrapper-head img {
-        width: 133px !important;
-        height: 40px !important;
+        width: 168px !important;
+        height: auto !important;
     }
     .header .btn-primary {
         font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.1px;
     }
 }
 
+.header .themed-container{padding: 9px 0;}
 
