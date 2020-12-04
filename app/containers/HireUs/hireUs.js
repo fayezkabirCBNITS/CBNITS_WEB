@@ -93,12 +93,17 @@ const initialFields = {
   country: "",
   contactNo: "",
   emailAddress: "",
-  hiringChecked: "",
+  hiringChecked: "monthly",
   note: "",
 };
 const HireUs = (props) => {
   const [checks, setChecks] = useState([]);
   const [formData, setFormData] = useState(initialFields);
+  const [fullNameError, setFullNameError] = useState(false);
+  const [countryError, setCountryError] = useState(false);
+  const [contactNoError, setContactNoError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [noteError, setNoteError] = useState(false);
 
   const handleCheckbox = (value) => {
     let tempServices = JSON.parse(JSON.stringify(checks));
@@ -121,18 +126,37 @@ const HireUs = (props) => {
     setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
+  const onFocusInput = (name) => {
+    if (name == "fullname") {
+      setFullNameError(false);
+    } else if (name == "country") {
+      setCountryError(false);
+    } else if (name == "contactNo") {
+      setContactNoError(false)
+    } else if (name == "emailAddress") {
+      setEmailError(false)
+    } else if (name == "note") {
+      setNoteError(false)
+    }
+  };
+
   const _validation = () => {
     if (formData.fullname.length == 0) {
+      setFullNameError(true);
       return false;
     } else if (formData.country.length == 0) {
+      setCountryError(true);
       return false;
     } else if (formData.contactNo.length == 0) {
+      setContactNoError(true);
       return false;
-    } else if (formData.emailAddress.length == 0) {
+    } else if (!formData.emailAddress.match(/\S+@\S+\.\S+/)) {
+      setEmailError(true);
       return false;
     } else if (formData.hiringChecked.length == 0) {
       return false;
     } else if (formData.note.length == 0) {
+      setNoteError(true);
       return false;
     } else {
       return true;
@@ -154,7 +178,7 @@ const HireUs = (props) => {
         });
         if (res.status == 200) {
           alert("Successful!");
-          setFormData(initialFields)
+          setFormData(initialFields);
         } else {
           alert("Something went wrong!");
         }
@@ -202,14 +226,14 @@ const HireUs = (props) => {
                       <Label for="fullname">Full name*</Label>
                       <Input
                         type="text"
-                        invalid={false}
-                        valid={false}
+                        invalid={fullNameError}
                         form
                         name="fullname"
                         value={formData.fullname}
                         onChange={(e) =>
                           handleChange(e.target.name, e.target.value)
                         }
+                        onFocus={(e) => onFocusInput(e.target.name)}
                         required
                         id="full name"
                         placeholder="enter your first name"
@@ -220,14 +244,14 @@ const HireUs = (props) => {
                     <FormGroup className="px-4">
                       <Label for="exampleEmail">Where are you from*</Label>
                       <Input
-                        invalid={false}
-                        valid={false}
+                        invalid={countryError}
                         type="select"
                         name="country"
                         value={formData.country}
                         onChange={(e) =>
                           handleChange(e.target.name, e.target.value)
                         }
+                        onFocus={(e) => onFocusInput(e.target.name)}
                         required
                         id="exampleSelect"
                       >
@@ -243,14 +267,14 @@ const HireUs = (props) => {
                     <FormGroup className="px-4">
                       <Label for="examplePassword">Contact no*</Label>
                       <Input
-                        invalid={false}
-                        valid={false}
+                        invalid={contactNoError}
                         type="number"
                         name="contactNo"
                         value={formData.contactNo}
                         onChange={(e) =>
                           handleChange(e.target.name, e.target.value)
                         }
+                        onFocus={(e) => onFocusInput(e.target.name)}
                         required
                         id="number"
                         placeholder="enter your contact no"
@@ -261,8 +285,7 @@ const HireUs = (props) => {
                     <FormGroup className="px-4">
                       <Label for="email">Email*</Label>
                       <Input
-                        invalid={false}
-                        valid={false}
+                        invalid={emailError}
                         type="email"
                         name="emailAddress"
                         value={formData.emailAddress}
@@ -270,6 +293,7 @@ const HireUs = (props) => {
                           handleChange(e.target.name, e.target.value)
                         }
                         required
+                        onFocus={(e) => onFocusInput(e.target.name)}
                         id="userEmail"
                         placeholder="enter your email"
                       />
@@ -324,8 +348,7 @@ const HireUs = (props) => {
                     <FormGroup className="px-4">
                       <Label for="text">yout note*</Label>
                       <Input
-                        invalid={false}
-                        valid={false}
+                        invalid={noteError}
                         type="textarea"
                         rows={6}
                         name="note"
@@ -334,6 +357,7 @@ const HireUs = (props) => {
                           handleChange(e.target.name, e.target.value)
                         }
                         required
+                        onFocus={(e) => onFocusInput(e.target.name)}
                         id="textarea"
                         placeholder=""
                       />

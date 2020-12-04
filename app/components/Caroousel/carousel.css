@@ -8,8 +8,8 @@
 
 }
 .client-img img{
-    height: 60px;
-    width: 60px;
+    height: auto;
+    width: 80px;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid #1dbdfc;
@@ -27,7 +27,11 @@
 }
 .actual-client h5{
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 20px;
+}
+.actual-client h5 span{
+    margin-bottom: 0;
+    font-size: 20px;
 }
 .actual-client p{
     margin-bottom: 0;
@@ -35,12 +39,33 @@
 }
 .title-carousel h3{
     color: #000;
-    font-size: 42px;
+    font-size: 48px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .title-carousel h4{
     color: #1dbdfc;
-    font-size: 42px;
+    font-size: 48px;
     text-transform: uppercase;
     margin-bottom: 60px;
+    font-weight: 600;
+}
+.custom-carousel .carousel-item {
+    font-size: 22px;
+font-weight: 300;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .title-carousel h3{    font-size: 38px;}
+    .title-carousel h4 {
+        font-size: 38px;}
+
+        .actual-client h5 {
+            font-size: 18px;
+        }
+
+        .customer-head h2 {
+            font-size: 38px;
+        }
 }

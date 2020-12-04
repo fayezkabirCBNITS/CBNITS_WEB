@@ -65,7 +65,9 @@
 }
 .exp-name abbr {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #767778;
 }
 .exp-name p {
     margin-bottom: 0;
