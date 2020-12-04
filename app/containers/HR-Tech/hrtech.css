@@ -1,0 +1,40 @@
+
+.hrTech {
+    font-family: 'poppins', sans-serif;
+    background-color: #fff;
+    /* padding: 10px 200px; */
+}
+.hrTech-img img{
+    width: 100%;
+    height: 350px;
+}
+
+.hrTech-Text{
+    text-align: justify;
+    margin-left: 30px;
+}
+.hrTech-Text span {
+    font-size: 40px;
+    font-weight: 600;
+}
+.hrTech-Text p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.hrTechCbnits{
+    background-color: #1dbdfc;
+}
+.hrTechCbnits h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #fff;
+}
+.hrTechCbnits-advantages{
+    font-weight: 500;
+    margin: 30px 0;
+  }
+
+.hrTechCbnits-advantages p {
+    font-size: 18px;
+    color: #fff;
+  }
