@@ -115,7 +115,14 @@ const Specialised = (props) => {
         <div className="category-container">
           {specialDomain.map((data, index) => (
             <div
-              className="text-center position-relative health-tab"
+              className={`text-center position-relative health-tab 
+              ${activeIndex === index && activeIndex == 0 ? "green-active" : ""}
+              ${activeIndex === index && activeIndex == 1 ? "purple-active" : ""}
+              ${activeIndex === index && activeIndex == 2 ? "orange-active" : ""}
+              ${activeIndex === index && activeIndex == 3 ? "sky-active" : ""}
+              ${activeIndex === index && activeIndex == 4 ? "blue-active" : ""}
+              `            
+            }
               key={index}
               onClick={() => setActiveIndex(index)}
             >

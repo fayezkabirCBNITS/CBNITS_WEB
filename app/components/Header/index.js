@@ -12,7 +12,7 @@ import './herder.css';
 import logo from "./../../images/logo.png";
 import { ReactMegaMenu } from "react-mega-menu";
 
-import { Router } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 
 
@@ -202,7 +202,7 @@ const Example = (props) => {
                 <Row className="p15 d-flex align-items-center">
                     <Col xl={2} lg={1} md={1} xs={6} className="d-flex align-items-center p-0">
                         <div className="img-wrapper-head m-0">
-                            <img src={logo} alt="logo" />
+                            <img src={logo} alt="logo" onClick={() => props.history.push("/")}/>
                         </div>
                     </Col>
                     <Col xl={10} lg={11} md={11} className="p-0 for-desktop">
@@ -224,7 +224,7 @@ const Example = (props) => {
                                 {reactMegaMenu()}
                             </Col>
                             <Col xl={2} lg={2} md={2} sm={2} xs={2} className="p-0">
-                                <Button color="primary" >Get in touch</Button></Col>
+                                <Button color="primary" onClick={() => props.history.push("/contact")}>Get in touch</Button></Col>
                         </Row>
 
                     </Col>
@@ -275,7 +275,7 @@ const Example = (props) => {
     );
 }
 
-export default Example;
+export default withRouter(Example);
 
 
 
