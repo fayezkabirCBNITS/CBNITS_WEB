@@ -40,7 +40,7 @@
 }
 
 .leftTopic h2 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     margin-left: 10px;
 }
@@ -130,4 +130,65 @@
     border-bottom: 31px solid #009444;
 }
 
+.health-tab {
+    padding: 20px 50px 10px;
+}
+.health-tab p{
+    font-weight: 500; 
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+.green-active{background: #009444;}
+.green-active p{
+    color: #fff;
+}
+.green-active img {
+    filter: brightness(100) invert(0);
+}
 
+.purple-active{background: #7f3f98;}
+.purple-active p{
+    color: #fff;
+}
+.purple-active img {
+    filter: brightness(100) invert(0);
+}
+
+.orange-active{background: #f15a29;}
+.orange-active p{
+    color: #fff;
+}
+.orange-active img {
+    filter: brightness(100) invert(0);
+}
+
+.sky-active{background: #1cb5f2;}
+.sky-active p{
+    color: #fff;
+}
+.sky-active img {
+    filter: brightness(100) invert(0);
+}
+
+.blue-active{background: #01478e;}
+.blue-active p{
+    color: #fff;
+}
+.blue-active img {
+    filter: brightness(100) invert(0);
+}
+
+@media only screen and (max-width : 767px) {
+    
+    .category-container{
+     display: flex;  
+     justify-content: center;
+     align-items: center; 
+     flex-wrap: wrap;
+    }
+
+    .leftTopic h2 {
+        font-size: 30px;
+    }
+
+}

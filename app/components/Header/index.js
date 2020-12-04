@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
+import { Nav, NavItem, Button, NavLink, Row, Col, Container,  Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem,
+    NavbarText } from 'reactstrap';
 import './herder.css';
 import logo from "./../../images/logo.png";
 import { ReactMegaMenu } from "react-mega-menu";
+
+import { withRouter } from "react-router-dom";
+
 
 
 const Example = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const [showAboutMenu, setshowAboutMenu] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const navtoggle = () => setIsOpen(!isOpen);
     const handleHover = () => {
         setshowAboutMenu(true);
     };
@@ -125,7 +138,10 @@ const Example = (props) => {
                                         <NavLink href="/hadoop">hadoop</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="#">dynamic-365</NavLink>
+                                        <NavLink href="/dynamic-365">dynamic-365</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/blockchain">blockchain</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>
@@ -151,6 +167,9 @@ const Example = (props) => {
                                     </NavItem>
                                     <NavItem >
                                         <NavLink href="/mobileApp">mobileApp</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/ui-ux">Ui/Ux</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>
@@ -181,12 +200,12 @@ const Example = (props) => {
         <div className="header">
             <Container className="themed-container" fluid={false}>
                 <Row className="p15 d-flex align-items-center">
-                    <Col xl={2} lg={1} md={1} className="d-flex align-items-center p-0">
+                    <Col xl={2} lg={1} md={1} xs={6} className="d-flex align-items-center p-0">
                         <div className="img-wrapper-head m-0">
-                            <img src={logo} alt="logo" />
+                            <img src={logo} alt="logo" onClick={() => props.history.push("/")}/>
                         </div>
                     </Col>
-                    <Col xl={10} lg={11} md={11} className="p-0">
+                    <Col xl={10} lg={11} md={11} className="p-0 for-desktop">
                         <Row className="d-flex justify-content-md-left justify-content-center head-navigation">
                             <Col xl={4} lg={4} md={4} sm={4} className="p-0">
                                 <Nav tabs className="d-flex justify-content-end" >
@@ -205,9 +224,45 @@ const Example = (props) => {
                                 {reactMegaMenu()}
                             </Col>
                             <Col xl={2} lg={2} md={2} sm={2} xs={2} className="p-0">
-                                <Button color="primary">Get in touch</Button></Col>
+                                <Button color="primary" onClick={() => props.history.push("/contact")}>Get in touch</Button></Col>
                         </Row>
 
+                    </Col>
+
+
+                    <Col xl={10} lg={11} md={11} xs={6} className="p-0 for-tab">
+                        <Navbar  light expand="md">
+                            
+                            <NavbarToggler onClick={navtoggle} />
+                            <Collapse isOpen={isOpen} navbar>
+                                <Nav className="mr-auto" navbar>
+                                    <NavItem>
+                                        <NavLink href="/components/">Components</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                    </NavItem>
+                                    <UncontrolledDropdown nav inNavbar>
+                                        <DropdownToggle nav caret>
+                                            Options
+              </DropdownToggle>
+                                        <DropdownMenu right>
+                                            <DropdownItem>
+                                                Option 1
+                </DropdownItem>
+                                            <DropdownItem>
+                                                Option 2
+                </DropdownItem>
+                                            <DropdownItem divider />
+                                            <DropdownItem>
+                                                Reset
+                </DropdownItem>
+                                        </DropdownMenu>
+                                    </UncontrolledDropdown>
+                                </Nav>
+                                <NavbarText>Simple Text</NavbarText>
+                            </Collapse>
+                        </Navbar>
                     </Col>
                 </Row>
             </Container>
@@ -220,7 +275,7 @@ const Example = (props) => {
     );
 }
 
-export default Example;
+export default withRouter(Example);
 
 
 

@@ -69,6 +69,11 @@
 }
 .exp-name p {
     margin-bottom: 0;
-    font-size: 24px;
 }
 
+.years-exp {
+    background-color: #fff !important;
+}
+.experience {
+    background-color: #f8f9fc;
+}

@@ -206,11 +206,7 @@ const MobileAppDevelopment = (props) => {
           <Container fluid={false}>
             <div className="text-center tool-bottamBanner">
               <p>
-                At CBNITS, We provide the best web development solutions at the
-                best price. Make full use of our expertise to grow your
-                business. At CBNITS, We provide the best web development
-                solutions at the best price. Make full use of our expertise to
-                grow your business.
+              Mobile apps have turned out to be the go-to solutions for businesses cutting across multiple domains. From design to strategy to development to maintenance, CBNITS provides you the finest app development budget.
               </p>
             </div>
           </Container>

@@ -53,7 +53,7 @@ const Banner = (props) => {
     // <div bannerimage="./../../images/banner.jpg" className="tech-img">
     <div
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.3)), url(${
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${
           props.bannerImg
         }`,
       }}
@@ -81,7 +81,7 @@ const Banner = (props) => {
             <span className="whiteColor">{props.whiteText}</span>
           </h1>
           <p>{props.paraFirst}</p>
-          <p>{props.paraSecond}</p>
+          <p className="optimal">{props.paraSecond}</p>
           {props.requiredButton ? (
             <Button type="button" color="primary">
               Hire us

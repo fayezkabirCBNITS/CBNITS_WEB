@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Container } from "reactstrap";
 import "./aboutCbnits.css";
 import a1 from "./../../images/a1.jpg";
+import v4 from "./../../images/v4.jpg";
 import a2 from "./../../images/a2.jpg";
 
 const Expertise = (props) => {
@@ -19,12 +20,12 @@ const Expertise = (props) => {
               </Col>
               <Col xl={6} lg={6}>
                 <div className="right-party right-party-1">
-                  <p>event & party</p>
-                  <img src={a1} alt="img" />
+                  <p>fun & game</p>
+                  <img src={v4} alt="img" />
                 </div>
                 <div className="right-party right-party-2">
                   <img src={a2} alt="img" />
-                  <p>event & party</p>
+                  <p>traveling</p>
                 </div>
               </Col>
             </Row>

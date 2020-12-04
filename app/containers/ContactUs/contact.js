@@ -24,6 +24,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./contact.css";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "us";
 const blueTxt = "Contact";
@@ -56,7 +57,7 @@ const ContactUs = (props) => {
     if (_validation()) {
       e.preventDefault();
       try {
-        let res = await Axios.post("/contactMai", {
+        let res = await Axios.post("/contactMail", {
           name: firstName + " " + lastName,
           contactNo: contact,
           emailAddress: email,
@@ -264,4 +265,4 @@ const ContactUs = (props) => {
   );
 };
 
-export default ContactUs;
+export default withRouter(ContactUs);

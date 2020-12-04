@@ -21,11 +21,13 @@
     align-items: flex-start;
     margin-bottom: 25px;
 }
+
+.num-txt h4{font-family: 'Poppins', sans-serif; font-size: 22px; color:#222222;}
 .num-txt span {
     line-height: 1;
     margin-right: 8px;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 400;
     color: #b8b9bb;
 }
 .desp {
@@ -53,3 +55,4 @@
     height: 170px;
     padding: 10px;
 }
+

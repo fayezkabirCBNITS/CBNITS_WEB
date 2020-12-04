@@ -117,11 +117,7 @@ const Dynamic365 = (props) => {
           <Container fluid={false}>
             <div className="text-center dynamic-bottamBanner">
               <p>
-                At CBNITS, We provide the best web development solutions at the
-                best price. Make full use of our expertise to grow your
-                business. At CBNITS, We provide the best web development
-                solutions at the best price. Make full use of our expertise to
-                grow your business.
+              With CBNITS, take the leap from on-premise to the cloud and make sure you’re supported every step of the way. Our process is flexible and customer-driven, so you get a Dynamics 365 solution that could prove a game-changer for your business.
               </p>
             </div>
           </Container>

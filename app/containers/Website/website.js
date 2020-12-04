@@ -84,8 +84,7 @@ const Website = props => {
                 <div className="themed-container">
                     <Container fluid={false}>
                         <div className="text-center bottamBanner">
-                            <p>At CBNITS, We provide the best web development solutions at the best price. Make full use
-                            of our expertise to grow your business.
+                            <p>At CBNITS, we provide the best web development solutions at the best price. Make full use of our expertise to grow your business.
                         </p>
                         </div>
                     </Container>

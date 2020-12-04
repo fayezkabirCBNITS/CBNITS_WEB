@@ -10,7 +10,7 @@ import FooterComp from "./../components/Footer/index";
 import HomePage from "./../containers/Home/index";
 import NotFound from "./../containers/NotFoundPage/Loadable";
 import AboutUs from "./../containers/AboutUs/about";
-//import Career from "../containers/dynamic365";
+import Career from "../containers/career/career";
 import mobileAppDevelopment from "../containers/MobileAppDevelopment/mobileAppDevelopment";
 // import GlobalStyle from '../global-styles';
 import Dynamic from "../containers/dynamic365/dynamic365";
@@ -26,6 +26,8 @@ import Golang from "./../containers/Technology/golang"
 import Python from "./../containers/Technology/python"
 import ContactUs from "./../containers/ContactUs/contact"
 import Hadoop from "./../containers/Technology/hadoop"
+import BlockChain from "./../containers/Technology/blockchain/blockchain"
+import UiUx from "./../containers/Technology/ui-ux"
 import Hireus from "../containers/HireUs/hireUs";
 import AboutUsV2 from "../containers/AboutUsV2/about";
 import CloudDevelopment from './../containers/CloudDevelopment/cloud-development'
@@ -54,7 +56,7 @@ const Routing = (_) => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/aboutus--" component={AboutUs} />
-        {/* <Route exact path="/career" component={Career} /> */}
+        <Route exact path="/career" component={Career} />
         <Route exact path="/website" component={Website} />
         <Route exact path="/software-support" component={SoftwareSupport} />
         <Route exact path="/mobileApp" component={mobileAppDevelopment} />
@@ -69,6 +71,8 @@ const Routing = (_) => {
         <Route exact path="/contact" component={ContactUs} />
         <Route exact path="/hadoop" component={Hadoop} />
         <Route exact path="/hireus" component={Hireus} />
+        <Route exact path="/blockchain" component={BlockChain} />
+        <Route exact path="/ui-ux" component={UiUx} />
         <Route exact path="/aboutus" component={AboutUsV2} />
         <Route exact path="/cloud-development" component={CloudDevelopment} />
         <Route exact path="/cloud-devops" component={CloudDevOps} />
