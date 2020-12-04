@@ -176,7 +176,7 @@ const Example = (props) => {
                   <h6 className="text-left">sap</h6>
                   <Nav tabs className="d-flex direction-column">
                     <NavItem>
-                      <NavLink href="#">sap</NavLink>
+                      <NavLink href="/sap">sap</NavLink>
                     </NavItem>
                   </Nav>
                 </Col>

@@ -6,6 +6,7 @@ import styled from "styled-components";
 import "./techBanner.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
+import { withRouter } from "react-router-dom";
 
 const Banner = (props) => {
   const [images, setImages] = useState([]);
@@ -83,7 +84,7 @@ const Banner = (props) => {
           <p>{props.paraFirst}</p>
           <p className="optimal">{props.paraSecond}</p>
           {props.requiredButton ? (
-            <Button type="button" color="primary">
+            <Button type="button" color="primary" onClick={() => props.history.push("/hire-us")}>
               Hire us
             </Button>
           ) : null}
@@ -103,4 +104,4 @@ const Banner = (props) => {
   );
 };
 
-export default Banner;
+export default withRouter(Banner);
