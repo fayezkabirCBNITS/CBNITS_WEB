@@ -118,6 +118,9 @@
         color: #fff;
         text-align: center;
     }
+    .tech-title-info span {    
+        width: 100%;
+        display: block;}
 
     .tech-lang-container {
         margin-top: 60px;
