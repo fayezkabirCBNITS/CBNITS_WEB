@@ -178,6 +178,13 @@
 
 } */
 
+.for-tab .navbar-collapse {
+    left: -14px;
+  }
+
+  .for-tab .dropdown-item {
+      font-size: 12px;
+  }
 @media (min-width: 1025px) and (max-width: 1199px) {
     
     .img-wrapper-head {
@@ -239,6 +246,10 @@
 }
 .for-desktop{
     display: none !important;
+}
+.p15{
+    padding: 15px 0px 15px 15px !important;
+    margin: 0 !important;
 }
 
 }

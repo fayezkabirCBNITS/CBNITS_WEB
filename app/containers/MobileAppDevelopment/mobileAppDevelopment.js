@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "reactstrap";
 import "./style.css";
 import ToolTechnology from "./../../components/ToolTechnology/ToolTechnology";
+import Banner from "./../../components/TechBanner/techBanner"
+import appBnr from "./../../images/appBnr.jpg";
 import Axios from "../../service/axios-config";
 
 import react from "./../../images/react.png";
@@ -30,6 +32,10 @@ const imgArr = [
   { img: java, lang: "java" },
   { img: golang, lang: "golang" },
 ];
+const whiteText = "development";
+const blueTxt = "mobile app";
+const paraFirst = "Bespoke Android & iPhone mobile app development";
+const paraSecond = "solutions";
 const techArr = [
   {
     img: app1,
@@ -106,43 +112,13 @@ const MobileAppDevelopment = (props) => {
   };
   return (
     <div>
-      <div className="mobile-header-img">
-        <Container className="themed-container" fluid={false}>
-          <p className="title-info">
-            <span>
-              <abbr>
-                <img src={msg} alt="msg" />{" "}
-              </abbr>
-              info@cbnits.com
-            </span>
-            <span>
-              <abbr>
-                <img src={ph} alt="phone" />{" "}
-              </abbr>
-              +1699-213-8574
-            </span>
-          </p>
-          <div className="mobile-middle-section">
-            <h2 className="skycolor ">
-              Mobile App <span>Development</span>
-            </h2>
-            <p className="mb-xl-1">
-              Bespoke Android & iphone mobile app Development
-            </p>
-            <p>solutions</p>
-          </div>
-          <div className="mobile-lang-container">
-            {imgArr.map((language, idx) => (
-              <div key={idx} className="mobile-lang-wrapper">
-                <abbr>
-                  <img src={language.img} alt={language.lang} />
-                </abbr>
-                <span>{language.lang}</span>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </div>
+       <Banner
+        bannerImg={appBnr}
+        whiteText={whiteText}
+        blueTxt={blueTxt}
+        paraFirst={paraFirst}
+        paraSecond={paraSecond}
+      />
       <div className="sub-header">
         <Container className="themed-container" fluid={false}>
           <Row
@@ -150,7 +126,7 @@ const MobileAppDevelopment = (props) => {
             style={{ margin: "50px 0" }}
           >
             <Col xl={5} lg={5}>
-              <div>
+              <div className="imgSec">
                 <img src={data.image} />
               </div>
             </Col>

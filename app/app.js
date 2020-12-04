@@ -18,6 +18,11 @@ import Zendesk from "react-zendesk";
 import history from "utils/history";
 import "sanitize.css/sanitize.css";
 import "./global.css";
+import {
+  ToastsContainer,
+  ToastsStore,
+  ToastsContainerPosition,
+} from "react-toasts";
 
 // Import root app
 import App from "containers/App";
@@ -50,7 +55,7 @@ const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById("app");
 
 const render = messages => {
-  // console.log = () => {};
+  console.log = () => {};
 const ZENDESK_KEY = "67315c60-6a93-4b24-8a51-941ce043a452";
 
 const setting = {
@@ -70,6 +75,10 @@ const setting = {
 };
   ReactDOM.render(
     <Provider store={store}>
+      <ToastsContainer
+        store={ToastsStore}
+        position={ToastsContainerPosition.BOTTOM_RIGHT}
+      />
       <Zendesk
         zendeskKey={ZENDESK_KEY}
         {...setting}

@@ -22,6 +22,7 @@ import ruby from "./../../../images/website/tech3.png";
 import php from "./../../../images/website/tech4.png";
 import ccc from "./../../../images/website/tech5.png";
 import "./blockchain.css";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "development";
 const blueTxt = "blockchain technology";
@@ -284,12 +285,12 @@ const BlockChain = (props) => {
             </p>
           </div>
         </Container>
-        <div className="hireUs text-center">
-          <Button>Hire Us</Button>
-        </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
       </div>
     </div>
   );
 };
 
-export default BlockChain;
+export default withRouter(BlockChain);

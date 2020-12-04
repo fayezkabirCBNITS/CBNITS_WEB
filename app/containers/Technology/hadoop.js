@@ -10,6 +10,7 @@ import expertiseimg from "./../../images/hl10.jpg";
 import habootMain from "./../../images/habootMain.png";
 import haboot from "./../../images/haboot.png";
 import haboot2 from "./../../images/haboot2.png";
+import { withRouter } from "react-router-dom";
 
 import "./hadoop.css";
 
@@ -304,9 +305,9 @@ const Hadoop = (props) => {
                   ))
                 : null}
             </Row>
-            <div className="text-center">
-              <Button color="primary">Hire Us</Button>
-            </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
           </Container>
         </div>
       </div>
@@ -314,4 +315,4 @@ const Hadoop = (props) => {
   );
 };
 
-export default Hadoop;
+export default withRouter(Hadoop);

@@ -15,6 +15,7 @@ const paraFirst =
 const paraSecond = "label real-time application.";
 
 import "./techLanguage.css";
+import { withRouter } from "react-router-dom";
 
 
 const Nodejs = (props) => {
@@ -148,9 +149,9 @@ const Nodejs = (props) => {
                 </div>
               </Col>
             </Row>
-            <div className="text-center">
-              <Button color="primary">Hire Us</Button>
-            </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
           </Container>
         </div>
       </div>
@@ -158,4 +159,4 @@ const Nodejs = (props) => {
   );
 };
 
-export default Nodejs;
+export default withRouter(Nodejs);

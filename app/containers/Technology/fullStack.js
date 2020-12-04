@@ -17,6 +17,7 @@ import typescript from "./../../images/website/tech6.png"
 import go from "./../../images/website/tech7.png"
 import swift from "./../../images/tools7.png"
 import java from "./../../images/tools9.png"
+import { withRouter } from "react-router-dom";
 
 const techArr = [
     {
@@ -281,13 +282,13 @@ const FullStack = props => {
                             </TabContent>
                         </div>
                     </Row>
-                    <div className="text-center">
-                        <Button color="primary">Hire Us</Button>
-                    </div>
+                        <div className="text-center">
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
+                        </div>
                 </Container>
             </div>
         </div>
     )
 }
 
-export default FullStack;
+export default withRouter(FullStack);

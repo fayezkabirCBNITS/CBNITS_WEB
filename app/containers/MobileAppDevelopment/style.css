@@ -1,6 +1,5 @@
 /*****************************banner section****************************************/
-.mobile-header-img {
-    /* margin-top: -73px; */
+/* .mobile-header-img {
     height: 640px;
     width: 100%;
     background:
@@ -13,7 +12,7 @@
     background-size: cover;
     padding-top: 80px;
     font-family: 'Lato', sans-serif;
-}
+} */
 .title-info {
     color: #fff;
 }

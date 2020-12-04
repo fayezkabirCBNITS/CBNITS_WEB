@@ -7,6 +7,7 @@ import bannerImg from "./../../images/angularBnr.jpg"
 import icon from "./../../images/list-icon.png"
 import angularcreation from "./../../images/angularcreation.png"
 import angularjs from "./../../images/angularjs.png"
+import { withRouter } from "react-router-dom";
 
 import "./techLanguage.css";
 
@@ -126,7 +127,7 @@ const Angularjs = (props) => {
                             </Col>
                         </Row>
                         <div className="text-center">
-                            <Button color="primary">Hire Us</Button>
+                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
                         </div>
                     </Container>
                 </div>
@@ -135,4 +136,4 @@ const Angularjs = (props) => {
     );
 };
 
-export default Angularjs;
+export default withRouter(Angularjs);

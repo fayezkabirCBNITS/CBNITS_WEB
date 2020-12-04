@@ -14,6 +14,7 @@ import {
 } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
+import { showToast } from "../../utils/helper-methods";
 
 import bannerImg from "./../../images/angularBnr.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -85,15 +86,15 @@ const ContactUs = (props) => {
 
         if (res.status == 200) {
           resetValue();
-          alert("Successful!");
+          showToast("We will contact you soon!");
         } else {
           setIsLoading(false);
-          alert("Something went wrong!");
+          showToast("Something went wrong!","error");
         }
       }
     } catch (error) {
       setIsLoading(false);
-      console.log("error---->", error);
+      showToast("Something went wrong!","error");
     }
   };
 

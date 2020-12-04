@@ -46,19 +46,14 @@ const ToolTechnology = (props) => {
           {responseData
             ? responseData.map((data, idx) => (
                 <Col xl={3} lg={3} key={idx}>
-                  <div className="tracks">
-                    <Row className="d-flex align-items-center">
-                      <Col lg={3}>
-                        {" "}
-                        <div className="tracks-img">
+                  <div className="techstack mb-4">
+                        <div className="teckStackImg">
                           <img src={data.image} alt="image" />
                         </div>
-                      </Col>
-                      <Col lg={9}>
-                        {/* <h5>{data.txt}</h5> */}
-                        <p>{data.name}</p>
-                      </Col>
-                    </Row>
+                        <div className="teckStackName pl-4">
+
+                        <span>{data.name}</span>
+                        </div>
                   </div>
                 </Col>
               ))
