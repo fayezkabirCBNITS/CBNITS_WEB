@@ -1,0 +1,55 @@
+.offering-bnits{
+    background-color: #f8f9fc;
+}
+.skycolor {
+    color: #1dbdfc;
+}
+.offering-head {
+    font-family: 'Poppins', sans-serif;
+}
+.offering-head h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ============== */
+.offering-deliverOptn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .offering-deliverOptnNo {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #1dbdfc;
+  }
+  .offering-dashBorder {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #0000;
+    border: 1px dashed #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .offering-dashBorder span {
+    color: #fff;
+  }
+  .offering-deliverDetails {
+    padding-left: 10px;
+  }
+  .offering-deliverDetails span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
