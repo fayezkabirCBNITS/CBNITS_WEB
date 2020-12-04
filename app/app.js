@@ -49,6 +49,7 @@ const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 
 const render = messages => {
+  console.log = () => {};
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>
