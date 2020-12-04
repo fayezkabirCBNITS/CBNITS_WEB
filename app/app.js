@@ -49,6 +49,8 @@ const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById("app");
 
+const render = messages => {
+  console.log = () => {};
 const ZENDESK_KEY = "67315c60-6a93-4b24-8a51-941ce043a452";
 
 const setting = {
@@ -66,8 +68,6 @@ const setting = {
     ],
   },
 };
-
-const render = (messages) => {
   ReactDOM.render(
     <Provider store={store}>
       <Zendesk

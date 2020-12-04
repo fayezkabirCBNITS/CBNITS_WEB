@@ -93,7 +93,7 @@ const CarouselCustom = (props) => {
           </div>
           <div>
             <img src={leftcoma} alt="" />
-            <p>{item.description} </p>
+            <p className="px-5">{item.description} </p>
             <img src={rightcoma} alt="" style={{ float: "right" }} />
           </div>
           <div className="clients">
@@ -106,8 +106,8 @@ const CarouselCustom = (props) => {
           </div>
         </div>
         <CarouselCaption
-          captionText={item.name}
-          captionHeader={item.name}
+          // captionText={item.name}
+          // captionHeader={item.name}
         />
       </CarouselItem>
     );
