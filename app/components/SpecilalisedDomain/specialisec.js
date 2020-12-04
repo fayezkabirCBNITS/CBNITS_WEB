@@ -115,7 +115,7 @@ const Specialised = (props) => {
         <div className="category-container">
           {specialDomain.map((data, index) => (
             <div
-              className="text-center position-relative"
+              className="text-center position-relative health-tab"
               key={index}
               onClick={() => setActiveIndex(index)}
             >

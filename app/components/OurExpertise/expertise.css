@@ -18,7 +18,7 @@
 .expertiseDiv-head p{
     font-size: 18px;
     color: #fff;
-    font-weight: 600;
+    font-weight:500;
 }
 .expertiseDiv-para{
     font-size: 18px;
@@ -37,7 +37,11 @@
     margin-bottom: 30px;
 }
 .expertiseDiv-box img {
-    height: 80px;
-    width: 80px;
+
     margin: 20px;
+}
+
+@media only screen and (max-width : 767px) {
+    .expertiseDiv-head h2{font-size: 40px;}
+
 }
