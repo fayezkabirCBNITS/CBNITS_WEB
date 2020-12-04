@@ -177,7 +177,7 @@ const Uiux = (props) => {
                         </div>
                         <Row className="d-flex align-items-center ">
                             {morethan.map((data, ibx) => (
-                                <Col xl={3} lg={6} md={6} sm={12} xs={12}>
+                                <Col xl={3} lg={6} md={6} sm={12} xs={12} key={ibx}>
                                     <div className="morethanlist mt-5">
                                         <div className="morethantop">
                                             <div className="head">
@@ -193,7 +193,7 @@ const Uiux = (props) => {
                                                 Our mission is to provide a bespoke and tailor-made
                                                 design strategy into the existing design that will offer
                                                 the best user experience.
-                      </p>
+                                            </p>
                                         </div>
                                     </div>
                                 </Col>
@@ -211,7 +211,7 @@ const Uiux = (props) => {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting
                                 industry. Lorem Ipsum has been the industry's standard dummy
                                 text ever since.
-              </p>
+                            </p>
                         </div>
                         <Row className="d-flex align-items-center ">
                             {deliver.map((data, ibx) => (

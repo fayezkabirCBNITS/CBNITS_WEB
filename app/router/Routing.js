@@ -10,7 +10,7 @@ import FooterComp from "./../components/Footer/index";
 import HomePage from "./../containers/Home/index";
 import NotFound from "./../containers/NotFoundPage/Loadable";
 import AboutUs from "./../containers/AboutUs/about";
-//import Career from "../containers/dynamic365";
+import Career from "../containers/career/career";
 import mobileAppDevelopment from "../containers/MobileAppDevelopment/mobileAppDevelopment";
 // import GlobalStyle from '../global-styles';
 import Dynamic from "../containers/dynamic365/dynamic365";
@@ -53,7 +53,7 @@ const Routing = (_) => {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/aboutus--" component={AboutUs} />
-        {/* <Route exact path="/career" component={Career} /> */}
+        <Route exact path="/career" component={Career} />
         <Route exact path="/website" component={Website} />
         <Route exact path="/software-support" component={SoftwareSupport} />
         <Route exact path="/mobileApp" component={mobileAppDevelopment} />

@@ -1,0 +1,568 @@
+.language {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .webpage {
+    width: 100%;
+  }
+  .webpage h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .webpage h2 span {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .webpage span {
+    font-size: 17px;
+  }
+  
+  .morethan {
+    width: 100%;
+  }
+  .morethan h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+  }
+  .morethan h2 span {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .morethan h6 {
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+  }
+  .morethanlist {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .morethantop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .morethantop .head {
+    width: 20%;
+  }
+  .morethantop .head span {
+    font-size: 45px;
+    font-weight: 700;
+    color: #1dbdfc;
+  }
+  .morethantop .head2 {
+    width: 80%;
+    padding-left: 10px;
+  }
+  .morethantop .head2 span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+  }
+  .morethantop h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #000;
+  }
+  .morethanbtm {
+    padding: 10px 0;
+  }
+  .morethanbtm p {
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .deliver {
+    width: 100%;
+  }
+  .deliver h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .deliver p {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  .deliverOptn {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .deliverOptnNo {
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border-radius: 20px;
+    background-color: #1dbdfc;
+  }
+  .dashBorder {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #0000;
+    border: 1px dashed #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashBorder span {
+    color: #fff;
+  }
+  .deliverDetails {
+    padding-left: 10px;
+  }
+  .deliverDetails span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  .uiux {
+    width: 100%;
+  }
+  .uiux h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .fullstack-tab p {
+    font-size: 22px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+  }
+  .techstack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .techstack .teckStackImg {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .techstack .teckStackName {
+    padding-left: 10px;
+  }
+  .techstack .teckStackName span {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .skycolor {
+    color: #1dbdfc;
+  }
+  .develpment {
+    width: 100%;
+  }
+  .develpment h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .develpment p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .develpment p span {
+    margin-right: 12px;
+  }
+  
+  .hire-req {
+    background-color: #f25a29;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px 0 50px 0;
+  }
+  .hire-req p {
+    margin-bottom: 0px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .advantages {
+    background-color: #f8f9fd;
+  }
+  .darkbg {
+    background-color: #f8f9fd;
+    padding: 50px 0;
+  }
+  .skybg {
+    background-color: #22bbf7;
+    padding: 70px 0 60px 0;
+  }
+  
+  .advantages h6 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .advantages p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .advantages p span {
+    margin-right: 12px;
+  }
+  
+  .darkbg .btn-primary {
+    margin-top: 80px;
+    background-color: #009444;
+    border-color: #009444;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    font-size: 18px;
+  }
+  .imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
+  .white {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .red {
+    color: #f15a29;
+    font-size: 45px;
+    font-weight: 700;
+  }
+  .trans {
+    background-color: #0000;
+  }
+  .Cloudera {
+    background-color: #0000;
+  }
+  .bigdata h6 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .bigdata p {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .bigdata p span {
+    margin-right: 12px;
+  }
+  .cloudera {
+    background-color: #0000;
+  }
+  .cloudera h6 {
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .cloudera p {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .cloudera p span {
+    margin-right: 12px;
+  }
+  .expertise {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .expertiseimg {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+  }
+  .expertiseimg img {
+    width: 100%;
+    height: 100%;
+  }
+  .expertise span {
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 375px) {
+    .webpage h2 {
+      font-size: 20px;
+    }
+    .webpage h2 span {
+      font-size: 20px;
+    }
+    .webpage span {
+      font-size: 14px;
+    }
+    .morethan h6 {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 20px;
+    }
+    .deliver p {
+      font-size: 14px;
+    }
+    .tab-container h2 {
+      font-size: 20px;
+    }
+    .fullstack-tab p {
+      font-size: 14px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 376px) and (max-width: 425px) {
+    .webpage h2 {
+      font-size: 25px;
+    }
+    .webpage h2 span {
+      font-size: 25px;
+    }
+    .webpage span {
+      font-size: 14px;
+    }
+    .morethan h6 {
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 25px;
+    }
+    .deliver p {
+      font-size: 14px;
+    }
+    .tab-container h2 {
+      font-size: 25px;
+    }
+    .fullstack-tab p {
+      font-size: 14px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 426px) and (max-width: 575px) {
+    .webpage h2 {
+      font-size: 26px;
+    }
+    .webpage h2 span {
+      font-size: 26px;
+    }
+    .webpage span {
+      font-size: 16px;
+    }
+    .morethan h6 {
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 26px;
+    }
+    .deliver p {
+      font-size: 16px;
+    }
+    .tab-container h2 {
+      font-size: 26px;
+    }
+    .fullstack-tab p {
+      font-size: 16px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .morethanlist {
+      height: 165px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .webpage h2 {
+      font-size: 29px;
+    }
+    .webpage h2 span {
+      font-size: 29px;
+    }
+    .webpage span {
+      font-size: 16px;
+    }
+    .morethan h6 {
+      font-size: 18px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 29px;
+    }
+    .deliver p {
+      font-size: 16px;
+    }
+    .tab-container h2 {
+      font-size: 29px;
+    }
+    .fullstack-tab p {
+      font-size: 16px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .morethanlist {
+      height: 165px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .webpage h2 {
+      font-size: 32px;
+    }
+    .webpage h2 span {
+      font-size: 32px;
+    }
+    .webpage span {
+      font-size: 18px;
+    }
+    .morethan h6 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 32px;
+    }
+    .deliver p {
+      font-size: 18px;
+    }
+    .tab-container h2 {
+      font-size: 32px;
+    }
+    .fullstack-tab p {
+      font-size: 18px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .morethanlist {
+      height: 175px;
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1199px) {
+    .webpage h2 {
+      font-size: 38px;
+    }
+    .webpage h2 span {
+      font-size: 38px;
+    }
+    .webpage span {
+      font-size: 20px;
+    }
+    .morethan h6 {
+      font-size: 22px;
+      padding: 0;
+      margin: 0;
+    }
+    .deliver h2 {
+      font-size: 38px;
+    }
+    .deliver p {
+      font-size: 18px;
+    }
+    .tab-container h2 {
+      font-size: 38px;
+    }
+    .fullstack-tab p {
+      font-size: 18px;
+    }
+    .fullstack-tab .nav {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .nav-tabs .nav-item {
+      margin-bottom: 10px;
+    }
+    .techstack {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .morethanlist {
+      height: 160px;
+    }
+  }
+  
