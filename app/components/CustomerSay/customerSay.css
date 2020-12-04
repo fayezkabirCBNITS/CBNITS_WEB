@@ -40,4 +40,8 @@
     .each-customer {
     margin-bottom: 33px;
 }
+
+.customer-head h2 span{
+   display: block;
+}
 }
