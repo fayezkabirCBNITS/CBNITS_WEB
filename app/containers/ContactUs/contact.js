@@ -24,6 +24,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./contact.css";
+import { withRouter } from "react-router-dom";
 
 const whiteText = "us";
 const blueTxt = "Contact";
@@ -264,4 +265,4 @@ const ContactUs = (props) => {
   );
 };
 
-export default ContactUs;
+export default withRouter(ContactUs);

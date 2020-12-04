@@ -4,6 +4,9 @@ import './herder.css';
 import logo from "./../../images/logo.png";
 import { ReactMegaMenu } from "react-mega-menu";
 
+import { Router } from  "react-router-dom";
+
+
 
 const Example = (props) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -125,7 +128,10 @@ const Example = (props) => {
                                         <NavLink href="/hadoop">hadoop</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="#">dynamic-365</NavLink>
+                                        <NavLink href="/dynamic-365">dynamic-365</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="/blockchain">blockchain</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>
@@ -151,6 +157,9 @@ const Example = (props) => {
                                     </NavItem>
                                     <NavItem >
                                         <NavLink href="/mobileApp">mobileApp</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/ui-ux">Ui/Ux</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>
@@ -205,7 +214,7 @@ const Example = (props) => {
                                 {reactMegaMenu()}
                             </Col>
                             <Col xl={2} lg={2} md={2} sm={2} xs={2} className="p-0">
-                                <Button color="primary">Get in touch</Button></Col>
+                                <Button color="primary" >Get in touch</Button></Col>
                         </Row>
 
                     </Col>

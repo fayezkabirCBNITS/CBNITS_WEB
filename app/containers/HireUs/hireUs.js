@@ -144,7 +144,7 @@ const HireUs = (props) => {
                                     <Col sm={10} className="d-flex align-items-center">
                                         <FormGroup check className="mr-4">
                                             <Label check>
-                                                <Input type="radio" name="radio1" />{' '}
+                                                <Input type="radio" name="radio2" />{' '}
                                                 monthly
                                         </Label>
                                         </FormGroup>
@@ -204,6 +204,12 @@ const HireUs = (props) => {
                             </div>
                         </Col>
                     </Row>
+                </Container>
+            </div>
+
+            <div>
+                <Container className="themed-container" fluid={false}>
+                    <h2>monthly-basic <span className="skycolor">hiring process</span></h2>
                 </Container>
             </div>
         </div>
