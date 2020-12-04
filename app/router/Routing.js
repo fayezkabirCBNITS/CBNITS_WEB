@@ -29,6 +29,9 @@ import Hadoop from "./../containers/Technology/hadoop"
 import Hireus from "../containers/HireUs/hireUs";
 import AboutUsV2 from "../containers/AboutUsV2/about";
 import CloudDevelopment from './../containers/CloudDevelopment/cloud-development'
+import CloudDevOps from './../containers/CloudDevOps/cloud-devops';
+import QualityEngineer from './../containers/QualityEngineering/quality-engineering';
+import SAP from './../containers/SAP/sap';
 
 
 const AppWrapper = styled.div`
@@ -68,6 +71,9 @@ const Routing = (_) => {
         <Route exact path="/hireus" component={Hireus} />
         <Route exact path="/aboutus" component={AboutUsV2} />
         <Route exact path="/cloud-development" component={CloudDevelopment} />
+        <Route exact path="/cloud-devops" component={CloudDevOps} />
+        <Route exact path="/quality-engineering" component={QualityEngineer} />
+        <Route exact path="/sap" component={SAP} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
