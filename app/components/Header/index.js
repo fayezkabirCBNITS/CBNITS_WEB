@@ -56,9 +56,9 @@ const Example = (props) => {
                     style: {
                         // width: "50em",
                         // border: "2px solid yellow",
-                        padding: "2px",
-                        zIndex: "9",
-                        left: "-83%"
+                        // padding: "2px",
+                        // zIndex: "9",
+                        // left: "-111%"
                         // backgroundColor:"#6c5ce7"
                     }
                 },
@@ -112,28 +112,34 @@ const Example = (props) => {
                     items: <div>
                         <Row>
                             <Col className="mega-link" >
-                                <h6 className="text-center">front end</h6>
-                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                <h6 className="text-left">Web development</h6>
+                                <Nav tabs className="d-flex direction-column" >
                                     <NavItem >
                                         <NavLink href="/angular">angular</NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink href="/react">react</NavLink>
                                     </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/full-stack">full-stack</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/ui-ux">Ui/Ux</NavLink>
+                                    </NavItem>
                                 </Nav>
                             </Col>
                             <Col className="mega-link">
-                                <h6 className="text-center">back end</h6>
-                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                <h6 className="text-left">back end</h6>
+                                <Nav tabs className="d-flex direction-column" >
                                     <NavItem >
                                         <NavLink href="/node">node</NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink href="/golang">golang</NavLink>
                                     </NavItem>
-                                    <NavItem>
+                                    {/* <NavItem>
                                         <NavLink href="/python">python</NavLink>
-                                    </NavItem>
+                                    </NavItem> */}
                                     <NavItem>
                                         <NavLink href="/hadoop">hadoop</NavLink>
                                     </NavItem>
@@ -146,30 +152,31 @@ const Example = (props) => {
                                 </Nav>
                             </Col>
                             <Col className="mega-link">
-                                <h6 className="text-center">Full stack</h6>
-                                <Nav tabs className="d-flex justify-content-center text-center" >
-                                    <NavItem >
-                                        <NavLink href="/full-stack">full-stack</NavLink>
+                                <h6 className="text-left">mobile development</h6>
+                                <Nav tabs className="d-flex direction-column" >
+                                    
+                                <NavItem >
+                                        <NavLink href="/mobileApp">mobileApp</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>
                             <Col className="mega-link">
-                                <h6 className="text-center">others</h6>
-                                <Nav tabs className="d-flex justify-content-center text-center" >
+                                <h6 className="text-left">sap</h6>
+                                <Nav tabs className="d-flex direction-column" >
                                     <NavItem >
-                                        <NavLink href="/cloud-development">cloud-development</NavLink>
+                                        <NavLink href="#">sap</NavLink>
                                     </NavItem>
+                                    
+                                </Nav>
+                            </Col>
+                            <Col className="mega-link">
+                                <h6 className="text-left">others</h6>
+                                <Nav tabs className="d-flex direction-column" >
                                     <NavItem >
                                         <NavLink href="/cloud-development">cloud-development</NavLink>
                                     </NavItem>
                                     <NavItem >
                                         <NavLink href="/software-support">software-support</NavLink>
-                                    </NavItem>
-                                    <NavItem >
-                                        <NavLink href="/mobileApp">mobileApp</NavLink>
-                                    </NavItem>
-                                    <NavItem >
-                                        <NavLink href="/ui-ux">Ui/Ux</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Col>

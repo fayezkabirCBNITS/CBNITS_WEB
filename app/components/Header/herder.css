@@ -69,24 +69,43 @@
         text-transform: uppercase;
         cursor: pointer;
         font-family: 'Lato', sans-serif;
+        position: relative;
+}
+
+.mega-link li::before {
+    content: "";
+    top: 13px;
+    left: 8px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1DBDFC;
 }
 .css-13azwyo {   
     /* // border: 5px solid red  !important; */
-    margin-top: 30px;
-    width: 200% !important;
+    margin-top: 40px;
+    width: 80em !important;
     padding: 50px 20px !important;
-    background-color: #fff;
+    /* background-color:  */
+    background-image: linear-gradient(180deg, #e6f9ff, #e6ffe6);
+    z-index: 9;
+    left: -112%;
 }
 
 .mega-link h6 {
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
      border-bottom: 2px solid #1DBDFC;
+}
+.direction-column {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .mega-link .nav-tabs .nav-link {
     color: #000000;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 15px;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
@@ -112,7 +131,25 @@
 
 }
 
+@media (min-width: 1225px) and (max-width: 1440px) {
+    .css-13azwyo { 
+        width: 75em !important;
+        left: -106%;
+    }
+    .mega-link h6 {
+        font-size: 18px;
+    }
+
+}
 @media (min-width: 1025px) and (max-width: 1224px) {
+    
+    .css-13azwyo { 
+        width: 63em !important;
+        left: -84%;
+    }
+    .mega-link h6 {
+        font-size: 15px;
+    }
     .css-1owbun0 ul li{
             font-size: 12px !important;
     }
@@ -129,6 +166,18 @@
     }
     
 }
+/* @media (min-width: 767px) and (max-width: 1024px) {
+    
+    .css-13azwyo { 
+        width: 47em !important;
+        left: -81%;
+    }
+    .mega-link h6 {
+        font-size: 11px;
+    }
+
+} */
+
 @media (min-width: 1025px) and (max-width: 1199px) {
     
     .img-wrapper-head {
@@ -152,6 +201,18 @@
     .img-wrapper-head {
         margin-bottom: 0px !important;
     }
+    
+    .css-13azwyo { 
+        width: 47em !important;
+        left: -81%;
+    }
+    .mega-link h6 {
+        font-size: 11px;
+    }
+    
+.mega-link .nav-tabs .nav-link {
+    font-size: 9px !important;
+}
 }
 @media only screen and (min-width : 1440px) {
     .css-1owbun0 ul li{
@@ -201,7 +262,7 @@
     .navbar-light .navbar-toggler {
         color: rgba(0,0,0,.5);
         border-color: rgba(0,0,0,.1);
-        background: #fff;
+        background: #1dbdfc;
         float: right;
     }
 

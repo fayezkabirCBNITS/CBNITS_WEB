@@ -35,6 +35,9 @@ import CloudDevOps from './../containers/CloudDevOps/cloud-devops';
 import QualityEngineer from './../containers/QualityEngineering/quality-engineering';
 import SAP from './../containers/SAP/sap';
 import Hrtech from './../containers/HR-Tech/hr-tech';
+import Csitwochain from './../containers/CSI2Chain/csitwochain'
+import CSHealth from './../containers/CSHealth/cshealth'
+import Csecommerce from './../containers/CSEcommerce/csecommerce'
 
 
 const AppWrapper = styled.div`
@@ -80,6 +83,9 @@ const Routing = (_) => {
         <Route exact path="/quality-engineering" component={QualityEngineer} />
         <Route exact path="/sap" component={SAP} />
         <Route exact path="/hr-tech" component={Hrtech} />
+        <Route exact path="/cs-i-two-chain" component={Csitwochain} />
+        <Route exact path="/cs-Health" component={CSHealth} />
+        <Route exact path="/cs-ecommerce" component={Csecommerce} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
