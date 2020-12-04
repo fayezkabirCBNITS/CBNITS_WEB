@@ -15,6 +15,12 @@ import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import FontFaceObserver from "fontfaceobserver";
 import Zendesk from "react-zendesk";
+import {
+  ToastsContainer,
+  ToastsStore,
+  ToastsContainerPosition,
+} from "react-toasts";
+
 import history from "utils/history";
 import "sanitize.css/sanitize.css";
 import "./global.css";
@@ -49,27 +55,31 @@ const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById("app");
 
-const render = messages => {
+const render = (messages) => {
   console.log = () => {};
-const ZENDESK_KEY = "67315c60-6a93-4b24-8a51-941ce043a452";
+  const ZENDESK_KEY = "67315c60-6a93-4b24-8a51-941ce043a452";
 
-const setting = {
-  color: {
-    theme: "#000",
-  },
-  launcher: {
-    chatLabel: {
-      "en-US": "Need Help",
+  const setting = {
+    color: {
+      theme: "#000",
     },
-  },
-  contactForm: {
-    fields: [
-      { id: "description", prefill: { "*": "My pre-filled description" } },
-    ],
-  },
-};
+    launcher: {
+      chatLabel: {
+        "en-US": "Need Help",
+      },
+    },
+    contactForm: {
+      fields: [
+        { id: "description", prefill: { "*": "My pre-filled description" } },
+      ],
+    },
+  };
   ReactDOM.render(
     <Provider store={store}>
+      <ToastsContainer
+        store={ToastsStore}
+        position={ToastsContainerPosition.TOP_RIGHT}
+      />
       <Zendesk
         zendeskKey={ZENDESK_KEY}
         {...setting}

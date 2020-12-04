@@ -25,6 +25,7 @@ import {
 
 import "./contact.css";
 import { withRouter } from "react-router-dom";
+import { showToast } from "../../utils/helper-methods";
 
 const whiteText = "us";
 const blueTxt = "Contact";
@@ -85,7 +86,8 @@ const ContactUs = (props) => {
 
         if (res.status == 200) {
           resetValue();
-          alert("Successful!");
+          showToast("We will contact you soon!");
+          // alert("Successful!");
         } else {
           setIsLoading(false);
           alert("Something went wrong!");
