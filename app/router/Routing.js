@@ -73,7 +73,7 @@ const Routing = (_) => {
         <Route exact path="/python" component={Python} />
         <Route exact path="/contact" component={ContactUs} />
         <Route exact path="/hadoop" component={Hadoop} />
-        <Route exact path="/hireus" component={Hireus} />
+        <Route exact path="/hire-us" component={Hireus} />
         <Route exact path="/blockchain" component={BlockChain} />
         <Route exact path="/ui-ux" component={UiUx} />
         <Route exact path="/aboutus" component={AboutUsV2} />

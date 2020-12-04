@@ -19,11 +19,14 @@ import hrTech from "./../../images/h4.png";
 import eCommerce from "./../../images/h5.png";
 import classnames from "classnames";
 import axios from "axios";
+import { withRouter } from "react-router-dom";
 
 const a = ["healthcare", "security", "ED tech", "Hr tech", "E-commerce"];
 
 const Specialised = (props) => {
   const [activeTab, setActiveTab] = useState("1");
+  const [activeColor ,setActiveColor] = useState("");
+  const [readMoreLink , setReadmoreLink] = useState("");
   const [specialDomain, setSpecialDomain] = useState([]);
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeIndexData, setActiveIndexData] = useState([]);
@@ -55,14 +58,17 @@ const Specialised = (props) => {
           setSpecialDomain(res.data.data);
           console.log(res.data.data[0]);
           setActiveIndexData(res.data.data[0]);
+          setActiveColor(res.data.data[0].color);
+          setReadmoreLink(res.data.data[0].link);
         }
       })
       .catch((err) => {
         console.log(err);
       });
   };
-  console.log(activeIndexData?activeIndexData.name : "hii");
+  const gotoReadMore = _ => props.history.push(`/${readMoreLink}`);
 
+  console.log(activeColor , readMoreLink , "--------------------------")
   return (
     <div className="domain py-5">
       <Container className="themed-container" fluid={false}>
@@ -86,7 +92,7 @@ const Specialised = (props) => {
           </Col>
           <Col xl={6} lg={6} className="desp-topic">
             <p>{activeIndexData?activeIndexData.description : ""}</p>
-            <Button color="primary">Read more</Button>
+            <Button color="primary" onClick={gotoReadMore}>Read more</Button>
           </Col>
         </Row>
 
@@ -113,23 +119,25 @@ const Specialised = (props) => {
         </div> */}
 
         <div className="category-container">
-          {specialDomain.map((data, index) => (
+          {specialDomain.map((data, index) =>  (
             <div
-              className={`text-center position-relative health-tab 
-              ${activeIndex === index && activeIndex == 0 ? "green-active" : ""}
-              ${activeIndex === index && activeIndex == 1 ? "purple-active" : ""}
-              ${activeIndex === index && activeIndex == 2 ? "orange-active" : ""}
-              ${activeIndex === index && activeIndex == 3 ? "sky-active" : ""}
-              ${activeIndex === index && activeIndex == 4 ? "blue-active" : ""}
-              `            
+              className={`text-center position-relative health-tab  ${activeColor === data.color ? `${activeColor}-active` : ""}`
+              // ${activeIndex === index && activeIndex == 0 ? "green-active" : ""}
+              // ${activeIndex === index && activeIndex == 1 ? "purple-active" : ""}
+              // ${activeIndex === index && activeIndex == 2 ? "orange-active" : ""}
+              // ${activeIndex === index && activeIndex == 3 ? "sky-active" : ""}
+              // ${activeIndex === index && activeIndex == 4 ? "blue-active" : ""}
+
+                      
             }
               key={index}
-              onClick={() => setActiveIndex(index)}
+              onClick={() => {setActiveIndex(index) , setActiveColor(data.color) , setReadmoreLink(data.link)}}
             >
               <img src={data.logoPic} alt="" />
               <p>{data.name}</p>
             </div>
-          ))}
+          )
+          )}
           {/* <div className="text-center position-relative green green-back">
             <img src={specialDomain[0]} alt="" />
             <p>healthcare</p>
@@ -156,4 +164,4 @@ const Specialised = (props) => {
   );
 };
 
-export default Specialised;
+export default withRouter(Specialised);

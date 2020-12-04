@@ -164,7 +164,7 @@ const Example = (props) => {
                                 <h6 className="text-left">sap</h6>
                                 <Nav tabs className="d-flex direction-column" >
                                     <NavItem >
-                                        <NavLink href="#">sap</NavLink>
+                                        <NavLink href="/sap">sap</NavLink>
                                     </NavItem>
                                     
                                 </Nav>
@@ -178,6 +178,12 @@ const Example = (props) => {
                                     <NavItem >
                                         <NavLink href="/software-support">software-support</NavLink>
                                     </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/quality-engineering">quality-engineering</NavLink>
+                                    </NavItem>
+                                    <NavItem >
+                                        <NavLink href="/cloud-devops">Cloud devOps</NavLink>
+                                    </NavItem>
                                 </Nav>
                             </Col>
                         </Row>
@@ -186,12 +192,12 @@ const Example = (props) => {
                 {
                     label: "Dedicated Hiring",
                     key: 4,
-                    items: <p> Dedicated Hiring</p>
+                    items: <p className="text-center">coming soon....</p>
                 },
                 {
                     label: "Insights & News",
                     key: 5,
-                    items: <p> news  world</p>
+                    items: <p className="text-center">coming soon....</p>
                 },
                 // {
                 //     label: "Conatact Us",

@@ -22,6 +22,9 @@ const paraFirst =
 const paraSecond = "Optimal Buisness Growth ";
 
 const HomePage = (props) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  },[])
   return (
     <div>
       {/* <PageBanner /> */}

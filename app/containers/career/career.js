@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import {
     Nav,
     NavItem,
@@ -28,6 +28,9 @@ const paraFirst =
     "You can check the latest job openings here if you are looking to be a part of a your, vibrant and growing team. Take your first step to an incredible career with us.";
 
 const Career = (props) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0 });
+    }, [])
     return (
         <div>
             <Banner

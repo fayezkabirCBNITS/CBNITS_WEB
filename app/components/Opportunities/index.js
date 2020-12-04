@@ -13,6 +13,7 @@ import {
 } from "reactstrap";
 
 import accordionImage from "./../../images/accArrow.png";
+import CBNITSopp from "./../../images/careerOpportunity.png";
 
 const Opertunities = (props) => {
   const [data, setData] = useState([]);
@@ -71,55 +72,64 @@ const Opertunities = (props) => {
     return true;
   };
   return (
-    <div className="content-wrapper">
+    <div className="oppurtunity-wrapper">
       <Container className="themed-container py-5" fluid={false}>
-        <div className="whyTitle text-center">
+        <div className="opportunity text-center">
           <h2>
             Current career <br />
-            <span>opportunities at Cbnits</span>
+            <span className="skycolor">opportunities at Cbnits</span>
           </h2>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.{" "}
+          <p className="my-4">
+          You can check the latest job openings here if you are looking to be a part of a young, vibrant and growing team. Take your first step to an incredible career with us.{" "}
           </p>
         </div>
         <Row className="d-flex justify-content-between">
           <Col md={12}>
             {data && data.length > 0
               ? data.map((accordian, key) => (
-                  <div className="accWrap mb-3" key={key}>
-                    <div
-                      className={
-                        currentId == accordian._id
-                          ? "collapsTitle d-flex active"
-                          : "collapsTitle d-flex"
-                      }
-                      onClick={() => toggle(accordian._id)}
-                    >
-                      <p className="mb-0">{accordian.name}</p>
-                      <span>
-                        <img
-                          src={accordionImage}
-                          alt="next"
-                          className="img-fluid"
-                        />
-                      </span>
-                    </div>
-                    <Collapse isOpen={currentId == accordian._id}>
-                      <div className="collapseContent py-4">
-                        <p>{accordian.subDescription}</p>
-                        <ul class="listStyle">
-                          {accordian.description &&
-                            accordian.description.map((item, idx) => (
-                              <li key={idx}>{item}</li>
-                            ))}
-                        </ul>
-                      </div>
-                    </Collapse>
+                <div className="accWrap mb-3" key={key}>
+                  <div
+                    className={
+                      currentId == accordian._id
+                        ? "collapsTitle d-flex active"
+                        : "collapsTitle d-flex"
+                    }
+                    onClick={() => toggle(accordian._id)}
+                  >
+                    <p className="mb-0">{accordian.name}</p>
+                    <span>
+                      <img
+                        src={accordionImage}
+                        alt="next"
+                        className="img-fluid"
+                      />
+                    </span>
                   </div>
-                ))
+                  <Collapse isOpen={currentId == accordian._id}>
+                    <div className="collapseContent py-4">
+                      {/* <p>{accordian.subDescription}</p> */}
+                      <div>
+                        <p>Must have 5 to 7 years of experience for <b>{accordian.name}</b></p>
+                        <Row className="d-flex align-items-center">
+                          <Col xl={5} lg={5} md={5} sm={12}>
+                            <div className="imgSec">
+                              <img src={CBNITSopp} alt="" />
+                            </div>
+                          </Col>
+                          <Col xl={7} lg={7} md={7} sm={12}>
+                            <ul class="listStyle">
+                              {accordian.description &&
+                                accordian.description.map((item, idx) => (
+                                  <li key={idx}>{item}</li>
+                                ))}
+                            </ul>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
+                  </Collapse>
+                </div>
+              ))
               : null}
 
             {/* <div className="accWrap mb-3">
