@@ -8,7 +8,7 @@ import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
 
-const whiteText = "service";
+const whiteText = "";
 const blueTxt = "node js development";
 const paraFirst =
   "End-to-end Node.JS development service to build faster and sca-";
@@ -71,7 +71,7 @@ const Nodejs = (props) => {
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <div className="develpment">
                 <h2>
-                  Node js <span className="skycolor mb-5">development</span>
+                  Node js <span className="skycolor mb-5">development offerings</span>
                 </h2>
                 {/* <h2 className="skycolor mb-5">development</h2> */}
                 {data && data.description

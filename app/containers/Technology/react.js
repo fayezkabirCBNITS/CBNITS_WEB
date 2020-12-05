@@ -71,8 +71,8 @@ const Reactjs = (props) => {
           <Row className="d-flex align-items-center">
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <div className="develpment">
-                <h2>our reactjs</h2>
-                <h2 className="skycolor mb-5">development</h2>
+                <h2>our react js</h2>
+                <h2 className="skycolor mb-5">development offerings</h2>
                 {data && data.description
                   ? data.description.map((item, key) => (
                     <Row key={key}>

@@ -62,7 +62,7 @@ const techArr = [
 
 import "./fullstack.css"
 
-const whiteText = "full-stack"
+const whiteText = "full-stack developers"
 const blueTxt = "hire dedicated"
 const paraFirst = "scalable & cost effective full-stack development"
 const paraSecond = "solutions"
@@ -167,7 +167,7 @@ const FullStack = props => {
                     <Row className="d-flex align-items-center">
                         <Col xl={6} lg={6} md={6} xs={12} sm={12}>
                             <div className="full-stack-dedicated">
-                                <h2>Dedicated <span className="skycolor">Full-stack developer</span></h2>
+                                <h2>Our Dedicated <span className="skycolor">Full-stack developer</span></h2>
                                 <h6>{data && data.description && data.description[0]}</h6>
                                 <p>{data && data.description && data.description[1]}</p>
                             </div>
@@ -206,8 +206,8 @@ const FullStack = props => {
             </div>
             <div className="fullstack-tab py-5">
                 <Container className="themed-container text-center tab-container" fluid={false}>
-                    <h2>Technical skill of our</h2>
-                    <h2 className="skycolor mb-5">full-stack developres</h2>
+                    <h2>Technical skills of our</h2>
+                    <h2 className="skycolor mb-5">full-stack developers</h2>
 
                     <Row className="d-flex align-items-center">
                         <div style={{ width: "100%" }}>
