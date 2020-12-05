@@ -15,55 +15,33 @@ import msg from "./../../images/msg.png"
 import ph from "./../../images/ph.png"
 import Axios from "../../service/axios-config";
 import agile from "./../../images/agile.jpg"
+import TechBanner from "./../../components/TechBanner/techBanner";
+import BannerImg from "./../../images/softwareSupport/softwareBnr.jpg";
 
 
+const whiteText = "SUPPORT SERVICES";
+const blueTxt = "SOFTWARE MAINTENANCE &";
+const paraFirst = "Prevent minor issues from becoming major ones";
+const paraSecond = "";
 
-
-const imgArr = [
-    { img: react, lang: "react.js" },
-    { img: angular, lang: "angular.js" },
-    { img: vue, lang: "vue.js" },
-    { img: node, lang: "node.js" },
-    { img: python, lang: "python" },
-    { img: java, lang: "java" },
-    { img: golang, lang: "golang" }
-];
 
 const SoftwareSupport = props => {
 
     return (
         <div>
-            <div className="software-header-img">
-                <Container className="themed-container" fluid={false}>
-                    <p className="title-info">
-                        <span><abbr><img src={msg} alt="msg" /> </abbr>info@cbnits.com</span>
-                        <span><abbr><img src={ph} alt="phone" /> </abbr>+1699-213-8574</span>
-                    </p>
-                    <div className="software-middle-section">
-                        <h2 className="skycolor ">SOFTWARE MAINTENANCE &</h2>
-                        <h2>SUPPORT SERVICES</h2>
-                        <p className="mb-xl-1">Prevent minor issues from becoming major ones</p>
-                    </div>
-                    <div className="software-lang-container">
-                        {
-                            imgArr.map((language, idx) => (
-                                <div key={idx} className="lang-wrapper">
-                                    <abbr><img src={language.img} alt={language.lang} /></abbr>
-                                    <span>{language.lang}</span>
-                                </div>
-                            )
-                            )
-                        }
-                    </div>
-                </Container>
-            </div>
+            <TechBanner
+                bannerImg={BannerImg}
+                whiteText={whiteText}
+                blueTxt={blueTxt}
+                paraFirst={paraFirst}
+            />
             <div className="sub-header">
                 <div className="devCbnits py-5">
                     <Container className="themed-container" fluid={false}>
                         <Row className="d-flex align-items-center">
                             <Col xl={5} lg={5}>
                                 <div className="software-devCbnits-img">
-                                    <img src={agile} alt="agile"/>
+                                    <img src={agile} alt="agile" />
                                 </div>
                             </Col>
                             <Col xl={7} lg={7}>
