@@ -65,11 +65,11 @@ const Nodejs = (props) => {
         paraFirst={paraFirst}
         paraSecond={paraSecond}
       />
-      <div className="language py-5">
+      <div className="Alanguage py-5">
         <Container className="themed-container" fluid={false}>
           <Row className="d-flex align-items-center">
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <div className="develpment">
+              <div className="Adevelpment">
                 <h2>
                   Node js <span className="skycolor mb-5">development offerings</span>
                 </h2>
@@ -103,7 +103,7 @@ const Nodejs = (props) => {
               </div>
             </Col>
           </Row>
-          <div className="text-center hire-req">
+          <div className="text-center Ahire-req">
             <p>
               Hire the best in the industry Node developer from CBNITS to
               secure outstanding software development services according to your
@@ -111,7 +111,7 @@ const Nodejs = (props) => {
             </p>
           </div>
         </Container>
-        <div className="darkbg">
+        <div className="Adarkbg">
           <Container className="themed-container" fluid={false}>
             <Row className="d-flex align-items-center ">
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
@@ -120,7 +120,7 @@ const Nodejs = (props) => {
                 </div>
               </Col>
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                <div className="advantages">
+                <div className="Aadvantages">
                   <h6>
                     Why Hire Node.Js Developers from{" "}
                     <span className="skycolor">CBNITS</span>
