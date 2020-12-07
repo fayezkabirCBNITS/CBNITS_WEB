@@ -13,10 +13,10 @@ const CloudPortfolio = props => {
     const _getWhoWeAre = async () => {
         try {
             let res = await Axios.post("/getPageWiseDatabyCategory", {
-                page: "Cloud Development",
+                page: "CLOUD & DEVOPS",
                 category: "Our Cloud Development Services",
             });
-            console.log("res-- Our Cloud Development Services --->", res.data.data[0]);
+            // console.log("res-- Our Cloud Development Services --->", res.data.data[0]);
             if (res.status == 200) {
                 setResponseData(res.data.data[0]);
             }
@@ -27,7 +27,6 @@ const CloudPortfolio = props => {
             console.log("error---->", error);
         }
     };
-    console.log('Programming Languages=====> ', responseData.description)
 
     return (
         <div className="offering-bnits py-5">
@@ -36,7 +35,7 @@ const CloudPortfolio = props => {
                     <h2>Devops<span className="skycolor"> Offering</span></h2>
                 </div>
                 <Row className="d-flex align-items-center">
-                    {responseData.description && responseData.description.length > 0
+                    {responseData && responseData.description && responseData.description.length > 0
                         ? responseData.description.map((data, idx) => (
                             <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>
                                 <div className="offering-deliverOptn mt-4">
