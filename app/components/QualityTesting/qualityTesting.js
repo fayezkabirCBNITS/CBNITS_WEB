@@ -75,7 +75,7 @@ const CloudPortfolio = props => {
                         of a wide variety of software, web and mobile applications
                     </p>
                 </div>
-                <Row className="d-flex align-items-center">
+                <Row className="d-flex align-items-center justify-content-center">
                     {expertise.map((data, idx) => (
                         <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>
                             <div className="quality-deliverOptn mt-4">

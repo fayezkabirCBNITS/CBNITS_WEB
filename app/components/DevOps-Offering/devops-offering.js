@@ -14,7 +14,7 @@ const CloudPortfolio = props => {
         try {
             let res = await Axios.post("/getPageWiseDatabyCategory", {
                 page: "CLOUD & DEVOPS",
-                category: "Our Cloud Development Services",
+                category: "DEVOPS OFFERING",
             });
             // console.log("res-- Our Cloud Development Services --->", res.data.data[0]);
             if (res.status == 200) {
@@ -34,7 +34,7 @@ const CloudPortfolio = props => {
                 <div className="text-center offering-head">
                     <h2>Devops<span className="skycolor"> Offering</span></h2>
                 </div>
-                <Row className="d-flex align-items-center">
+                <Row className="d-flex align-items-center justify-content-center">
                     {responseData && responseData.description && responseData.description.length > 0
                         ? responseData.description.map((data, idx) => (
                             <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>

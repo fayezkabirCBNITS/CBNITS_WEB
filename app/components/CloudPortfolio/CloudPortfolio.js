@@ -35,7 +35,7 @@ const CloudPortfolio = props => {
                 <div className="text-center head">
                     <h2>Our cloud Development services <span className="skycolor">Portfolio includes:</span></h2>
                 </div>
-                <Row className="d-flex align-items-center">
+                <Row className="d-flex align-items-center justify-content-center">
                     {responseData.description && responseData.description.length > 0
                         ? responseData.description.map((data, idx) => (
                             <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>
