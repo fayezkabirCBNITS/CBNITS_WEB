@@ -6,25 +6,9 @@ import { Row, Col, Container, Form } from "reactstrap";
 const WhatWeDo = (props) => {
   const [data, setData] = useState({});
   useEffect(() => {
-    _getData();
+    setData(props.whatWeDoData);
   }, []);
-  const _getData = async () => {
-    try {
-      let res = await Axios.post("/getPageWiseDatabyCategory", {
-        page: "Home",
-        category: "What We Do",
-      });
-      if (res.status == 200) {
-        setData(res.data.data);
-      } else {
-        console.log("Something went wrong!");
-      }
-    } catch (error) {
-      console.log("error---->", error);
-    }
-  };
-
-
+  
   return (
     <div className="content-wrapper">
       <Container className="themed-container py-5" fluid={false}>
@@ -35,8 +19,8 @@ const WhatWeDo = (props) => {
         </div>
         <Form>
           <Row className="d-flex justify-content-between ">
-            {data && data.length > 0
-              ? data.map((item, idx) => (
+            {props.whatWeDoData && props.whatWeDoData.length > 0
+              ? props.whatWeDoData.map((item, idx) => (
                   <Col xl={4} lg={4} key={idx}>
                     <div className="we-container">
                       <div className="num-txt">

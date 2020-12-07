@@ -8,6 +8,7 @@ import icon from "./../../images/list-icon.png"
 import angularcreation from "./../../images/angularcreation.png"
 import angularjs from "./../../images/angularjs.png"
 import { withRouter } from "react-router-dom";
+import Loader from "react-loader-spinner";
 
 import "./techLanguage.css";
 
@@ -22,6 +23,7 @@ const paraSecond =
 const Angularjs = (props) => {
     const [data, setData] = useState({});
     const [response, setResponse] = useState({});
+    const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
         _getData();
         _getResponse();
@@ -45,12 +47,14 @@ const Angularjs = (props) => {
 
     const _getResponse = async () => {
         try {
+            setIsLoaded(true)
             let res = await Axios.post("/getPageWiseDatabyCategory", {
                 page: "Angular Js Development Service",
                 category: "Advantages of Hiring Angular JS",
             });
             if (res.status == 200) {
                 setResponse(res.data.data[0]);
+                setIsLoaded(false)
             } else {
                 console.log("Something went wrong!");
             }
@@ -59,7 +63,18 @@ const Angularjs = (props) => {
         }
     };
     return (
-        <div>
+        <div>{
+            isLoaded ?
+              <Loader
+                type="ThreeDots"
+                color="rgba(0, 191, 255, 0.5)"
+                height={"100vh"}
+                width={100}
+                className="d-flex justify-content-center align-items-center"
+                visible={isLoaded}
+              />
+              :
+              <>
             <Banner
                 bannerImg={bannerImg}
                 whiteText={whiteText}
@@ -133,6 +148,8 @@ const Angularjs = (props) => {
                     </Container>
                 </div>
             </div>
+        </>
+}
         </div>
     );
 };
