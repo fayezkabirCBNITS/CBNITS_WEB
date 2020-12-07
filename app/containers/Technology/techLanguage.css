@@ -1,59 +1,59 @@
-.language {
+.Alanguage {
     font-family: 'Lato', sans-serif;
 
 }
 
-.develpment h2{
+.Adevelpment h2{
     font-size: 50px;
     text-transform: uppercase;
     font-weight: 700;
 }
-.develpment h4{
+.Adevelpment h4{
     font-weight: 600;
     margin-top: -40px;
     margin-bottom: 30px;
 }
-.develpment p{
+.Adevelpment p{
     font-size: 18px;
     font-weight: 600;
 }
-.develpment p span {
+.Adevelpment p span {
     margin-right: 12px;
 }
-.hire-req {
+.Ahire-req {
     background-color: #F25A29;
     border-radius: 5px;
     padding: 30px;
     margin: 40px 0 80px 0 ;
 }
-.hire-req p {
+.Ahire-req p {
     margin-bottom: 0px;
     font-size: 24px;
     color: #fff;
 }
 
-.advantages {
+.Aadvantages {
     background-color: #F8F9FD;
 }
-.darkbg {
+.Adarkbg {
     background-color: #F8F9FD;
     padding: 50px 0;
 }
 
-.advantages h6{
+.Aadvantages h6{
     font-size: 38px;
     font-weight: 700;
     margin-bottom: 30px;
 }
-.advantages p{
+.Aadvantages p{
     font-size: 18px;
     font-weight: 600;
 }
-.advantages p span {
+.Aadvantages p span {
     margin-right: 12px;
 }
 
-.darkbg .btn-primary {
+.Adarkbg .btn-primary {
     margin-top: 80px;
     background-color: #009444;
     border-color: #009444;
