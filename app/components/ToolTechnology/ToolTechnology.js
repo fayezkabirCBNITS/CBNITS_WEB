@@ -42,7 +42,7 @@ const ToolTechnology = (props) => {
           </p>
         </div>
 
-        <Row className="d-flex align-items-center">
+        <Row className="d-flex align-items-center justify-content-center">
           {responseData
             ? responseData.map((data, idx) => (
                 <Col xl={3} lg={3} key={idx}>

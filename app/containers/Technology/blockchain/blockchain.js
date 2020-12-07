@@ -225,7 +225,7 @@ const BlockChain = (props) => {
                 our blockchain <span className="red">capabilities</span>
               </h2>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex align-items-center justify-content-center">
               {data && data.description && data.description.length > 0
                 ? data.description.map((item, ibx) => (
                     <Col xl={3} lg={3} md={4} sm={6} xs={12} key={ibx}>
@@ -252,7 +252,7 @@ const BlockChain = (props) => {
               blockchain tools <span className="skycolor">& technologies</span>
             </h2>
           </div>
-          <Row className="mt-5 ">
+          <Row className="d-flex mt-5 justify-content-center">
             {techArr.map((data, idx) => (
               <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                 <div className="techstack mt-4">
@@ -275,7 +275,7 @@ const BlockChain = (props) => {
                 Industries <span className="red">We Serve</span>
               </h2>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex align-items-center justify-content-center">
               {response &&
               response.description &&
               response.description.length > 0

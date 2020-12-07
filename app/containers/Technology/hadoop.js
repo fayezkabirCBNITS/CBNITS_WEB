@@ -291,7 +291,7 @@ const Hadoop = (props) => {
                 Domain <span className="skycolor">Expertise</span>
               </h6>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex align-items-center justify-content-center ">
               {domain && domain.length > 0
                 ? domain.map((item, ibx) => (
                     <Col xl={3} lg={3} md={4} sm={6} xs={6} key={ibx}>
