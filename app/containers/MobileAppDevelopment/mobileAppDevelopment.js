@@ -97,7 +97,7 @@ const MobileAppDevelopment = (props) => {
         });
         console.log("res-- App Development Services --->", res);
         if (res.status == 200) {
-          setServices(res.data.data);
+          setServices(res.data.data.reverse());
         }
         else{
             console.log("Something went wrong!");
