@@ -88,7 +88,7 @@ const Angularjs = (props) => {
                         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
                             <div className="Adevelpment">
                                 <h2>our angularjs</h2>
-                                <h2 className="skycolor mb-5">development</h2>
+                                <h2 className="skycolor mb-5">development offerings</h2>
                                 {data && data.description
                                     ? data.description.map((item, index) => (
                                         <p key={index}>

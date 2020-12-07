@@ -11,7 +11,7 @@ import SapTechnology from './../../components/SAPTechnology/sapTechnology'
 
 const blueTxt = "Our Expertise";
 const whiteText = "On SAP";
-const paraFirst = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
+const paraFirst = "";
 
 import tickWhite1 from "./../../images/sap/sapIcon1.jpg";
 import tickWhite2 from "./../../images/sap/sapIcon2.png";
@@ -65,7 +65,7 @@ const SAP = (props) => {
                         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
                             <div className="sapCbnits-Text">
                                 <p>CBNITS makes use of SAP's intelligent Technology Packages(IT's) which is a buldle of intelligent Robotics
-                                    Process Automation (RPA). SAP
+                                    Process Automation (RPA) SAP
                                     Conversation AI and Machine Learning foundation services
                                 </p>
                                 <p className="skycolor">

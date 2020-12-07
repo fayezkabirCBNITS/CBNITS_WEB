@@ -16,8 +16,8 @@ import "./hadoop.css";
 
 const whiteText = "And Cloudera";
 const blueTxt = "Hadoop, Big Data";
-const paraFirst = "Scalable & cost-effective full-stack development";
-const paraSecond = "solutions";
+const paraFirst = "Achieve more uptime, better performance, faster case resolution";
+const paraSecond = "";
 
 const dummyArr = [
   {
@@ -213,7 +213,7 @@ const Hadoop = (props) => {
                 <h2>
                   the heart <span className="skycolor">of the big</span>
                 </h2>
-                <h2 className="skycolor">data revolution</h2>
+                <h2 className="skycolor">data revolution &</h2>
                 <h2 className="skycolor mb-4">Cloudera</h2>
                 <p className="lightGreyText">
                   {data && data.description && data.description[0]}

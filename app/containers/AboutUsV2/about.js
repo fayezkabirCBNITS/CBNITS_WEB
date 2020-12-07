@@ -193,7 +193,7 @@ const AboutUs = (props) => {
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <h2>
-                diversity <span className="skycolor">our team</span>
+                diversity of <span className="skycolor">our team</span>
               </h2>
               <p>
                 {team && team.description && team.description[0]}
