@@ -86,8 +86,8 @@ const Routing = (_) => {
         <Route exact path="/cs-hr-tech" component={Hrtech} />
         <Route exact path="/cs-i-two-chain" component={Csitwochain} />
         <Route exact path="/cs-Health" component={CSHealth} />
-        <Route exact path="/cs-ed-tech" component={Csecommerce} />
-        <Route exact path="/cs-education" component={CSEducation} />
+        <Route exact path="/cs-ecommerce" component={Csecommerce} />
+        <Route exact path="/cs-ed-tech" component={CSEducation} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />

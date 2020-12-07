@@ -15,34 +15,13 @@ import cloudDevMain2 from "./../../images/cloudDevMain2.jpg";
 import "./devops.css";
 import DevopsOffering from "../../components/DevOps-Offering/devops-offering";
 import DevopsBusiness from "../../components/Devops-Business/DevopsBusiness";
+import { withRouter } from "react-router-dom";
 
 const blueTxt = "Cloud";
 const whiteText = "& Devops";
 const paraFirst = "Experience a brand new digital dimension with";
 const paraSecond = "Cloud & Devops";
 
-const dummyArr = [
-  {
-    txt: "custom angular js development",
-    img: icon,
-  },
-  {
-    txt: "AJAX development",
-    img: icon,
-  },
-  {
-    txt: "Angular js mobile app development",
-    img: icon,
-  },
-  {
-    txt: "Angular js web app development",
-    img: icon,
-  },
-  {
-    txt: "Angular ecommerce application",
-    img: icon,
-  },
-];
 
 const advantageArr = [
   {
@@ -120,6 +99,7 @@ const CloudDevOps = (props) => {
         blueTxt={blueTxt}
         paraFirst={paraFirst}
         paraSecond={paraSecond}
+        bannerIconCategory={"Cloud Devops"}
       />
       <div className="devopsCbnits py-5">
         <Container className="themed-container" fluid={false}>
@@ -192,10 +172,10 @@ const CloudDevOps = (props) => {
         </Container>
       </div>
       <div className="text-center devopsCbnits-button">
-        <Button color="primary">Hire Us</Button>
+        <Button color="primary" onClick={() => props.history.push("/hire-us")}>Hire Us</Button>
       </div>
     </div>
   );
 };
 
-export default CloudDevOps;
+export default withRouter(CloudDevOps);

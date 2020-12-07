@@ -104,6 +104,12 @@ const HireUs = (props) => {
   const [contactNoError, setContactNoError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [noteError, setNoteError] = useState(false);
+  const [fixedHiredData, setFixedHiredData] = useState([]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+    getFixedHiringProcess();
+  }, [])
 
   const handleCheckbox = (value) => {
     let tempServices = JSON.parse(JSON.stringify(checks));
@@ -187,6 +193,15 @@ const HireUs = (props) => {
       }
     }
   };
+  const getFixedHiringProcess = async data => {
+
+    const response = await Axios.post("/getPageWiseDatabyCategory", {
+      page: "Hire Us",
+      category: "Fixed Basis Hiring",
+    });
+
+    setFixedHiredData(response.data.data);
+  }
   return (
     <div>
       <Banner
@@ -381,19 +396,6 @@ const HireUs = (props) => {
             monthly-basic <span className="skycolor">hiring process</span>
           </h2>
           <Row className="d-flex align-items-center">
-            {/* <ul className="w-100 ">
-                            {
-                                new Array(7).fill({ "hello": 12 }).map((data, index) => (
-                                    <li >
-                                        <div className="hire-process-li">
-                                            <div className="hiring-process">{index + 1}</div>
-                                            <p>jibon hell</p>
-                                        </div>
-                                    </li>
-                                ))
-                            }
-                        </ul> */}
-
             <Col>
               <div className="imgSec">
                 <img src={tree} />
@@ -403,13 +405,32 @@ const HireUs = (props) => {
         </Container>
       </div>
 
-      {/* <div>
+      <div className="monthly-based py-5">
         <Container className="themed-container" fluid={false}>
-          <h2>
+          <h2 className="mb-5">
             monthly-basic <span className="skycolor">hiring process</span>
           </h2>
+          <Row className="d-flex align-items-center justify-content-center">
+            {
+              fixedHiredData.length > 1 &&
+              fixedHiredData.map((data, idx) => (
+                <Col  xl={4} lg={4} md={6} xs={12} sm={12}  key={idx} className="mb-4">
+                  <div className="fix-buget-process d-flex align-items-center">
+                    <div>
+                      <img src={data.image} alt="" />
+                    </div>
+                    <div className="fixedmotnPara">
+                      <p>{data.name}</p>
+                    </div>
+
+
+                  </div>
+                </Col>
+              ))
+            }
+          </Row>
         </Container>
-      </div> */}
+      </div>
     </div>
   );
 };

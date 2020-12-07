@@ -101,7 +101,6 @@ const getWhatWeDoData = async () => {
           />
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
-          {/* <Experience /> */}
           <Expertise responseData={responseData}  setIsLoaded={(data) => setIsLoaded(data)} />
           <Specialised />
           <WhyCbnits />
