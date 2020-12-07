@@ -1,6 +1,6 @@
 .testing-process{
     background-color: #f8f9fc;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 .testing-process-head h2{
     font-size: 50px;
@@ -35,11 +35,37 @@
 }
 .testing-bottamBanner{
     font-family: 'Poppins', sans-serif;
-    background: #1dbdfc;
+    /* background: #1dbdfc; */
+    background-image: url("./../../images/quaTextBox.png");
     height: 130px;
     padding:30px;
     margin: 50px 0;
-    border-radius: 4px;
+    border-radius: 8px;
     color: #fff;
     font-size: 18px;
 }
+.automation {
+    background-color: #F8F9FC;
+}
+.automation h2 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media only screen and (max-width : 600px) {
+    .testing-bottamBanner{
+        height: 100%;
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    .testing-process-head h2{
+        font-size: 30px;
+    }
+            
+
+    }
+    @media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+    }
