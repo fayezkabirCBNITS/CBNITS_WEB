@@ -126,11 +126,11 @@ const Golang = (props) => {
         paraFirst={paraFirst}
         paraSecond={paraSecond}
       />
-      <div className="language py-5">
+      <div className="Alanguage py-5">
         <Container className="themed-container" fluid={false}>
           <Row className="d-flex align-items-center">
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <div className="develpment">
+              <div className="Adevelpment">
                 <h2>our Golang</h2>
                 <h2 className="skycolor mb-5">development</h2>
                 <h4>Service under a single umbrella</h4>
@@ -163,7 +163,7 @@ const Golang = (props) => {
               </div>
             </Col>
           </Row>
-          <div className="text-center hire-req">
+          <div className="text-center Ahire-req">
             <p>
               Hire the best in the industry Golang developer from CBNITS to
               secure outstanding software development services according to your
@@ -171,7 +171,7 @@ const Golang = (props) => {
             </p>
           </div>
         </Container>
-        <div className="darkbg">
+        <div className="Adarkbg">
           <Container className="themed-container" fluid={false}>
             <Row className="d-flex align-items-center ">
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
@@ -180,7 +180,7 @@ const Golang = (props) => {
                 </div>
               </Col>
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                <div className="advantages">
+                <div className="Aadvantages">
                   <h6>
                     Advantages of hiring Golang dvelopers from{" "}
                     <span className="skycolor">CBNITS</span>
