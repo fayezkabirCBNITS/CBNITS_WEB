@@ -6,6 +6,7 @@ import "./quality.css";
 import QualityDevBnr from "./../../images/qualityEng/qualityEngBnr.jpg";
 import qualityEng from "./../../images/qualityEng/qualityEng.png";
 import QualityTesting from './../../components/QualityTesting/qualityTesting'
+import QualityStep from "./../../images/quaSec.png"
 
 
 const blueTxt = "Quality";
@@ -40,6 +41,9 @@ const QualtyEngineer = (props) => {
             </div>
             <div className="themed-container">
                     <Container fluid={false}>
+                        <div className="imgSec">
+                            <img src={QualityStep} alt="" />
+                        </div>
                         <div className="text-center testing-bottamBanner">
                             <p>CBNITS is an internationally quality engineering firm renowned for
                                 providing top-notch software quality assurance and testing expertise.
@@ -47,6 +51,20 @@ const QualtyEngineer = (props) => {
                         </div>
                     </Container>
                 </div>
+                
+        <div className="automation text-center py-5 ">
+            <Container className="themed-container" fluid={false}>
+                    <h2 className="mb-5">test <span className="skycolor">automation</span></h2>
+                    <p>CBNITS is a certified software testing company in San Jose,California
+                        From strategy consulting to test automation our highly-skilled resources
+                        are really available for dedicated hiring our experienced quali-ty</p>
+                        
+                    <p>CBNITS is a certified software testing company in San Jose,California
+                        From strategy consulting to test automation our highly-skilled resources
+                        are really available for dedicated hiring our experienced quali-ty</p>
+
+            </Container>
+        </div>
             <div className="text-center testing-button">
                 <Button color="primary">Hire Us</Button>
             </div>
