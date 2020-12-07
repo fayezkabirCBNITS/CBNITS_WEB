@@ -36,7 +36,7 @@ const SoftwareMaintenance = () =>{
                     <h2 className="skycolor">SUPPORT SERVICES OF CBNITS</h2>
                 </div>
                 
-                <Row className="d-flex align-items-center justify-content-between serviceDiv" >
+                <Row className="d-flex align-items-center justify-content-center serviceDiv" >
                 {
                       responseData.description ? responseData.description.map((data, idx) => (
                             <Col xl={4} lg={4} key={idx}>

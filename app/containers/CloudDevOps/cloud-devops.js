@@ -9,16 +9,15 @@ import devopmain2 from "./../../images/cloudDevop/devopmain2.jpg";
 import icon from "./../../images/list-icon.png";
 import tickWhite from "./../../images/tickWhite.png";
 import expertiseimg from "./../../images/hl10.jpg";
-import agile from "./../../images/cloudDevMain.jpg"
-import cloudDevMain2 from "./../../images/cloudDevMain2.jpg"
+import agile from "./../../images/cloudDevMain.jpg";
+import cloudDevMain2 from "./../../images/cloudDevMain2.jpg";
 
 import "./devops.css";
-import DevopsOffering from '../../components/DevOps-Offering/devops-offering'
-import DevopsBusiness from '../../components/Devops-Business/DevopsBusiness'
+import DevopsOffering from "../../components/DevOps-Offering/devops-offering";
+import DevopsBusiness from "../../components/Devops-Business/DevopsBusiness";
 
-
-const blueTxt = "Devops &";
-const whiteText = "Cloud Devops";
+const blueTxt = "Cloud";
+const whiteText = "& Devops";
 const paraFirst = "Experience a brand new digital dimension with";
 const paraSecond = "Cloud & Devops";
 
@@ -47,35 +46,23 @@ const dummyArr = [
 
 const advantageArr = [
   {
-    txt: "Big Data Development Maintenance & Support",
+    txt:
+      "With automation from code to cloud, our engineers will stay your business ahead at every step.",
     img: tickWhite,
   },
   {
-    txt: "Data Integration and Management",
+    txt:
+      "Through containers and cloud-native dev tools, we accelerate the delivery of your new apps.",
     img: tickWhite,
   },
   {
-    txt: "Cloudera Services",
+    txt:
+      "We provide high-end automated test techniques with quick set up and efficient operations.",
     img: tickWhite,
   },
   {
-    txt: "Data Integration and Management",
-    img: tickWhite,
-  },
-  {
-    txt: "Cloudera Services",
-    img: tickWhite,
-  },
-  {
-    txt: "Big Data Analytics & Insights Services",
-    img: tickWhite,
-  },
-  {
-    txt: "Hadoop configuration management,",
-    img: tickWhite,
-  },
-  {
-    txt: "Hadoop monitoring, Hadoop Metrics,",
+    txt:
+      "Our DevOps services are tailored to your business requirements and delivered by top engineers from our global talent network.",
     img: tickWhite,
   },
 ];
@@ -125,7 +112,6 @@ const expertise = [
 ];
 
 const CloudDevOps = (props) => {
-
   return (
     <div>
       <Banner
@@ -145,11 +131,20 @@ const CloudDevOps = (props) => {
             </Col>
             <Col xl={6} lg={6}>
               <div className="devopsCbnits-Text">
-                <p><span>Powering the </span><span className="skycolor">Future </span>  has the special expertise in developing top of the line webistes.
-                      Our talented bunch of developres hold special expertise in reaceting excellent websites.
-                      We are focused on delevering real value to our global clients.
-                      You can hire our talented team of developers on dedicated basis option.
-                      Let us drive your growth with our web development expertise.</p>
+                <h2>
+                  At <span className="skycolor">CBNITS</span>,
+                </h2>
+                <p>
+                  our goal is to simplify and transform businessesdigitally
+                  through high-performance Cloud technology. As cloud enablement
+                  experts we offer top-notch DevOps, Migration and Cloud Native
+                  solutions. Our profound industry experience on Cloud platforms
+                  like AWS, GCP and Azure enables our clients to adopt Cloud
+                  culture in a seamless way. We are also renowned for holding
+                  special expertise on Infrastructure as Code tools like
+                  Terraform, CloudFormation and Ansible. All our cloud services
+                  are instantly scalable for optimum performance.
+                </p>
               </div>
             </Col>
           </Row>
@@ -158,9 +153,9 @@ const CloudDevOps = (props) => {
       <div>
         <DevopsOffering />
       </div>
-      <div>
+      {/* <div>
         <DevopsBusiness />
-      </div>
+      </div> */}
       <div className="devopsCbnits py-5">
         <Container className="themed-container" fluid={false}>
           <Row className="d-flex align-items-center">
@@ -171,9 +166,7 @@ const CloudDevOps = (props) => {
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <div className="devopsCbnits-advantages">
-                <h6>
-                  Why CBNITS as your Devops sevices provider?
-                </h6>
+                <h6>Why CBNITS as your Devops sevices provider?</h6>
                 {advantageArr.map((item, key) => (
                   <Row key={key}>
                     <Col xl={1} lg={1}>
@@ -189,13 +182,10 @@ const CloudDevOps = (props) => {
                       />
                     </Col>
                     <Col xl={11} lg={11}>
-                      <p>
-                        {item.txt}
-                      </p>
+                      <p>{item.txt}</p>
                     </Col>
                   </Row>
-                ))
-                }
+                ))}
               </div>
             </Col>
           </Row>

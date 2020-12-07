@@ -18,7 +18,7 @@ const Specialized = (props) => {
           });
           console.log("res-- Specialized Services --->", res.data.data);
           if (res.status == 200) {
-            setResponseData(res.data.data);
+            setResponseData(res.data.data.reverse());
           }
           else{
               console.log("Something went wrong!");
