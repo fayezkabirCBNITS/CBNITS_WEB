@@ -18,7 +18,7 @@ const WhyChoose = () => {
             // category: "Specialized Services",
             category: "Why Choose Us"
           });
-          console.log("res-- Why choose use --->", res.data.data[0]);
+          console.log("res-- Why choose use --->", JSON.parse(res.data.data[0].description[0]));
           if (res.status == 200) {
             setResponseData(res.data.data[0]);
           }
@@ -39,19 +39,21 @@ const WhyChoose = () => {
                 </div>
                 <Row className="d-flex align-items-center">
                     {
-                       responseData.description ? responseData.description.map((data, idx) => (
-                            <Col xl={3} lg={3} key={idx}>
+                       responseData.description ? responseData.description.map((data, idx) => {
+                            let parseData = JSON.parse(data);
+                            console.log("parseDAta--->", parseData)
+                            return (<Col xl={3} lg={3} key={idx}>
                                 <div className="whychoose">
                                     <div className="whychoose-header text-center"><span>{idx + 1}</span></div>
                                         <Row className="d-flex align-items-center">
                                             <Col xl={12} lg={12}>
-                                                <h5>{data.title}</h5>
-                                                <p>{data.desc}</p>
+                                                <h5>{parseData.title}</h5>
+                                                <p>{parseData.desc}</p>
                                             </Col>
                                         </Row>
                                 </div>
-                            </Col>
-                        )) : ''
+                            </Col>)
+}) : ''
                     }
                 </Row>
             </Container>

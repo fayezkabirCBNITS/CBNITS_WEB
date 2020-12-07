@@ -164,15 +164,32 @@ const BlockChain = (props) => {
 
   useEffect(() => {
     _getFirstData();
+    _getIndustries();
   }, []);
   const _getFirstData = async () => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "BlockChain",
+        category: "Capabilities",
+      });
+      if (res.status == 200) {
+        setData(res.data.data[0]);
+      } else {
+        console.log("Something went wrong!");
+      }
+    } catch (error) {
+      console.log("error---->", error);
+    }
+  };
+
+  const _getIndustries = async () => {
     try {
       let res = await Axios.post("/getPageWiseDatabyCategory", {
         page: "BlockChain",
         category: "Industry We Serve",
       });
       if (res.status == 200) {
-        setData(res.data.data[0]);
+        setResponse(res.data.data[0]);
       } else {
         console.log("Something went wrong!");
       }
@@ -215,7 +232,7 @@ const BlockChain = (props) => {
                       <div className="deliverOptn mt-4">
                         <div className="deliverOptnNo">
                           <div className="dashBorder">
-                            <span>{ibx+1}</span>
+                            <span>{ibx + 1}</span>
                           </div>
                         </div>
                         <div className="deliverDetails">
@@ -255,24 +272,28 @@ const BlockChain = (props) => {
           <Container className="themed-container" fluid={false}>
             <div className="morethan text-center">
               <h2 className="mb-3">
-                blockchain tools <span className="red">& technologies</span>
+                Industries <span className="red">We Serve</span>
               </h2>
             </div>
             <Row className="d-flex align-items-center ">
-              {techno.map((data, ibx) => (
-                <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-                  <div className="deliverOptn mt-4">
-                    <div className="deliverOptnNo">
-                      <div className="dashBorder">
-                        <span>{data.no}</span>
+              {response &&
+              response.description &&
+              response.description.length > 0
+                ? response.description.map((item, ibx) => (
+                    <Col xl={3} lg={3} md={4} sm={6} xs={12}>
+                      <div className="deliverOptn mt-4">
+                        <div className="deliverOptnNo">
+                          <div className="dashBorder">
+                            <span>{ibx+1}</span>
+                          </div>
+                        </div>
+                        <div className="deliverDetails">
+                          <span>{item}</span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="deliverDetails">
-                      <span>{data.txt}</span>
-                    </div>
-                  </div>
-                </Col>
-              ))}
+                    </Col>
+                  ))
+                : null}
             </Row>
           </Container>
         </div>
@@ -285,9 +306,14 @@ const BlockChain = (props) => {
             </p>
           </div>
         </Container>
-                        <div className="text-center">
-                            <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
-                        </div>
+        <div className="text-center">
+          <Button
+            color="primary"
+            onClick={() => props.history.push("/hire-us")}
+          >
+            Hire Us
+          </Button>
+        </div>
       </div>
     </div>
   );

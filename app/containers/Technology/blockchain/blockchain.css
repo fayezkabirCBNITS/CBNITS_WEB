@@ -22,10 +22,11 @@
     color: #000;
   }
   .detailsBox {
+    background-image: url('../../../images/quaTextBox.png');
+    background-size: cover;
     width: 100%;
     margin: 100px 0;
     padding: 40px 50px;
-    background-color: #f15a29;
   }
   .detailsBox p {
     padding: 0;
