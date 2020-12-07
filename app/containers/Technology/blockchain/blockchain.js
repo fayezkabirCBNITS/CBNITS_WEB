@@ -26,7 +26,7 @@ import { withRouter } from "react-router-dom";
 
 const whiteText = "development";
 const blueTxt = "blockchain technology";
-const paraFirst = "Get ou Blockchain Experts Ready to Empower your Business";
+const paraFirst = "Get our Blockchain Experts Ready to Empower your Business";
 const paraSecond = "human interactions";
 
 const capabilities = [
