@@ -64,9 +64,9 @@ const FourReasons = (props) => {
           <Row className="d-flex justify-content-between">
             {data && data.description && data.description.length > 0
               ? data.description.map((item, idx) => (
-                  <Col xl={3} lg={3} key={idx}>
-                    <div className="we-container fourResonsBX">
-                      <div className="num-txt border-bottom mb-3 pb-3">
+                  <Col xl={3} lg={3} md={6} className="mb-4" key={idx}>
+                    <div className="we-container we-cnt-new fourResonsBX">
+                      <div className="num-txt num-txt-new border-bottom mb-3 pb-3">
                         <span>{idx + 1}</span>
                         <h6>{item.title}</h6>
                       </div>
