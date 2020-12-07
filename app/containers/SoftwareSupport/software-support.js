@@ -80,7 +80,7 @@ const SoftwareSupport = (props) => {
                   </p>
                 </Col>
                 <Col xl={2} lg={2}>
-                  <Button color="primary">HIRE US</Button>
+                  <Button color="primary" onClick={()=>props.history.push("/hire-us")}>HIRE US</Button>
                 </Col>
               </Row>
             </div>
