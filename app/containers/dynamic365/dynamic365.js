@@ -16,6 +16,13 @@ import ph from "./../../images/ph.png";
 import exper from "./../../images/365.png";
 import MicroDynamic from "./../../components/MicroDynamic/microDyamic";
 import SeamLessMigration from "./../../components/SeamlessMigration/SeamlessMigration";
+import BannerCustom from "./../../components/TechBanner/techBanner";
+import BannerImg from "./../../images/website/webBnr.jpg";
+
+
+const blueTxt = "Microsoft";
+const whiteText = "Dynamic 365";
+const paraFirst = "Map your needs with the certified Microsoft Dynamic 365 partner";
 
 const imgArr = [
   { img: react, lang: "react.js" },
@@ -51,7 +58,14 @@ const Dynamic365 = (props) => {
 
   return (
     <div>
-      <div className="dynamic-header-img">
+      
+      <BannerCustom
+                bannerImg={BannerImg}
+                whiteText={whiteText}
+                blueTxt={blueTxt}
+                paraFirst={paraFirst}
+            />
+      {/* <div className="dynamic-header-img">
         <Container className="themed-container" fluid={false}>
           <p className="title-info">
             <span>
@@ -86,7 +100,7 @@ const Dynamic365 = (props) => {
             ))}
           </div>
         </Container>
-      </div>
+      </div> */}
       <div className="sub-header">
         <div className="dyanamicCbnits py-5">
           <Container className="themed-container" fluid={false}>
