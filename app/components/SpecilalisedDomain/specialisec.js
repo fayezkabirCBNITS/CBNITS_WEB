@@ -74,7 +74,7 @@ const Specialised = (props) => {
       <Container className="themed-container" fluid={false}>
         <div className="text-center domain-head">
           <h2>
-            our specialised<span> domain</span>
+            our specialised<span> domains</span>
           </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

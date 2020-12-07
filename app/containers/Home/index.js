@@ -43,7 +43,7 @@ const HomePage = (props) => {
         });
         console.log("res-- Our Expertise --->", res);
         if (res.status == 200) {
-            setResponseData(res.data.data);
+            setResponseData(res.data.data.reverse());
             setIsLoaded(false);
         } else {
             console.log("Something went wrong!");
