@@ -1,98 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import './expertise.css';
-import Axios from './../../service/axios-config'
-import ai from "./../../images/e1.png"
-import blockchain from "./../../images/e2.png"
-import iot from "./../../images/e3.png"
-import hadoop from "./../../images/e4.png"
-import augmented from "./../../images/e5.png"
-import wearbles from "./../../images/e6.png"
-import decops from "./../../images/e7.png"
-import uxui from "./../../images/e8.png"
-import dataSci from "./../../images/e9.png"
-import cyberSec from "./../../images/e10.png"
-import cloudSol from "./../../images/e11.png"
-import softDev from "./../../images/e12.png"
-
-const techArr = [
-    {
-        img: ai,
-        title: "Al & Machine Learnings"
-    },
-    {
-        img: blockchain,
-        title: "blockchain"
-    },
-    {
-        img: iot,
-        title: "iot & connected devices"
-    },
-    {
-        img: hadoop,
-        title: "Big data & Hadoop"
-    },
-    {
-        img: augmented,
-        title: "Augmented Reality"
-    },
-    {
-        img: wearbles,
-        title: "Mobile & wearables"
-    },
-    {
-        img: decops,
-        title: "DevOps & Infrastructure"
-    },
-    {
-        img: uxui,
-        title: "UX / ui"
-    },
-    {
-        img: dataSci,
-        title: "Data Science"
-    },
-    {
-        img: cyberSec,
-        title: "Cybersecurity"
-    },
-    {
-        img: cloudSol,
-        title: "Cloud solutions"
-    },
-    {
-        img: softDev,
-        title: "Software Development"
-    },
-]
-
-
 
 const Expertise = props => {
     const [responseData, setResponseData] = useState();
+    useEffect(() => {
+        setResponseData(props.responseData)
+    }, [])
 
-    const getData = async () => {
-        try {
-          let res = await Axios.post("/getPageWiseDatabyCategory", {
-            page: "Home",
-            category: "Our Expertise",
-          });
-          console.log("res-- Our Expertise --->", res);
-          if (res.status == 200) {
-            setResponseData(res.data.data);
-          } else {
-            console.log("Something went wrong!");
-          }
-        } catch (error) {
-          console.log("error---->", error);
-        }
-      };
-
-    useEffect(()=>{
-        getData()
-    },[])
-
-    console.log('responseData===>',responseData)
+    console.log('responseData===>', responseData)
 
     return (
         <div className="expertiseDiv py-5">
