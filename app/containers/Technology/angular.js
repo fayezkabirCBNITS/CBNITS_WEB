@@ -15,7 +15,7 @@ import "./techLanguage.css";
 const whiteText = "service";
 const blueTxt = "angular js development";
 const paraFirst =
-    "no matter how complex your project is ,at CBNITS, our cutting edge and best in";
+    "no matter how complex your project is, at CBNITS, our cutting edge and best in";
 const paraSecond =
     "class Angular Development Services have predictable outcomes. ";
 
