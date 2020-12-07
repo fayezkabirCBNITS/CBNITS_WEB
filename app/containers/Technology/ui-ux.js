@@ -18,11 +18,11 @@ import uiuxMain from "./../../images/uiuxMain.jpg";
 import "./uiux.css";
 import classnames from "classnames";
 
-import python from "./../../images/website/tech1.png";
-import javascript from "./../../images/website/tech2.png";
-import ruby from "./../../images/website/tech3.png";
-import php from "./../../images/website/tech4.png";
-import ccc from "./../../images/website/tech5.png";
+import ui1 from "./../../images/uiux/ui1.jpg";
+import ui2 from "./../../images/uiux/ui2.jpg";
+import ui3 from "./../../images/uiux/ui3.jpg";
+import ui4 from "./../../images/uiux/ui4.jpg";
+import ui5 from "./../../images/uiux/ui5.jpg";
 
 const whiteText = "development";
 const blueTxt = "UX & UI";
@@ -32,23 +32,23 @@ const paraSecond = "human interactions";
 const techArr = [
   {
     techname: "OmniGraffle",
-    img: python,
+    img: ui1,
   },
   {
     techname: "Balsamiq",
-    img: javascript,
+    img: ui2,
   },
   {
     techname: "InVISION",
-    img: ruby,
+    img: ui3,
   },
   {
     techname: "Sketch",
-    img: php,
+    img: ui4,
   },
   {
     techname: "Xd",
-    img: ccc,
+    img: ui5,
   },
 ];
 
@@ -215,11 +215,11 @@ const Uiux = (props) => {
             <div className="deliver text-center">
               <h2>deliverables</h2>
               <h2 className="mb-3 skycolor">what we can design for you</h2>
-              <p>
+              {/* <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since.
-              </p>
+              </p> */}
             </div>
             <Row className="d-flex align-items-center ">
               {deliver.map((data, ibx) => (

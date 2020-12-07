@@ -19,6 +19,8 @@ import Axios from "./../../service/axios-config";
 import tool7 from "./../../images/tools7.png";
 import bannerImg from "./../../images/aboutBnr.jpg";
 import ang from "./../../images/angularcreation.png";
+import about1 from "./../../images/aboutM1.png";
+import about2 from "./../../images/aboutM2.png";
 
 import aboutC from "./../../images/aboutC.png";
 import aboutM from "./../../images/aboutM.png";
@@ -199,7 +201,7 @@ const AboutUs = (props) => {
                 {team && team.description && team.description[0]}
               </p>
               <p>
-              {team && team.description && team.description[1]}
+                {team && team.description && team.description[1]}
               </p>
               <p>{team && team.description && team.description[2]}</p>
             </Col>
@@ -248,7 +250,7 @@ const AboutUs = (props) => {
             <Col xl={5} lg={5} className="mb-5 your-it-partner text-right">
               <h6>{response.length && response[2].name}</h6>
               <p>
-              {response.length && response[2].description[0]}
+                {response.length && response[2].description[0]}
               </p>
             </Col>
             <Col xl={2} lg={2} className="d-flex justify-content-center left">
@@ -267,14 +269,14 @@ const AboutUs = (props) => {
             <Col xl={5} lg={5} className="mb-5 your-it-partner">
               <h6>{response.length && response[1].name}</h6>
               <p>
-              {response.length && response[1].description[0]}
+                {response.length && response[1].description[0]}
               </p>
             </Col>
 
             <Col xl={5} lg={5} className="mb-5 your-it-partner text-right">
               <h6>{response.length && response[0].name}</h6>
               <p>
-              {response.length && response[0].description[0]}
+                {response.length && response[0].description[0]}
               </p>
             </Col>
             <Col xl={2} lg={2} className="d-flex justify-content-center left">
@@ -282,6 +284,44 @@ const AboutUs = (props) => {
             </Col>
             <Col xl={5} lg={5} className="mb-5 text-center">
               <img src={ar4} alt="" />
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <div className="mission py5">
+        <Container className="themed-container">
+          <Row className="d-flex align-items-center">
+            <Col md={6} lg={6} xl={6} sm={12} xs={12}>
+              <div className="our-vision">
+                <div className="vision-img">
+                  <img src={about1} alt="" />
+                  <h5>
+                    Our Vision
+                </h5>
+                </div>
+                  <p>
+                    We strive to exceed expectations and be the best that we can be,
+                    maintaining the highest level of quality. Our aim is to change
+                    the way IT services are delivered, through focusing on our core values.
+                    We always try to improve the quality of our services by exploring
+                    innovative ideas.
+                  </p>
+              </div>
+            </Col>
+            <Col md={6} lg={6} xl={6} sm={12} xs={12}>
+              <div className="our-mission">
+                <div className="vision-img">
+                  <img src={about2} alt="" />
+                  <h5>
+                    Our Mission
+                </h5>
+                </div>
+                  <p>
+                    Our mission is distinctly innovative.
+                    We constantly seek new ways to improve our IT
+                    offerings to increase our brand value.
+                  </p>
+              </div>
             </Col>
           </Row>
         </Container>

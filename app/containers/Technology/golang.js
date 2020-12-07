@@ -3,7 +3,7 @@ import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
-import bannerImg from "./../../images/banner2.jpg";
+import bannerImg from "./../../images/golangBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
@@ -12,7 +12,7 @@ import { withRouter } from "react-router-dom";
 const whiteText = "";
 const blueTxt = "Golang development";
 const paraFirst =
-  "With CBNITS' top of the line Golang development services,bring";
+  "With CBNITS' top of the line Golang development services, bring";
 const paraSecond = "your most complex software ideas to life. ";
 
 import "./techLanguage.css";

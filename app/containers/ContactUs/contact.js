@@ -16,7 +16,7 @@ import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 import { showToast } from "../../utils/helper-methods";
 
-import bannerImg from "./../../images/angularBnr.jpg";
+import bannerImg from "./../../images/contactBnr.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkerAlt,
