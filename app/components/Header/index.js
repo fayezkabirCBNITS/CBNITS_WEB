@@ -212,12 +212,26 @@ const Example = (props) => {
         {
           label: "Dedicated Hiring",
           key: 4,
-          items: <p> Dedicated Hiring</p>,
+          items: (
+          <div>
+            <Row>
+              
+            <Col className="dedicate-link">
+                  <Nav tabs className="d-flex direction-column align-items-center">
+                    <NavItem>
+                      <NavLink href="/hire-us">Dedicated Hiring</NavLink>
+                    </NavItem>
+                  </Nav>
+                </Col>
+            </Row>
+          </div>
+          
+            ),
         },
         {
-          label: "Insights & News",
+          label: <p className="insignts">Insights & News</p>,
           key: 5,
-          items: <p> news world</p>,
+          items: <p>coming soon.......</p>,
         },
         // {
         //     label: "Conatact Us",

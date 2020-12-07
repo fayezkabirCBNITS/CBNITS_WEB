@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
 import Banner from "../../components/TechBanner/techBanner";
-import Axios from "../../service/axios-config";
 
 import cloudDevBnr from "./../../images/cloudDevBnr.jpg";
-import icon from "./../../images/list-icon.png";
-import tickWhite from "./../../images/tickWhite.png";
-import expertiseimg from "./../../images/hl10.jpg";
 import agile from "./../../images/cloudDevMain.jpg";
 import cloudDevMain2 from "./../../images/cloudDevMain2.jpg";
 
@@ -93,7 +89,7 @@ const CloudDevelopment = (props) => {
           </Container>
         </div>
         <div className="text-center cloudCbnits-btn">
-          <Button color="primary" onClick={() => props.history.push("hire-us")}>
+          <Button color="primary" onClick={() => props.history.push("/hire-us")}>
             Hire Us
           </Button>
         </div>

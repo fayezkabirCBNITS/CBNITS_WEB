@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
+import { Button, Row, Col, Container } from "reactstrap";
 import Banner from "../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 import "./quality.css";

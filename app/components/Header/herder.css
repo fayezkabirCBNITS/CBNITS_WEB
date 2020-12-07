@@ -42,6 +42,7 @@
     font-size: 15px;
 }
 .img-wrapper-head img {
+    cursor: pointer;
     width: 133px;
     height: 40px;
 }
@@ -111,6 +112,14 @@
     font-family: 'Lato', sans-serif;
     padding: 6px 15px;
     text-align: center;
+}
+.dedicate-link .nav-tabs .nav-link {
+    color: #000000;
+}
+.insignts {
+    margin-bottom: 0px;
+    cursor: not-allowed;
+    color:#cecece;;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

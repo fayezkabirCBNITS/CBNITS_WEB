@@ -7,6 +7,7 @@ import "./techBanner.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
 import { withRouter } from "react-router-dom";
+import Axios from "./../../service/axios-config"
 
 const Banner = (props) => {
   const [images, setImages] = useState([]);
@@ -28,7 +29,11 @@ const Banner = (props) => {
   `;
 
   useEffect(() => {
-    getImageArray();
+    if(props.bannerIconCategory   === "Cloud Devops") {
+      getCloudDevopsImage()
+    }else {
+      getImageArray();
+    }
   }, []);
 
   const getImageArray = () => {
@@ -48,6 +53,20 @@ const Banner = (props) => {
       .catch((err) => {
         console.log(err);
       });
+  };
+  const getCloudDevopsImage = async () => {
+    try {
+      
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "Cloud Devops",
+        category: "Languages",
+        
+    });
+    setImages(res.data.data.reverse());
+
+    }catch (e){
+      console.log(e);
+    }
   };
 
   return (
@@ -93,9 +112,9 @@ const Banner = (props) => {
           {images.map((language, idx) => (
             <div key={idx} className="tech-lang-wrapper">
               <abbr>
-                <img src={language.logoPic} alt={language.category} />
+                <img src={language.image ?language.image :  language.logoPic} alt={language.category} />
               </abbr>
-              <span>{language.name}</span>
+              <span>{language.name ? language.name : ""}</span>
             </div>
           ))}
         </div>
