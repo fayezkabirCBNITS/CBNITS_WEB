@@ -6,11 +6,13 @@ import Banner from "./../../components/TechBanner/techBanner";
 import banner365 from "./../../images/banner365.jpg";
 import MicroDynamic from "./../../components/MicroDynamic/microDyamic";
 import SeamLessMigration from "./../../components/SeamlessMigration/SeamlessMigration";
+import BannerCustom from "./../../components/TechBanner/techBanner";
+import BannerImg from "./../../images/website/webBnr.jpg";
+
 
 const blueTxt = "Microsoft";
 const whiteText = "Dynamic 365";
-const paraFirst = "Map your needs with the Certified Microsoft Dynamic 365 Partner";
-
+const paraFirst = "Map your needs with the certified Microsoft Dynamic 365 partner";
 
 const Dynamic365 = (props) => {
   const [data, setData] = useState({});
