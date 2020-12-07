@@ -20,7 +20,7 @@ const WhyCbnits = (props) => {
         category: "Why CBNITS",
       });
       if (res.status == 200) {
-        setData(res.data.data);
+        setData(res.data.data.reverse());
       } else {
         console.log("Something went wrong!");
       }

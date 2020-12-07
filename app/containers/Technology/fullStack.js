@@ -64,7 +64,7 @@ import "./fullstack.css"
 
 const whiteText = "full-stack developers"
 const blueTxt = "hire dedicated"
-const paraFirst = "scalable & cost effective full-stack development"
+const paraFirst = "Scalable & cost-effective full-stack development"
 const paraSecond = "solutions"
 
 const advantageArr = [

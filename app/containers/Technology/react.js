@@ -3,7 +3,7 @@ import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
-import bannerImg from "./../../images/banner2.jpg";
+import bannerImg from "./../../images/reactBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
@@ -12,7 +12,7 @@ import { withRouter } from "react-router-dom";
 const whiteText = "service";
 const blueTxt = "react js development";
 const paraFirst =
-  "no matter how complex your project is ,at CBNITS, our cutting edge and best in";
+  "no matter how complex your project is, at CBNITS, our cutting edge and best in";
 const paraSecond =
   "class React Development Services have predictable outcomes. ";
 

@@ -41,6 +41,8 @@
     font-weight: 600;
   }
   .morethanlist {
+    background-image: url('./../../images/uiuxBox.jpg');
+    background-size: cover;
     width: 100%;
     height: 200px;
     background-color: #fff;

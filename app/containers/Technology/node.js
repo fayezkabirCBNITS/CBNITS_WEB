@@ -3,7 +3,7 @@ import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
-import bannerImg from "./../../images/banner2.jpg";
+import bannerImg from "./../../images/nodeBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
@@ -123,7 +123,7 @@ const Nodejs = (props) => {
                 <div className="Aadvantages">
                   <h6>
                     Why Hire Node.Js Developers from{" "}
-                    <span className="skycolor">CBNITS</span>
+                    <span className="skycolor">CBNITS?</span>
                   </h6>
                   {response && response.description
                     ? response.description.map((item, key) => (

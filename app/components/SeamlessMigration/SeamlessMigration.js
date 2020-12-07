@@ -5,6 +5,7 @@ import Axios from "../../service/axios-config";
 import seamImage from "./../../images/career-left.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import icon from "./../../images/list-icon.png"
 
 const SeamLess = (props) => {
   const [response, setResponse] = useState({});
@@ -60,26 +61,27 @@ const SeamLess = (props) => {
                 <div className="seamCbnits-pText">
                   {response && response.description && response.description.length > 0
                     ? response.description.map((item, key) => (
-                        <Row key={key}>
-                          <Col xl={1} lg={1}>
-                            <FontAwesomeIcon
-                              icon={faCheckCircle}
-                              style={{
-                                color: " #ff5c33",
-                                marginRight: "2px",
-                                fontSize: "18px",
-                                marginTop: "5px",
-                                marginLeft: "10px",
-                              }}
-                            />
-                          </Col>
-                          <Col xl={11} lg={11}>
-                            <p>
-                              {item}
-                            </p>
-                          </Col>
-                        </Row>
-                      ))
+                      <Row key={key}>
+                        <Col xl={1} lg={1}>
+                        <img src={icon} alt={icon} />
+                          {/* <FontAwesomeIcon
+                            icon={faCheckCircle}
+                            style={{
+                              color: " #ff5c33",
+                              marginRight: "2px",
+                              fontSize: "18px",
+                              marginTop: "5px",
+                              marginLeft: "10px",
+                            }}
+                          /> */}
+                        </Col>
+                        <Col xl={11} lg={11}>
+                          <p>
+                            {item}
+                          </p>
+                        </Col>
+                      </Row>
+                    ))
                     : null}
                   {/* <Row>
                     <Col xl={1} lg={1}>
