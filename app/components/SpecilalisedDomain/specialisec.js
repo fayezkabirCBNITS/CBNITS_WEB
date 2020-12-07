@@ -74,14 +74,14 @@ const Specialised = (props) => {
       <Container className="themed-container" fluid={false}>
         <div className="text-center domain-head">
           <h2>
-            our specialised<span> domain</span>
+            our specialized<span> domain</span>
           </h2>
-          <p>
+          {/* <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
             ipsum suspendisse ultrices gravida. Risus commas accumsan lacus vel
             facilisis.{" "}
-          </p>
+          </p> */}
         </div>
         <Row className="d-flex align-items-center justify-content-between">
           <Col xl={6} lg={6} className="d-flex align-items-center leftTopic">

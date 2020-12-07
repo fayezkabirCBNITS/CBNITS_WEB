@@ -9,11 +9,11 @@ import angularcreation from "./../../images/angularcreation.png";
 import angularjs from "./../../images/angularjs.png";
 import { withRouter } from "react-router-dom";
 
-const whiteText = "service";
+const whiteText = "";
 const blueTxt = "Golang development";
 const paraFirst =
-  "With CBNITS top of the line Golang development services,bring";
-const paraSecond = "your most complex software ideas ti life. ";
+  "With CBNITS' top of the line Golang development services,bring";
+const paraSecond = "your most complex software ideas to life. ";
 
 import "./techLanguage.css";
 
@@ -182,7 +182,7 @@ const Golang = (props) => {
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
                 <div className="Aadvantages">
                   <h6>
-                    Advantages of hiring Golang dvelopers from{" "}
+                    Advantages of hiring Golang developers from{" "}
                     <span className="skycolor">CBNITS</span>
                   </h6>
                   {response && response.description
