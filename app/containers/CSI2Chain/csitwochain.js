@@ -93,15 +93,9 @@ const Csitwochain = (props) => {
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
               <div className="webpage">
                 <h2>Overview</h2>
-                <span className="lightGreyText">
-                  application designing have become a very sophisticated
-                  technology-based art. At CBNITS, we follow a foundational
-                  approach for building UX/UI strategy for our clients. Our
-                  UI/UX designing team is globally recognized for designing the
-                  most innovative and user-centric experience for any digital
-                  product. We follow the best UI/UX practices in the
-                  industry.pabilities for your company and get it up and running
-                  in quick time.
+                <span className="lightGreyText">i2Chain’s SaaS application enables companies to securely share sensitive documents with anyone within or outside the organization. i2Chain enables mortgage companies, banks, accounting firms, hospitals, and others to safely share their PII, IP, and PHI with co-processing entities in compliance with GDPR and CCPA privacy regulations. 
+
+i2Chain’s zero-click technology secures documents with encryption, policies, immutable audit logs, and it is cloud type and storage type agnostic.
                 </span>
               </div>
             </Col>

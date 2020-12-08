@@ -101,7 +101,8 @@ const CarouselCustom = (props) => {
               <img src={item.logoPic} />
             </div>
             <div className="actual-client">
-              <h5 className="car-desp-name">{item.name}</h5>
+              <h5 className="car-desp-name">{item.name.split(",")[0]}</h5>
+              <h5 className="car-desp-name">{item.name.split(",")[1]}</h5>
             </div>
           </div>
         </div>

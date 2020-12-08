@@ -27,7 +27,7 @@ const Expertise = (props) => {
             what our <span>customers say</span>
           </h2>
         </div>
-        <Row>
+        <Row className="d-flex justify-centent-center">
           <Col xl={4} lg={4}>
             <div className="each-customer">
               <div className="customer-img">
