@@ -14,6 +14,8 @@ import leftcoma from "./../../images/in1.png";
 import rightcoma from "./../../images/in2.png";
 import numly from "./../../images/testimonial.jpg";
 import numlyLogo from "./../../images/numly.png";
+import msg from "./../../images/msg.png";
+import ph from "./../../images/ph.png";
 
 const items1 = [
     {
@@ -76,7 +78,7 @@ const CarouselCustom = (props) => {
             }
         }).then((res) => {
             if (res.status === 200) {
-                setBannerDetails(res.data.data)
+                setBannerDetails(res.data.data.reverse())
             }
         })
 
@@ -99,7 +101,7 @@ const CarouselCustom = (props) => {
         setActiveIndex(newIndex);
     };
 
-    const slides =bannerDetails.map((item, index) => {
+    const slides = bannerDetails.map((item, index) => {
         return (
             <CarouselItem
                 onExiting={() => setAnimating(true)}
@@ -108,13 +110,13 @@ const CarouselCustom = (props) => {
             >
                 <div className="text-center car-home-bnr">
                     <h2 className="skycolor">{item.description[0] ? item.description[0] : ""}</h2>
-                    <h2>{item.description[1] ? item.description[1] : ""}</h2>
+                    <h2 className="mb-4">{item.description[1] ? item.description[1] : ""}</h2>
                     <p>{item.description[2] ? item.description[2] : ""}</p>
                     <p>{item.description[3] ? item.description[3] : ""}</p>
                 </div>
                 <div className="tech-lang-container-home">
                     {images.map((language, idx) => (
-                        <div key={idx} className="tech-lang-wrapper">
+                        <div key={idx} className="tech-lang-wrapper-home">
                             <abbr>
                                 <img src={language.image ? language.image : language.logoPic} alt={language.category} />
                             </abbr>
@@ -127,7 +129,7 @@ const CarouselCustom = (props) => {
             </CarouselItem>
         );
     });
-    console.log(bannerDetails , "checking length")
+    console.log(bannerDetails, "checking length")
 
     return (
         <div className="custom-carousel-home  py-5"
@@ -137,6 +139,20 @@ const CarouselCustom = (props) => {
             }}
         >
             <Container className="themed-container" fluid={false}>
+                <p className="tech-title-info-home">
+                    <span>
+                        <abbr>
+                            <img src={msg} alt="msg" />{" "}
+                        </abbr>
+            business@cbnits.com
+            </span>
+                    <span>
+                        <abbr>
+                            <img src={ph} alt="phone" />{" "}
+                        </abbr>
+            +1669-213-8571
+            </span>
+                </p>
                 <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                     <CarouselIndicators
                         items={bannerDetails}

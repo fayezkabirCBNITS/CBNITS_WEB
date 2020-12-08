@@ -92,16 +92,16 @@ const getWhatWeDoData = async () => {
         <>
             
 
-          <Banner
+          {/* <Banner
             bannerImg={bannerImg}
             whiteText={whiteText}
             blueTxt={blueTxt}
             paraFirst={paraFirst}
             paraSecond={paraSecond}
             requiredButton={true}
-          />
-          {/* <BannerCarousel 
-            bannerImg={bannerImg} /> */}
+          /> */}
+          <BannerCarousel 
+            bannerImg={bannerImg} />
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
           <Expertise responseData={responseData}  setIsLoaded={(data) => setIsLoaded(data)} />
