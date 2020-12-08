@@ -178,7 +178,7 @@ const CSEducation = (props) => {
             </h2>
           </div>
 
-          <Row className="mt-5 ">
+          <Row className="mt-5 d-flex justify-content-center align-items-center">
             {techArr.map((data, idx) => (
               <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                 <div className="techstack mb-4">

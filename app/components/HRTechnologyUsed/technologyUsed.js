@@ -52,7 +52,7 @@ const TechnologyUsed = props => {
                 <div className="text-center TechnolyUesd-head">
                     <h2>Technology<span className="skycolor"> Used</span></h2>
                 </div>
-                <Row className="d-flex align-items-center mt-4">
+                <Row className="d-flex justify-content-center align-items-center mt-4">
                   {expertise.map((data, idx) => (
                     <Col xl={3} lg={3} md={4} sm={12} xs={12} key={idx}>
                       <div className="TechnolyUesd-deliverOptn mt-4">

@@ -263,7 +263,7 @@ const Cshealth = (props) => {
                 <b>Patients Activity:</b>
               </p>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex justify-content-center align-items-center ">
               {patient.map((data, ibx) => (
                 <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                   <div className="deliverOptn mt-4">
@@ -285,7 +285,7 @@ const Cshealth = (props) => {
                 <b>Practitioners' Activity:</b>
               </p>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex justify-content-center align-items-center ">
               {pratitioners.map((data, ibx) => (
                 <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                   <div className="deliverOptn mt-4">
@@ -307,7 +307,7 @@ const Cshealth = (props) => {
                 <b>Admin Activity:</b>
               </p>
             </div>
-            <Row className="d-flex align-items-center ">
+            <Row className="d-flex justify-content-center align-items-center ">
               {admin.map((data, ibx) => (
                 <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                   <div className="deliverOptn mt-4">
@@ -362,7 +362,7 @@ const Cshealth = (props) => {
             </h2>
           </div>
 
-          <Row className="mt-5 ">
+          <Row className="mt-5 d-flex justify-content-center align-items-center">
             {techArr.map((data, idx) => (
               <Col xl={3} lg={3} md={4} sm={6} xs={12}>
                 <div className="techstack mb-4">

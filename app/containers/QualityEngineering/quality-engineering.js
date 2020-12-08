@@ -59,17 +59,13 @@ const QualtyEngineer = (props) => {
             test <span className="skycolor">automation</span>
           </h2>
           <p>
-            CBNITS is a certified software testing company in San
-            Jose,California From strategy consulting to test automation our
-            highly-skilled resources are really available for dedicated hiring
-            our experienced quali-ty
+          Continuous testing is the backbone of continuous integration. At CBNITS, we follow a
+process-oriented approach for the successful deployment of test automation. By designing
           </p>
 
           <p>
-            CBNITS is a certified software testing company in San
-            Jose,California From strategy consulting to test automation our
-            highly-skilled resources are really available for dedicated hiring
-            our experienced quali-ty
+          an automation strategy aligned with enterprise goals, CBNITS enables faster time-to-
+market for your enterprise apps.
           </p>
         </Container>
       </div>
