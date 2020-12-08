@@ -47,8 +47,8 @@ const AboutUs = props => {
             <div className="header-img">
                 <Container className="themed-container" fluid={false}>
                     <p className="title-info">
-                        <span><abbr><img src={msg} alt="msg" /> </abbr>info@cbnits.com</span>
-                        <span><abbr><img src={ph} alt="phone" /> </abbr>+1699-213-8574</span>
+                        <span><abbr><img src={msg} alt="msg" /> </abbr>business@cbnits.com</span>
+                        <span><abbr><img src={ph} alt="phone" /> </abbr>+1669-213-8571</span>
                     </p>
                     <div className="middle-section">
                         <h2 className="skycolor ">about <span>us</span></h2>

@@ -40,13 +40,13 @@ const Banner = (props) => {
             <abbr>
               <img src={msg} alt="msg" />{" "}
             </abbr>
-            info@cbnits.com
+            business@cbnits.com
           </span>
           <span>
             <abbr>
               <img src={ph} alt="phone" />{" "}
             </abbr>
-            +1699-213-8574
+            +1669-213-8571
           </span>
         </p>
         <div className="middle-section">
