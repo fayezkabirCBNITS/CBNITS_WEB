@@ -48,7 +48,8 @@
 
 .category-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 90px;
     border-bottom: 1px solid #cdcdcd;
 }
