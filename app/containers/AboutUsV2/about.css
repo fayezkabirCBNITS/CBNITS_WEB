@@ -83,7 +83,7 @@
     text-transform: uppercase;
 }
 .v2-xfactor p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .v2-discovery h2 {
@@ -102,7 +102,7 @@
     text-align: center;
 }
 .v2-discovery p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .v2-cbnits-left h2 {
@@ -168,6 +168,18 @@
 }
 
 @media only screen and (max-width : 767px) {
+    .v2-cbnits-left h2 {
+        font-size: 32px !important;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .v2-cbnits-left p {
+        font-size: 15px;
+        text-align: justify;
+    }
+    .v2-cbnits-right p{
+        margin-left: 50px;
+    }
 
     .v2-discovery h2{
         margin-top: 20px;

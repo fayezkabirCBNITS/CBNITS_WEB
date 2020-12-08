@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
+import { Button, Row, Col, Container } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
 import habootBnr from "./../../images/habootBnr.jpg";
 import icon from "./../../images/list-icon.png";
-import tickWhite from "./../../images/tickWhite.png";
-import expertiseimg from "./../../images/hl10.jpg";
-import habootMain from "./../../images/habootMain.png";
-import haboot from "./../../images/haboot.png";
-import haboot2 from "./../../images/haboot2.png";
 import { withRouter } from "react-router-dom";
 
 import "./hadoop.css";
@@ -19,107 +14,6 @@ const blueTxt = "Hadoop, Big Data";
 const paraFirst = "Achieve more uptime, better performance, faster case resolution";
 const paraSecond = "";
 
-const dummyArr = [
-  {
-    txt: "custom angular js development",
-    img: icon,
-  },
-  {
-    txt: "AJAX development",
-    img: icon,
-  },
-  {
-    txt: "Angular js mobile app development",
-    img: icon,
-  },
-  {
-    txt: "Angular js web app development",
-    img: icon,
-  },
-  {
-    txt: "Angular ecommerce application",
-    img: icon,
-  },
-];
-
-const advantageArr = [
-  {
-    txt: "Big Data Development Maintenance & Support",
-    img: tickWhite,
-  },
-  {
-    txt: "Data Integration and Management",
-    img: tickWhite,
-  },
-  {
-    txt: "Cloudera Services",
-    img: tickWhite,
-  },
-  {
-    txt: "Data Integration and Management",
-    img: tickWhite,
-  },
-  {
-    txt: "Cloudera Services",
-    img: tickWhite,
-  },
-  {
-    txt: "Big Data Analytics & Insights Services",
-    img: tickWhite,
-  },
-  {
-    txt: "Hadoop configuration management,",
-    img: tickWhite,
-  },
-  {
-    txt: "Hadoop monitoring, Hadoop Metrics,",
-    img: tickWhite,
-  },
-];
-
-const expertise = [
-  {
-    txt: "Manufacturing",
-    img: expertiseimg,
-  },
-  {
-    txt: "Real Estate",
-    img: expertiseimg,
-  },
-  {
-    txt: "Healthcare",
-    img: expertiseimg,
-  },
-  {
-    txt: "Education/e-Learning",
-    img: expertiseimg,
-  },
-  {
-    txt: "Retail",
-    img: expertiseimg,
-  },
-  {
-    txt: "Energy",
-    img: expertiseimg,
-  },
-
-  {
-    txt: "Travel & Hospitality",
-    img: expertiseimg,
-  },
-  {
-    txt: "Logistics",
-    img: expertiseimg,
-  },
-  {
-    txt: "e-Commerce",
-    img: expertiseimg,
-  },
-  {
-    txt: "Social Networking",
-    img: expertiseimg,
-  },
-];
 
 const Hadoop = (props) => {
   const [data, setData] = useState({});

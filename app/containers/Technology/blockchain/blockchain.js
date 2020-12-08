@@ -14,13 +14,6 @@ import Banner from "./../../../components/TechBanner/techBanner";
 import Axios from "../../../service/axios-config";
 
 import uiuxBnr from "./../../../images/uiuxBnr.jpg";
-import expertiseimg from "./../../../images/hl10.jpg";
-import uiuxMain from "./../../../images/uiuxMain.jpg";
-import python from "./../../../images/website/tech1.png";
-import javascript from "./../../../images/website/tech2.png";
-import ruby from "./../../../images/website/tech3.png";
-import php from "./../../../images/website/tech4.png";
-import ccc from "./../../../images/website/tech5.png";
 import "./blockchain.css";
 import { withRouter } from "react-router-dom";
 
@@ -29,141 +22,15 @@ const blueTxt = "blockchain technology";
 const paraFirst = "Get our Blockchain Experts Ready to Empower your Business";
 const paraSecond = "human interactions";
 
-const capabilities = [
-  {
-    txt: "User Information Design",
-    no: 1,
-  },
-  {
-    txt: "User Experience Design",
-    no: 2,
-  },
-  {
-    txt: "Design Research & Sprint",
-    no: 3,
-  },
-  {
-    txt: "Graphic Design",
-    no: 4,
-  },
-  {
-    txt: "Web Design",
-    no: 5,
-  },
-  {
-    txt: "Desktop App Design",
-    no: 6,
-  },
-  {
-    txt: "UX/UI Consulting",
-    no: 7,
-  },
-  {
-    txt: "Branding & Identity",
-    no: 8,
-  },
-  {
-    txt: "Concept Design",
-    no: 9,
-  },
-  {
-    txt: "Interaction Design",
-    no: 10,
-  },
-];
-
-const techno = [
-  {
-    txt: "User Information Design",
-    no: 1,
-  },
-  {
-    txt: "User Experience Design",
-    no: 2,
-  },
-  {
-    txt: "Design Research & Sprint",
-    no: 3,
-  },
-  {
-    txt: "Graphic Design",
-    no: 4,
-  },
-  {
-    txt: "Web Design",
-    no: 5,
-  },
-  {
-    txt: "Desktop App Design",
-    no: 6,
-  },
-  {
-    txt: "UX/UI Consulting",
-    no: 7,
-  },
-  {
-    txt: "Branding & Identity",
-    no: 8,
-  },
-  {
-    txt: "Concept Design",
-    no: 9,
-  },
-  {
-    txt: "Interaction Design",
-    no: 10,
-  },
-];
-
-const techArr = [
-  {
-    techname: "OmniGraffle",
-    img: python,
-  },
-  {
-    techname: "Balsamiq",
-    img: javascript,
-  },
-  {
-    techname: "InVISION",
-    img: ruby,
-  },
-  {
-    techname: "Sketch",
-    img: php,
-  },
-  {
-    techname: "Xd",
-    img: ccc,
-  },
-  {
-    techname: "OmniGraffle",
-    img: python,
-  },
-  {
-    techname: "Balsamiq",
-    img: javascript,
-  },
-  {
-    techname: "InVISION",
-    img: ruby,
-  },
-  {
-    techname: "Sketch",
-    img: php,
-  },
-  {
-    techname: "Xd",
-    img: ccc,
-  },
-];
 
 const BlockChain = (props) => {
   const [data, setData] = useState({});
+  const [technology, setTechnology] = useState([]);
   const [response, setResponse] = useState({});
 
   useEffect(() => {
     _getFirstData();
+    _getTechnology();
     _getIndustries();
   }, []);
   const _getFirstData = async () => {
@@ -176,6 +43,22 @@ const BlockChain = (props) => {
         setData(res.data.data[0]);
       } else {
         console.log("Something went wrong!");
+      }
+    } catch (error) {
+      console.log("error---->", error);
+    }
+  };
+
+  const _getTechnology = async () => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "BlockChain",
+        category: "Tools and Technologies",
+      });
+      if (res.status == 200) {
+        setTechnology(res.data.data.reverse());
+      } else {
+        console.log("Something went wrong");
       }
     } catch (error) {
       console.log("error---->", error);
@@ -253,18 +136,20 @@ const BlockChain = (props) => {
             </h2>
           </div>
           <Row className="d-flex mt-5 justify-content-center">
-            {techArr.map((data, idx) => (
-              <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-                <div className="techstack mt-4">
-                  <div className="teckStackImg">
-                    <img src={data.img} alt="" />
-                  </div>
-                  <div className="teckStackName">
-                    <span>{data.techname}</span>
-                  </div>
-                </div>
-              </Col>
-            ))}
+            {technology && technology.length > 0
+              ? technology.map((item, idx) => (
+                  <Col xl={3} lg={3} md={4} sm={6} xs={12} key={idx}>
+                    <div className="techstack mt-4">
+                      <div className="teckStackImg">
+                        <img src={item.image} alt="" />
+                      </div>
+                      <div className="teckStackName">
+                        <span>{item.name}</span>
+                      </div>
+                    </div>
+                  </Col>
+                ))
+              : null}
           </Row>
         </Container>
 
@@ -284,7 +169,7 @@ const BlockChain = (props) => {
                       <div className="deliverOptn mt-4">
                         <div className="deliverOptnNo">
                           <div className="dashBorder">
-                            <span>{ibx+1}</span>
+                            <span>{ibx + 1}</span>
                           </div>
                         </div>
                         <div className="deliverDetails">
