@@ -90,10 +90,10 @@ const ContactUs = (props) => {
 
         if (res.status == 200) {
           resetValue();
-          showToast("We will contact you soon!");
+          showToast("You have successfully submitted your queries. We will contact you soon!");
         } else {
           setIsLoading(false);
-          showToast("Something went wrong!", "error");
+          showToast("Something went wrong! please try again.", "error");
         }
       }
     } catch (error) {
