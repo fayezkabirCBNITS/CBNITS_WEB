@@ -34,8 +34,8 @@ const Website = props => {
             <div className="website-header-img">
                 <Container className="themed-container" fluid={false}>
                     <p className="title-info">
-                        <span><abbr><img src={msg} alt="msg" /> </abbr>info@cbnits.com</span>
-                        <span><abbr><img src={ph} alt="phone" /> </abbr>+1699-213-8574</span>
+                        <span><abbr><img src={msg} alt="msg" /> </abbr>business@cbnits.com</span>
+                        <span><abbr><img src={ph} alt="phone" /> </abbr>+1669-213-8571</span>
                     </p>
                     <div className="middle-section">
                         <h2 className="skycolor ">WEBSITE <span>DEVELOPMENT</span></h2>

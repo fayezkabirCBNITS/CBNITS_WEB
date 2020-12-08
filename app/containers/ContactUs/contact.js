@@ -17,11 +17,13 @@ import Axios from "../../service/axios-config";
 import { showToast } from "../../utils/helper-methods";
 
 import bannerImg from "./../../images/contactBnr.jpg";
+import skype from "./../../images/skype.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMapMarkerAlt,
   faMobileAlt,
   faEnvelope,
+  faSkype
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./contact.css";
@@ -181,10 +183,10 @@ const ContactUs = (props) => {
                   </Row>
                 </div>
                 <div>
-                  <h4>Connect with Gmail</h4>
+                  <h4>Connect with Skype</h4>
                   <Row>
                     <Col xl={1} lg={1}>
-                      <FontAwesomeIcon icon={faEnvelope} className="fontIcon" />
+                      <img src={skype} className="fontIcon" style={{width:'16px'}}/>
                     </Col>
                     <Col xl={11} lg={11}>
                       <p>CBNITS Business Development</p>
