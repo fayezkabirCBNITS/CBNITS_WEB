@@ -94,7 +94,7 @@ const MobileAppDevelopment = (props) => {
           <Container className="themed-container" fluid={false}>
             <div className="text-center mobile-heads">
               <h2>
-                OUR MOBILE APP <span>DVELOPMENT SERVICES</span>
+                OUR MOBILE APP <span>DEVELOPMENT SERVICES</span>
               </h2>
             </div>
 
