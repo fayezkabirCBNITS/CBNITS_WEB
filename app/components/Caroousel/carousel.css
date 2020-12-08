@@ -59,13 +59,16 @@ font-weight: 300;
 
     .title-carousel h3{    font-size: 38px;}
     .title-carousel h4 {
-        font-size: 38px;}
+        font-size: 35px;}
 
         .actual-client h5 {
             font-size: 18px;
         }
 
         .customer-head h2 {
-            font-size: 38px;
+            font-size: 35px;
+        }
+        .clients {
+            width: 100%;
         }
 }
