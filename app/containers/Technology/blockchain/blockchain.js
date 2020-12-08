@@ -160,10 +160,12 @@ const techArr = [
 
 const BlockChain = (props) => {
   const [data, setData] = useState({});
+  const [technology, setTechnology] = useState([]);
   const [response, setResponse] = useState({});
 
   useEffect(() => {
     _getFirstData();
+    _getTechnology();
     _getIndustries();
   }, []);
   const _getFirstData = async () => {
@@ -176,6 +178,22 @@ const BlockChain = (props) => {
         setData(res.data.data[0]);
       } else {
         console.log("Something went wrong!");
+      }
+    } catch (error) {
+      console.log("error---->", error);
+    }
+  };
+
+  const _getTechnology = async () => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "BlockChain",
+        category: "Tools and Technologies",
+      });
+      if (res.status == 200) {
+        setTechnology(res.data.data.reverse());
+      } else {
+        console.log("Something went wrong");
       }
     } catch (error) {
       console.log("error---->", error);
@@ -253,18 +271,20 @@ const BlockChain = (props) => {
             </h2>
           </div>
           <Row className="d-flex mt-5 justify-content-center">
-            {techArr.map((data, idx) => (
-              <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-                <div className="techstack mt-4">
-                  <div className="teckStackImg">
-                    <img src={data.img} alt="" />
-                  </div>
-                  <div className="teckStackName">
-                    <span>{data.techname}</span>
-                  </div>
-                </div>
-              </Col>
-            ))}
+            {technology && technology.length > 0
+              ? technology.map((item, idx) => (
+                  <Col xl={3} lg={3} md={4} sm={6} xs={12} key={idx}>
+                    <div className="techstack mt-4">
+                      <div className="teckStackImg">
+                        <img src={item.image} alt="" />
+                      </div>
+                      <div className="teckStackName">
+                        <span>{item.name}</span>
+                      </div>
+                    </div>
+                  </Col>
+                ))
+              : null}
           </Row>
         </Container>
 
@@ -284,7 +304,7 @@ const BlockChain = (props) => {
                       <div className="deliverOptn mt-4">
                         <div className="deliverOptnNo">
                           <div className="dashBorder">
-                            <span>{ibx+1}</span>
+                            <span>{ibx + 1}</span>
                           </div>
                         </div>
                         <div className="deliverDetails">
