@@ -39,7 +39,7 @@ const ContactUs = (props) => {
   const [txtArea, setTxtArea] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => window.scrollTo(0, 0));
+  useEffect(() => {window.scrollTo(0, 0)},[]);
 
   const _validation = () => {
     return new Promise((resolve) => {
