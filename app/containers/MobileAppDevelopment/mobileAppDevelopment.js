@@ -6,65 +6,14 @@ import Banner from "./../../components/TechBanner/techBanner"
 import appBnr from "./../../images/appBnr.jpg";
 import Axios from "../../service/axios-config";
 
-import react from "./../../images/react.png";
-import angular from "./../../images/angular.png";
-import vue from "./../../images/vue.png";
-import node from "./../../images/node.png";
-import python from "./../../images/python.png";
-import java from "./../../images/java.png";
-import golang from "./../../images/golang.png";
-import msg from "./../../images/msg.png";
-import ph from "./../../images/ph.png";
-import app from "./../../images/app.png";
-import app1 from "./../../images/app1.png";
-import app2 from "./../../images/app2.png";
-import app3 from "./../../images/app3.png";
-import app4 from "./../../images/app4.png";
-import app5 from "./../../images/app5.png";
-import app6 from "./../../images/app6.png";
 
-const imgArr = [
-  { img: react, lang: "react.js" },
-  { img: angular, lang: "angular.js" },
-  { img: vue, lang: "vue.js" },
-  { img: node, lang: "node.js" },
-  { img: python, lang: "python" },
-  { img: java, lang: "java" },
-  { img: golang, lang: "golang" },
-];
 const whiteText = "development";
 const blueTxt = "mobile app";
 const paraFirst = "Bespoke Android & iPhone mobile app development";
 const paraSecond = "solutions";
-const techArr = [
-  {
-    img: app1,
-    title: "iOS Application Development",
-  },
-  {
-    img: app2,
-    title: "Android Application Development",
-  },
-  {
-    img: app3,
-    title: "Cloud - Driven Mobile Apps Development ",
-  },
-  {
-    img: app4,
-    title: "Cross - Platform Application Development",
-  },
-  {
-    img: app5,
-    title: "Flutter Development",
-  },
-  {
-    img: app6,
-    title: "App Maintenance & Support",
-  },
-];
+
 
 const MobileAppDevelopment = (props) => {
-  const [activeTab, setActiveTab] = useState("1");
   const [data, setData] = useState({});
   const [services, setServices] = useState([]);
   useEffect(() => {
@@ -77,7 +26,6 @@ const MobileAppDevelopment = (props) => {
         category: "Mobile Application Post",
         page: "Mobile App Development",
       });
-      console.log("res-- Mobile App Devolopment --->", res);
       if (res.status == 200) {
         setData(res.data.data[0]);
       }
@@ -95,7 +43,6 @@ const MobileAppDevelopment = (props) => {
           category: "App Development Services",
           page: "Mobile App Development",
         });
-        console.log("res-- App Development Services --->", res);
         if (res.status == 200) {
           setServices(res.data.data.reverse());
         }
@@ -107,9 +54,6 @@ const MobileAppDevelopment = (props) => {
       }
   }
 
-  const toggle = (tab) => {
-    if (activeTab !== tab) setActiveTab(tab);
-  };
   return (
     <div>
        <Banner
@@ -156,7 +100,7 @@ const MobileAppDevelopment = (props) => {
 
             <Row className="d-flex align-items-center  justify-content-center">
               {services && services.length
-                ? services.map((data, index) => (
+                ? services.map((item, index) => (
                     <Col
                       xl={4}
                       lg={4}
@@ -165,8 +109,8 @@ const MobileAppDevelopment = (props) => {
                     >
                       <div className="mobile-wrap">
                         <div className="text-center">
-                          <img src={data.image} />
-                          <h6>{data.name}</h6>
+                          <img src={item.image} />
+                          <h6>{item.name}</h6>
                         </div>
                       </div>
                     </Col>
