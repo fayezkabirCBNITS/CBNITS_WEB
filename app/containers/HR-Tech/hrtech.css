@@ -38,3 +38,29 @@
     font-size: 18px;
     color: #fff;
   }
+
+
+  @media (max-width: 767px) {
+    .hrTech-Text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .hrTech-Text span {
+        font-size: 30px;
+    }
+    .hrTech-Text p {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .hrTechCbnits h2 {
+        font-size: 35px;
+        color: #fff;
+    }
+    .hrTechCbnits-advantages {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .TechnolyUesd-head h2 {
+        font-size: 35px !important;
+    }
+  }
