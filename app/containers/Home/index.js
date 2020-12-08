@@ -14,6 +14,7 @@ import AboutCbnits from "./../../components/AboutCbnits/aboutCbnits";
 import WorkingWithUs from "./../../components/Caroousel/carousel";
 import CustomerSay from "./../../components/CustomerSay/customarSay";
 import YearsOfExperience from "./../../components/homeExperienceYear/exp"
+import BannerCarousel from "./../../components/HomeBannerCarousel/bannnerCarusel"
 
 const whiteText = "specialists";
 const blueTxt = "We are Startup";
@@ -99,6 +100,8 @@ const getWhatWeDoData = async () => {
             paraSecond={paraSecond}
             requiredButton={true}
           />
+          {/* <BannerCarousel 
+            bannerImg={bannerImg} /> */}
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
           <Expertise responseData={responseData}  setIsLoaded={(data) => setIsLoaded(data)} />

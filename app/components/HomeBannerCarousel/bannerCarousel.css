@@ -1,0 +1,114 @@
+/* .clients {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+.client-img img{
+    height: auto;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #1dbdfc;
+    margin-right: 15px;
+
+} */
+
+.tech-lang-container-home {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.custom-carousel-home .carousel {
+    height: 100%;
+}
+.custom-carousel-home .carousel-indicators .active {
+    background-color: #1dbdfc;
+}
+.custom-carousel-home .carousel-indicators li {
+    background-color: #cdcdcd;
+}
+.actual-client h5{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.actual-client h5 span{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.actual-client p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+/* .title-carousel h3{
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 600;
+} */
+.title-carousel h4{
+    color: #1dbdfc;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+.custom-carousel-home .carousel-item {
+    font-size: 22px;
+font-weight: 300;
+}
+.custom-carousel-home .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -24%;
+    left: 0;
+
+}
+
+
+
+/* .testing {
+    
+    height: 700px;
+    width: 100%;
+    background-image: url("./../../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 80px;
+    font-family: 'Lato', sans-serif;
+} */
+
+.car-home-bnr {
+    margin-top: 80px;
+}
+.car-home-bnr h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.skycolor {
+    color: #1dbdfc !important;
+    font-weight: 600;
+}
+
+.car-home-bnr p{
+    font-size: 24px;
+    color: #fff;
+}
+
+@media only screen and (max-width : 767px) {
+    
+    .car-home-bnr h2 {
+        font-size: 32px;
+    }
+    
+    .car-home-bnr p{
+        font-size: 18px;
+    }
+}
