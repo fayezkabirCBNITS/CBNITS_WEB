@@ -28,6 +28,9 @@ import company3 from "./../../images/al3.png";
 import company4 from "./../../images/al4.png";
 import company5 from "./../../images/al5.png";
 import company6 from "./../../images/al6.png";
+import company7 from "./../../images/al7.png";
+import company8 from "./../../images/al8.png";
+import company9 from "./../../images/al9.png";
 
 import ar1 from "./../../images/ar1.png";
 import ar2 from "./../../images/ar2.png";
@@ -217,21 +220,30 @@ const AboutUs = (props) => {
                     <div className="p-2"> 
                       <img src={company2} alt="" className="company-img"/>
                     </div>
-                  </Col>
-                  <Col xl={4} lg={4} md={4} sm={12} xs={12}>
-                  <div className="p-2">
+                    <div className="p-2"> 
                       <img src={company3} alt="" className="company-img"/>
                     </div>
-                    <div className="p-2">
+                  </Col>
+                  <Col xl={4} lg={4} md={4} sm={12} xs={12}>
+                  <div className="p-2">
                       <img src={company4} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2">
+                      <img src={company5} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2"> 
+                      <img src={company6} alt="" className="company-img"/>
                     </div>
                   </Col>
                   <Col xl={4} lg={4} md={4} sm={12} xs={12}>
                   <div className="p-2">
-                      <img src={company5} alt="" className="company-img"/>
+                      <img src={company7} alt="" className="company-img"/>
                     </div>
                     <div className="p-2">
-                      <img src={company6} alt="" className="company-img"/>
+                      <img src={company8} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2"> 
+                      <img src={company9} alt="" className="company-img"/>
                     </div>
                   </Col>
                 </Row>
