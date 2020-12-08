@@ -1,81 +1,101 @@
 .circle-wrap {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .experience {
-    font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .circle-container {
-    position: relative;
-    background-color: #1dbdfc;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+  position: relative;
+  background-color: #1dbdfc;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 .circle-container::after {
-    content: "";
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 0;
-    right: -7em;
-    background-color:  #1dbdfc;
-    border-radius: 50%;
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: -7em;
+  background-color: #1dbdfc;
+  border-radius: 50%;
 }
 .circle {
-    position: absolute;
-    top: 12px;
-    left: 52px;
-    background-color: #fff;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 5px 5px 12px 6px rgba(194, 206, 223 , .8);
-
+  position: absolute;
+  top: 12px;
+  left: 52px;
+  background-color: #fff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 5px 5px 12px 6px rgba(194, 206, 223, 0.8);
 }
 .circle::after {
-    content: "";
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 3em;
-    right: -3.5em;
-    background-color: #1dbdfc;
-    border-radius: 50%;
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 3em;
+  right: -3.5em;
+  background-color: #1dbdfc;
+  border-radius: 50%;
 }
 .circle p {
-    margin-bottom: 0px;
-    font-weight: 500;
+  margin-bottom: 0px;
+  font-weight: 500;
 }
 .big-num {
-    font-size: 60px;
-    font-weight: 700;
-    color: #1dbdfc;
+  font-size: 60px;
+  font-weight: 700;
+  color: #1dbdfc;
 }
 
 .exp-name {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-.exp-name span{
-    font-size: 60px;
-    font-weight: 700;
-    color: #1dbdfc;
+.exp-name span {
+  font-size: 60px;
+  font-weight: 700;
+  color: #1dbdfc;
 }
 .exp-name abbr {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
-    color: #767778;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  color: #767778;
 }
 .exp-name p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .years-exp {
-    background-color: #fff !important;
+  background-color: #fff !important;
 }
 .experience {
-    background-color: #f8f9fc;
+  background-color: #f8f9fc;
+}
+
+@media (max-width: 767px) {
+  .circle-container {
+    height: 150px;
+    width: 150px;
+    margin-left: -90px;
+  }
+  .circle {
+    left: 40px;
+    height: 150px;
+    width: 150px;
+  }
+  .big-num {
+    font-size: 47px !important;
+  }
+  .circle-wrap {
+    margin-bottom: 30px;
+  }
+  .circle p {
+      font-size: 12px;
+}
 }
