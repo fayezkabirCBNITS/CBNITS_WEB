@@ -27,24 +27,6 @@ const FourReasons = (props) => {
     }
   };
 
-  const txtArr = [
-    {
-      desp: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...`,
-      title: `We know your business already`,
-    },
-    {
-      desp: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...`,
-      title: `Building context – not just code`,
-    },
-    {
-      desp: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.... `,
-      title: `We are responsive and flexible`,
-    },
-    {
-      desp: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.... `,
-      title: `7 years experience and counting`,
-    },
-  ];
   return (
     <div className="fourReacson-wrapper">
       <Container className="themed-container py-5" fluid={false}>
@@ -63,17 +45,20 @@ const FourReasons = (props) => {
         <Form>
           <Row className="d-flex justify-content-between">
             {data && data.description && data.description.length > 0
-              ? data.description.map((item, idx) => (
-                  <Col xl={3} lg={3} md={6} className="mb-4" key={idx}>
-                    <div className="we-container we-cnt-new fourResonsBX">
-                      <div className="num-txt num-txt-new border-bottom mb-3 pb-3">
-                        <span>{idx + 1}</span>
-                        <h6>{item.title}</h6>
+              ? data.description.map((item, idx) => {
+                  let parsedData = JSON.parse(item);
+                  return (
+                    <Col xl={3} lg={3} md={6} className="mb-4" key={idx}>
+                      <div className="we-container we-cnt-new fourResonsBX">
+                        <div className="num-txt num-txt-new border-bottom mb-3 pb-3">
+                          <span>{idx + 1}</span>
+                          <h6>{parsedData.title}</h6>
+                        </div>
+                        <p className="desp">{parsedData.description}</p>
                       </div>
-                      <p className="desp">{item.desc}</p>
-                    </div>
-                  </Col>
-                ))
+                    </Col>
+                  );
+                })
               : null}
           </Row>
         </Form>
