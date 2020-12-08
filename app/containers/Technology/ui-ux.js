@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Nav,
   NavItem,
@@ -23,6 +23,7 @@ import ui2 from "./../../images/uiux/ui2.jpg";
 import ui3 from "./../../images/uiux/ui3.jpg";
 import ui4 from "./../../images/uiux/ui4.jpg";
 import ui5 from "./../../images/uiux/ui5.jpg";
+import Axios from "../../service/axios-config";
 
 const whiteText = "development";
 const blueTxt = "UX & UI";
@@ -136,12 +137,34 @@ const morethan = [
 
 const Uiux = (props) => {
   const [activeTab, setActiveTab] = useState("1");
+  const [skills, setSkills] = useState([]);
 
-  const toggle = (tab) => {
-    if (activeTab !== tab) setActiveTab(tab);
+  useEffect(() => {
+    _getTechnicalSkills();
+  }, []);
+
+  const _getTechnicalSkills = async (skill = "User Experience") => {
+    try {
+      let res = await Axios.post("/getPageWiseDatabyCategory", {
+        page: "UI&UX",
+        category: skill,
+      });
+      if (res.status == 200) {
+        setSkills(res.data.data);
+      } else {
+        console.log("Something went wrong!");
+      }
+    } catch (error) {
+      console.log("error---->", error);
+    }
   };
 
-  const language = [];
+  const toggle = (tab, skill) => {
+    if (activeTab !== tab) setActiveTab(tab);
+    _getTechnicalSkills(skill);
+  };
+
+  console.log("skill----->", skills);
   return (
     <div>
       <Banner
@@ -193,7 +216,7 @@ const Uiux = (props) => {
                   <div className="morethanlist mt-5">
                     <div className="morethantop">
                       <div className="head">
-                        <span>{ibx+1}</span>
+                        <span>{ibx + 1}</span>
                       </div>
 
                       <div className="head2">
@@ -260,7 +283,7 @@ const Uiux = (props) => {
                     <NavLink
                       className={classnames({ active: activeTab === "1" })}
                       onClick={() => {
-                        toggle("1");
+                        toggle("1", "User Experience");
                       }}
                     >
                       User Experience
@@ -270,17 +293,17 @@ const Uiux = (props) => {
                     <NavLink
                       className={classnames({ active: activeTab === "2" })}
                       onClick={() => {
-                        toggle("2");
+                        toggle("2", "UI & CSS");
                       }}
                     >
-                      UI & css
+                      UI & CSS
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className={classnames({ active: activeTab === "3" })}
                       onClick={() => {
-                        toggle("3");
+                        toggle("3", "Templating");
                       }}
                     >
                       Templating
@@ -290,17 +313,17 @@ const Uiux = (props) => {
                     <NavLink
                       className={classnames({ active: activeTab === "4" })}
                       onClick={() => {
-                        toggle("4");
+                        toggle("4", "CSS Preprocessors");
                       }}
                     >
-                      Css Preprocessors
+                      CSS Preprocessors
                     </NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className={classnames({ active: activeTab === "5" })}
                       onClick={() => {
-                        toggle("5");
+                        toggle("5", "Package Managers");
                       }}
                     >
                       Package Managers
@@ -310,35 +333,37 @@ const Uiux = (props) => {
                     <NavLink
                       className={classnames({ active: activeTab === "6" })}
                       onClick={() => {
-                        toggle("6");
+                        toggle("6", "JS Framework");
                       }}
                     >
-                      Js Frameworks & Libraries
+                      JS Frameworks & Libraries
                     </NavLink>
                   </NavItem>
                 </Nav>
                 <TabContent activeTab={activeTab}>
-                  <TabPane tabId="1">
+                  <TabPane tabId={activeTab}>
                     <Row className="mt-5 ">
-                      {techArr.map((data, idx) => (
-                        <Col xl={3} lg={3} md={4} sm={6} xs={12}>
-                          <div className="techstack mt-4">
-                            <div className="teckStackImg">
-                              <img src={data.img} alt="" />
-                            </div>
-                            <div className="teckStackName">
-                              <span>{data.techname}</span>
-                            </div>
-                          </div>
-                        </Col>
-                      ))}
+                      {skills && skills.length > 0
+                        ? skills.map((item, idx) => (
+                            <Col xl={3} lg={3} md={4} sm={6} xs={12} key={idx}>
+                              <div className="techstack mt-4">
+                                <div className="teckStackImg">
+                                  <img src={item.image} alt="" />
+                                </div>
+                                <div className="teckStackName">
+                                  <span>{item.name}</span>
+                                </div>
+                              </div>
+                            </Col>
+                          ))
+                        : null}
                     </Row>
                   </TabPane>
                 </TabContent>
               </div>
             </Row>
             <div className="text-center">
-              <Button color="primary">Hire Us</Button>
+              <Button color="primary" onClick={()=> props.history.push("/hire-us")}>Hire Us</Button>
             </div>
           </Container>
         </div>

@@ -52,7 +52,7 @@ const AboutUs = props => {
                     </p>
                     <div className="middle-section">
                         <h2 className="skycolor ">about <span>us</span></h2>
-                        <p className="mb-xl-1">Our Expertise. Know more about what we do</p>
+                        <p className="mb-xl-1">Our Expertise, Know more about what we do</p>
                     </div>
                     <div className="lang-container">
                         {

@@ -61,4 +61,20 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+.num-txt-new {
+    height: 130px !important;
+}
+.we-cnt-new {
+    height: 320px !important;
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+    
+.num-txt-new {
+    height: 180px !important;
+}
+.we-cnt-new {
+    height: 380px !important;
+}
+}
 

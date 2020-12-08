@@ -39,6 +39,8 @@ const ContactUs = (props) => {
   const [txtArea, setTxtArea] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  useEffect(() => {window.scrollTo(0, 0)},[]);
+
   const _validation = () => {
     return new Promise((resolve) => {
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -89,12 +91,12 @@ const ContactUs = (props) => {
           showToast("We will contact you soon!");
         } else {
           setIsLoading(false);
-          showToast("Something went wrong!","error");
+          showToast("Something went wrong!", "error");
         }
       }
     } catch (error) {
       setIsLoading(false);
-      showToast("Something went wrong!","error");
+      showToast("Something went wrong!", "error");
     }
   };
 

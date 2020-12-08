@@ -33,7 +33,10 @@ const Transformation = props => {
 
                 <Row className="d-flex align-items-center justify-content-between">
                     <Col sm={6}>
-                        <img src={careerImg} alt="next" />
+                        <div className="imgSec">
+
+                            <img src={careerImg} alt="next" />
+                        </div>
                     </Col>
                     <Col sm={6}>
                         <div className="whyTitle">

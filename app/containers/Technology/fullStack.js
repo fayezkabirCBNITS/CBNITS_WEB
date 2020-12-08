@@ -155,9 +155,6 @@ const FullStack = props => {
         _getTechnicalSkills(skill);
     }
 
-    const language = [
-
-    ]
 
     return (
         <div className="full-stack">
