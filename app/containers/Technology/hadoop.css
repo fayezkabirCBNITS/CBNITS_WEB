@@ -138,22 +138,22 @@
 
 @media (max-width: 375px) {
   .develpment h2 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .develpment p {
     font-size: 13px;
   }
   .bigdata h6 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .red {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .bigdata p {
     font-size: 13px;
   }
   .cloudera h6 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .cloudera p {
     font-size: 13px;
@@ -175,7 +175,7 @@
 
 @media (min-width: 376px) and (max-width: 425px) {
   .develpment h2 {
-    font-size: 20px;
+    font-size: 30px !important;
   }
   .develpment p {
     font-size: 13px;

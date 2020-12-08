@@ -37,3 +37,21 @@
 .cloudCbnits-btn :hover{
     background: #ff5c33;
 }
+
+
+@media (max-width: 767px) {
+    .head-para {
+        width: 80%;
+        margin: auto;
+    }
+    .head h2 {
+        font-size: 30px;
+    }
+    .cloudCbnits-Text {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cloudCbnits-Text span {
+        font-size: 25px;
+    }
+}

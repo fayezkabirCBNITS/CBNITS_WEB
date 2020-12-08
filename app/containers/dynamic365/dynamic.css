@@ -84,7 +84,7 @@
     margin-left: 30px;
 }
 .dyanamicCbnits-Text span {
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -97,4 +97,29 @@
     color: #fff;
     font-size: 20px;
     font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .dyanamicCbnits-Text span {
+        font-size: 35px;
+    }
+    .dyanamicCbnits-Text {
+        margin: 30px 0 0 0;
+    }
+    .micro-tech-heads h2 {
+        font-size: 35px !important;
+    }
+    .micro-tech-heads h6 {
+        font-size: 18px !important;
+        margin: 10px 0 0 0;
+    }
+    .seam-head h2 {
+        font-size: 35px !important;
+    }
+    .seam-head p {
+       padding: 0
+    }
+    .seamCbnits-Text {
+        margin: 30px 0 0 0;
+    }
 }

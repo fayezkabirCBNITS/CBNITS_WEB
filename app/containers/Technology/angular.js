@@ -100,7 +100,7 @@ const Angularjs = (props) => {
                             </div>
                         </Col>
                         <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                            <div className="Adev-img"> 
+                            <div className="imgSec"> 
                                 <img src={data && data.image} alt="" />
                             </div>
                         </Col>
@@ -117,7 +117,7 @@ const Angularjs = (props) => {
                     <Container className="themed-container" fluid={false}>
                         <Row className="d-flex align-items-center ">
                             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                                <div className="Adev-img">
+                                <div className="imgSec">
                                     <img src={response && response.image} alt="" />
                                 </div>
                             </Col>

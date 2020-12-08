@@ -36,7 +36,7 @@ const dummyArr = [
     tech: "ui/ux",
   },
   {
-    tech: "DevOps / Cloud DecOps",
+    tech: "DevOps / Cloud DevOps",
   },
   {
     tech: "Hadoop & data science",
@@ -60,7 +60,7 @@ const dummyArr = [
     tech: "dedicated full-stack development",
   },
   {
-    tech: "maintance & support",
+    tech: "maintenance & support",
   },
   {
     tech: "Cyber security",
@@ -72,7 +72,7 @@ const dummyArr = [
     tech: "web development",
   },
   {
-    tech: "react & anular development",
+    tech: "react & angular development",
   },
   {
     tech: "Quality engineering",
@@ -84,7 +84,7 @@ const dummyArr = [
     tech: "mobile application development",
   },
   {
-    tech: "applicaion development",
+    tech: "application development",
   },
 ];
 
@@ -251,7 +251,7 @@ const HireUs = (props) => {
                         onFocus={(e) => onFocusInput(e.target.name)}
                         required
                         id="full name"
-                        placeholder="enter your first name"
+                        placeholder="Enter your first name"
                       />
                     </FormGroup>
                   </Col>
@@ -292,7 +292,7 @@ const HireUs = (props) => {
                         onFocus={(e) => onFocusInput(e.target.name)}
                         required
                         id="number"
-                        placeholder="enter your contact no"
+                        placeholder="Enter your contact no"
                       />
                     </FormGroup>
                   </Col>
@@ -310,7 +310,7 @@ const HireUs = (props) => {
                         required
                         onFocus={(e) => onFocusInput(e.target.name)}
                         id="userEmail"
-                        placeholder="enter your email"
+                        placeholder="Enter your email"
                       />
                     </FormGroup>
                   </Col>

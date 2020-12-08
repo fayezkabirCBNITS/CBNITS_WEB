@@ -53,6 +53,7 @@
     font-weight: 600;
 }
 
+
 @media only screen and (max-width : 600px) {
     .testing-bottamBanner{
         height: 100%;
@@ -62,6 +63,9 @@
     
     .testing-process-head h2{
         font-size: 30px;
+    }
+    .automation h2 {
+        font-size: 35px;
     }
             
 
