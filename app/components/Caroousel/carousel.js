@@ -93,7 +93,7 @@ const CarouselCustom = (props) => {
           </div>
           <div>
             <img src={leftcoma} alt="" />
-            <p className="px-5">{item.description} </p>
+            <p className="px-5 car-desp">{item.description} </p>
             <img src={rightcoma} alt="" style={{ float: "right" }} />
           </div>
           <div className="clients">
@@ -101,7 +101,7 @@ const CarouselCustom = (props) => {
               <img src={item.logoPic} />
             </div>
             <div className="actual-client">
-              <h5>{item.name}</h5>
+              <h5 className="car-desp-name">{item.name}</h5>
             </div>
           </div>
         </div>

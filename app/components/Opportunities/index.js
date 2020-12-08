@@ -77,7 +77,7 @@ const Opertunities = (props) => {
                       <div className="collapseContent py-4">
                         {/* <p>{accordian.subDescription}</p> */}
                         <div>
-                          <p className="pl-xl-5 pl-lg-5 pl-md-4">{accordian.careerExperienceYr}</p>
+                          <p className="pl-xl-5 pl-lg-5 pl-md-4 cllp-p">{accordian.careerExperienceYr}</p>
                           <Row className="d-flex align-items-center">
                             <Col xl={5} lg={5} md={5} sm={12}>
                               <div className="imgSec">

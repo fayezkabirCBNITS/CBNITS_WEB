@@ -50,13 +50,7 @@ const CloudDevelopment = (props) => {
               <Col xl={6} lg={6}>
                 <div className="cloudCbnits-Text">
                   <p>
-                    <span>Kubernets</span> has the special expertise in
-                    developing top of the line webistes. Our talented bunch of
-                    developres hold special expertise in reaceting excellent
-                    websites. We are focused on delevering real value to our
-                    global clients. You can hire our talented team of developers
-                    on dedicated basis option. Let us drive your growth with our
-                    web development expertise.
+                    <span>Kubernets</span> is a container orchestration system that was initially designed by Google to help scale containerized applications in the cloud. It aims to provide better ways of managing related, distributed components across varied infrastructure. All major cloud vendors are supporting Kubernetes providing out-of-the-box solutions for it. CBNITS provides a turn-key Kubernetes-based application management platform that accelerates the adoption of open-source and cloud-native technologies.
                   </p>
                 </div>
               </Col>
@@ -70,13 +64,7 @@ const CloudDevelopment = (props) => {
                 <div className="cloudCbnits-Text">
                   <p>
                     <span>The Cost</span>
-                    <span className="skycolor"> advantage</span> has the special
-                    expertise in developing top of the line webistes. Our
-                    talented bunch of developres hold special expertise in
-                    reaceting excellent websites. We are focused on delevering
-                    real value to our global clients. You can hire our talented
-                    team of developers on dedicated basis option. Let us drive
-                    your growth with our web development expertise.
+                    <span className="skycolor"> advantage</span> of cloud computing Cloud is an evolving and comprehensive platform. By hosting software, platforms, and databases remotely, the cloud servers free up the memory and computing power of individual computers. The costs of cloud computing are much more flexible. Our clients need to pay for server and infrastructure capacity only when they need them.
                   </p>
                 </div>
               </Col>
