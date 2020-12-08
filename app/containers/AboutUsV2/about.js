@@ -22,8 +22,10 @@ import ang from "./../../images/angularcreation.png";
 import about1 from "./../../images/aboutM1.png";
 import about2 from "./../../images/aboutM2.png";
 
-import aboutC from "./../../images/aboutC.png";
-import aboutM from "./../../images/aboutM.png";
+import company1 from "./../../images/company1.png";
+import company2 from "./../../images/company2.png";
+import company3 from "./../../images/company3.png";
+import company4 from "./../../images/company4.png";
 
 import ar1 from "./../../images/ar1.png";
 import ar2 from "./../../images/ar2.png";
@@ -204,6 +206,26 @@ const AboutUs = (props) => {
                 {team && team.description && team.description[1]}
               </p>
               <p>{team && team.description && team.description[2]}</p>
+              <div className="">
+                <Row className="d-flex text-center">
+                  <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+                    <div>
+                      <img src={company1} alt="" />
+                    </div>
+                    <div className="mt-5"> 
+                      <img src={company3} alt="" />
+                    </div>
+                  </Col>
+                  <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+                  <div className="mt-5">
+                      <img src={company2} alt="" />
+                    </div>
+                    <div className="mt-5">
+                      <img src={company4} alt="" />
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           </Row>
         </Container>
