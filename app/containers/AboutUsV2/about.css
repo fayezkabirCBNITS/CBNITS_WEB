@@ -166,7 +166,9 @@
 .our-mission p{
     font-size: 15px;
 }
-
+.company-img{
+    width: 70%;
+}
 @media only screen and (max-width : 767px) {
     .v2-cbnits-left h2 {
         font-size: 32px !important;
@@ -203,6 +205,9 @@
     }
     .our-mission{
         height: 325px;
+    }
+    .company-img{
+        width: 40%;
     }
 }
 @media (min-width: 768px) and (max-width : 1024px) {

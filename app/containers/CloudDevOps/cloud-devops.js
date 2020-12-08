@@ -115,15 +115,13 @@ const CloudDevOps = (props) => {
                   At <span className="skycolor">CBNITS</span>,
                 </h2>
                 <p>
-                  our goal is to simplify and transform businessesdigitally
-                  through high-performance Cloud technology. As cloud enablement
-                  experts we offer top-notch DevOps, Migration and Cloud Native
-                  solutions. Our profound industry experience on Cloud platforms
-                  like AWS, GCP and Azure enables our clients to adopt Cloud
-                  culture in a seamless way. We are also renowned for holding
-                  special expertise on Infrastructure as Code tools like
-                  Terraform, CloudFormation and Ansible. All our cloud services
-                  are instantly scalable for optimum performance.
+                our goal is to simplify and transform businesses digitally through 
+                high-performance Cloud technology. As cloud enablement experts 
+                we offer top-notch DevOps, Migration and Cloud Native solutions. 
+                Our profound industry experience on Cloud platforms like AWS, 
+                GCP and Azure enables our clients to adopt Cloud culture in a seamless way. 
+                We are also renowned for holding special expertise on Infrastructure as Code tools like Terraform, 
+                CloudFormation and Ansible. All our cloud services are instantly scalable for optimum performance.
                 </p>
               </div>
             </Col>
