@@ -44,11 +44,11 @@ const pratitioners = [
     no: 3,
   },
   {
-    txt: "Add Medical experience, Education",
+    txt: "Add Medical experience, and Education",
     no: 4,
   },
   {
-    txt: "Put availability on calender",
+    txt: "Put availability on calendar",
     no: 5,
   },
   {
@@ -72,12 +72,8 @@ const pratitioners = [
     no: 10,
   },
   {
-    txt: "Receive credentials from client",
-    no: 11,
-  },
-  {
     txt: "Provide rating and feedback",
-    no: 12,
+    no: 11,
   },
 ];
 
@@ -111,7 +107,7 @@ const patient = [
     no: 7,
   },
   {
-    txt: "Check Availability on Calender",
+    txt: "Check Availability on Calendar",
     no: 8,
   },
   {
@@ -220,7 +216,7 @@ const platform = [
     },
     {
       txt:
-        "Our development team has comprehensively implementted and developed the entire design concept.",
+        "Our development team has comprehensively implemented and developed the entire design concept.",
     },
   ];
 
@@ -240,9 +236,8 @@ const Cshealth = (props) => {
               <div className="webpage">
                 <h2>overview</h2>
                 <span>
-                  Teamwellness acts as a platform extensively for the health
-                  Practitioner and patients of users seeking advice. The
-                  platform connects both the patients and practitioner for an
+                  Teamwellness acts as a platform extensively for health practitioners and patients who are seeking advice.
+                  The platform connects both the patients and practitioner for an
                   online consultancy and eases the medical facility in a very
                   lucid manner. Starting from report sharing to medicinal advice
                   everything can be done sitting at residence. The appointment

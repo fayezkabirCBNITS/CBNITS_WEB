@@ -17,23 +17,23 @@ const whiteText = "Case study";
 
 const advantageArr = [
     {
-        txt: "Big Data Development Maintenance & Support",
+        txt: "Highly Private",
         img: tickWhite,
     },
     {
-        txt: "Data Integration and Management",
+        txt: "Trusted Network of Mentors",
         img: tickWhite,
     },
     {
-        txt: "Cloudera Services",
+        txt: "Easy to use - device agnostic (run on web, mobile and tablet)",
         img: tickWhite,
     },
     {
-        txt: "Data Integration and Management",
+        txt: "Rich database of questions to ask mentors and coaching tips",
         img: tickWhite,
     },
     {
-        txt: "Cloudera Services",
+        txt: "Easy sharing of feedback- on users’ choice",
         img: tickWhite,
     },
 ];
