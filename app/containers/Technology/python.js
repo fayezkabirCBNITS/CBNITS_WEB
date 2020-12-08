@@ -3,7 +3,7 @@ import { Button, Row, Col, Container } from 'reactstrap';
 import Banner from "./../../components/TechBanner/techBanner"
 import Axios from "../../service/axios-config";
 
-import bannerImg from "./../../images/banner2.jpg"
+import bannerImg from "./../../images/pythonBnr.jpg"
 import icon from "./../../images/list-icon.png"
 import { withRouter } from "react-router-dom";
 

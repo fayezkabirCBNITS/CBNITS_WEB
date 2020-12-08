@@ -3,7 +3,7 @@ import {  Button, Row, Col, Container } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
-import bannerImg from "./../../images/banner2.jpg";
+import bannerImg from "./../../images/golangBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import { withRouter } from "react-router-dom";
 
@@ -96,7 +96,7 @@ const Javajs = (props) => {
               </div>
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <div>
+              <div className="imgSec">
                 <img src={data && data.image} alt="" />
               </div>
             </Col>
@@ -113,7 +113,7 @@ const Javajs = (props) => {
           <Container className="themed-container" fluid={false}>
             <Row className="d-flex align-items-center ">
               <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                <div>
+                <div className="imgSec">
                   <img src={response && response.image} alt="" />
                 </div>
               </Col>
