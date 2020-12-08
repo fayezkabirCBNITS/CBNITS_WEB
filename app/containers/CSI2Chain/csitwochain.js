@@ -34,7 +34,7 @@ const paraSecond = "human interactions";
 
 const techArr = [
   {
-    techname: "Blackchain",
+    techname: "Blockchain",
     img: python,
   },
   {
@@ -61,7 +61,7 @@ const techArr = [
 
 const morethan = [
   {
-    txt: "Desktop app has been development",
+    txt: "Desktop app has been developed",
     img: csOptn1,
   },
   {

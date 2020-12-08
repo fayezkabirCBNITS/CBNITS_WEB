@@ -71,7 +71,7 @@ const platform = [
   },
   {
     txt:
-      "Course creation will help the students and parents to find the best courses that platform offer. We have incorporated unique courses, videos, and content along with the study materials into the website into PDF, audio files and video format.",
+      "Course creation will help the students and parents to find the best courses that platform offer. We have incorporated unique courses, videos, and content along with the study materials into the website in PDF, audio files and video format.",
   },
   {
     txt:
@@ -154,7 +154,7 @@ const CSEducation = (props) => {
         <Container className="themed-container" fluid={false}>
           <div className="morethan text-center">
             <h2 className="mb-3 mt-2">
-              what we did for <span className="red">for the platform</span>
+              what we did for <span className="red">the platform</span>
             </h2>
           </div>
           <Row className="d-flex mt-5 align-items-center ">

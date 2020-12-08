@@ -54,7 +54,7 @@ const pratitioners = [
     no: 5,
   },
   {
-    txt: "Provide Delivery",
+    txt: "Provide Address",
     no: 6,
   },
   {
@@ -97,7 +97,7 @@ const patient = [
     no: 7,
   },
   {
-    txt: "Seller Delevery Management System",
+    txt: "Seller Delivery Management System",
     no: 8,
   },
   {
@@ -185,7 +185,7 @@ const platform = [
   },
   {
     txt:
-      "Our development team has comprehensively implementted and developed the entire design concept.",
+      "Our development team has comprehensively implemented and developed the entire design concept.",
   },
 ];
 
@@ -205,15 +205,14 @@ const Csecommerce = (props) => {
               <div className="webpage">
                 <h2>overview</h2>
                 <span>
-                  Teamwellness acts as a platform extensively for the health
-                  Practitioner and patients of users seeking advice. The
-                  platform connects both the patients and practitioner for an
-                  online consultancy and eases the medical facility in a very
-                  lucid manner. Starting from report sharing to medicinal advice
-                  everything can be done sitting at residence. The appointment
-                  with the most preferred doctors can be easily made through the
-                  website and apps and also can choose insurance partners for
-                  affordable choices.
+                It’s an online marketplace for house hold products and 
+                to make day to day items available at your doorsteps. 
+                The platform has three types of users – Seller, Buyer and Admin Panel.  
+                The Seller needs to register and list their products in the platform with 
+                all the details. The buyers can search for products and add them to cart 
+                and make payment. The buyers can leave a review for the products they have bought.
+                 The admin will be responsible for looking after the entire functionality of the platform. 
+
                 </span>
               </div>
             </Col>
