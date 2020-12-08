@@ -46,49 +46,6 @@ const advantageArr = [
   },
 ];
 
-const expertise = [
-  {
-    txt: "Manufacturing",
-    img: expertiseimg,
-  },
-  {
-    txt: "Real Estate",
-    img: expertiseimg,
-  },
-  {
-    txt: "Healthcare",
-    img: expertiseimg,
-  },
-  {
-    txt: "Education/e-Learning",
-    img: expertiseimg,
-  },
-  {
-    txt: "Retail",
-    img: expertiseimg,
-  },
-  {
-    txt: "Energy",
-    img: expertiseimg,
-  },
-
-  {
-    txt: "Travel & Hospitality",
-    img: expertiseimg,
-  },
-  {
-    txt: "Logistics",
-    img: expertiseimg,
-  },
-  {
-    txt: "e-Commerce",
-    img: expertiseimg,
-  },
-  {
-    txt: "Social Networking",
-    img: expertiseimg,
-  },
-];
 
 const CloudDevOps = (props) => {
   return (
