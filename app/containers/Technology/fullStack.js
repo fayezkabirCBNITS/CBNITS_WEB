@@ -5,59 +5,8 @@ import Axios from "../../service/axios-config";
 
 import bannerImg from "./../../images/fullStackBnr.png"
 import icon from "./../../images/tick-white.png"
-import fullstackcreation from "./../../images/fullStack.png"
-import fulljs from "./../../images/fullStackjs.png";
 import classnames from 'classnames';
-import python from "./../../images/website/tech1.png"
-import javascript from "./../../images/website/tech2.png"
-import ruby from "./../../images/website/tech3.png"
-import php from "./../../images/website/tech4.png"
-import ccc from "./../../images/website/tech5.png"
-import typescript from "./../../images/website/tech6.png"
-import go from "./../../images/website/tech7.png"
-import swift from "./../../images/tools7.png"
-import java from "./../../images/tools9.png"
 import { withRouter } from "react-router-dom";
-
-const techArr = [
-    {
-        techname: "python",
-        img: python,
-    },
-    {
-        techname: "javascript",
-        img: javascript,
-    },
-    {
-        techname: "ruby",
-        img: ruby,
-    },
-    {
-        techname: "php",
-        img: php,
-    },
-    {
-        techname: "c++",
-        img: ccc,
-    },
-    {
-        techname: "typescript",
-        img: typescript,
-    },
-    {
-        techname: "go",
-        img: go,
-    },
-    {
-        techname: "swift",
-        img: swift,
-    },
-    {
-        techname: "Java",
-        img: java,
-    }
-]
-
 
 
 import "./fullstack.css"
@@ -67,28 +16,6 @@ const blueTxt = "hire dedicated"
 const paraFirst = "Scalable & cost-effective full-stack development"
 const paraSecond = "solutions"
 
-const advantageArr = [
-    {
-        txt: "directly access resource",
-        img: icon
-    },
-    {
-        txt: "flexible hiring models on hourly/weekly/monthly/yearly",
-        img: icon
-    },
-    {
-        txt: "source code authentication",
-        img: icon
-    },
-    {
-        txt: "agile development process",
-        img: icon
-    },
-    {
-        txt: "NDA signed with 100% Confidentiality",
-        img: icon
-    },
-]
 
 const FullStack = props => {
     const [activeTab, setActiveTab] = useState('1');
