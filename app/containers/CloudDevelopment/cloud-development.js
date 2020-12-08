@@ -43,7 +43,7 @@ const CloudDevelopment = (props) => {
           <Container className="themed-container" fluid={false}>
             <Row className="d-flex align-items-center">
               <Col xl={6} lg={6}>
-                <div className="cloudCbnits-img">
+                <div className="imgSec">
                   <img src={agile} alt="" />
                 </div>
               </Col>
@@ -69,7 +69,7 @@ const CloudDevelopment = (props) => {
                 </div>
               </Col>
               <Col xl={6} lg={6}>
-                <div className="cloudCbnits-img">
+                <div className="imgSec">
                   <img src={cloudDevMain2} alt="" />
                 </div>
               </Col>

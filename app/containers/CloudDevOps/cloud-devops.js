@@ -62,7 +62,7 @@ const CloudDevOps = (props) => {
         <Container className="themed-container" fluid={false}>
           <Row className="d-flex align-items-center">
             <Col xl={6} lg={6}>
-              <div className="devopsCbnits-img">
+              <div className="imgSec">
                 <img src={cloudMain} alt="" />
               </div>
             </Col>
@@ -95,7 +95,7 @@ const CloudDevOps = (props) => {
         <Container className="themed-container" fluid={false}>
           <Row className="d-flex align-items-center">
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <div className="devopsCbnits-img">
+              <div className="imgSec">
                 <img src={devopmain2} alt="" />
               </div>
             </Col>
