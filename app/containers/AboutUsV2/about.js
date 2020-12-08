@@ -22,10 +22,15 @@ import ang from "./../../images/angularcreation.png";
 import about1 from "./../../images/aboutM1.png";
 import about2 from "./../../images/aboutM2.png";
 
-import company1 from "./../../images/company1.png";
-import company2 from "./../../images/company2.png";
-import company3 from "./../../images/company3.png";
-import company4 from "./../../images/company4.png";
+import company1 from "./../../images/al1.png";
+import company2 from "./../../images/al2.png";
+import company3 from "./../../images/al3.png";
+import company4 from "./../../images/al4.png";
+import company5 from "./../../images/al5.png";
+import company6 from "./../../images/al6.png";
+import company7 from "./../../images/al7.png";
+import company8 from "./../../images/al8.png";
+import company9 from "./../../images/al9.png";
 
 import ar1 from "./../../images/ar1.png";
 import ar2 from "./../../images/ar2.png";
@@ -156,7 +161,7 @@ const AboutUs = (props) => {
                 <span>
                   <img src={ab1} alt="" />
                 </span>
-                180+ Expert-level software engineers,
+                200+ Expert-level software engineers,
               </p>
               <p>
                 <span>
@@ -208,20 +213,37 @@ const AboutUs = (props) => {
               <p>{team && team.description && team.description[2]}</p>
               <div className="">
                 <Row className="d-flex text-center">
-                  <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                    <div>
-                      <img src={company1} alt="" />
+                  <Col xl={4} lg={4} md={4} sm={12} xs={12}>
+                    <div className="p-2">
+                      <img src={company1} alt="" className="company-img" />
                     </div>
-                    <div className="mt-5"> 
-                      <img src={company3} alt="" />
+                    <div className="p-2"> 
+                      <img src={company2} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2"> 
+                      <img src={company3} alt="" className="company-img"/>
                     </div>
                   </Col>
-                  <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-                  <div className="mt-5">
-                      <img src={company2} alt="" />
+                  <Col xl={4} lg={4} md={4} sm={12} xs={12}>
+                  <div className="p-2">
+                      <img src={company4} alt="" className="company-img"/>
                     </div>
-                    <div className="mt-5">
-                      <img src={company4} alt="" />
+                    <div className="p-2">
+                      <img src={company5} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2"> 
+                      <img src={company6} alt="" className="company-img"/>
+                    </div>
+                  </Col>
+                  <Col xl={4} lg={4} md={4} sm={12} xs={12}>
+                  <div className="p-2">
+                      <img src={company7} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2">
+                      <img src={company8} alt="" className="company-img"/>
+                    </div>
+                    <div className="p-2"> 
+                      <img src={company9} alt="" className="company-img"/>
                     </div>
                   </Col>
                 </Row>

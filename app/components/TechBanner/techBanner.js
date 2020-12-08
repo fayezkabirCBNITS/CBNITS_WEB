@@ -91,7 +91,11 @@ const Banner = (props) => {
             <abbr>
               <img src={ph} alt="phone" />{" "}
             </abbr>
+<<<<<<< HEAD
             +1699-213-8571
+=======
+            +1669-213-8571
+>>>>>>> 91ce5b79437813373ccdfd307985d1fe29b7507a
           </span>
         </p>
         <div className="tech-middle-section">

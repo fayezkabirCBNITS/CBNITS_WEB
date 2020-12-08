@@ -15,11 +15,11 @@ import WorkingWithUs from "./../../components/Caroousel/carousel";
 import CustomerSay from "./../../components/CustomerSay/customarSay";
 import YearsOfExperience from "./../../components/homeExperienceYear/exp"
 
-const whiteText = "STARTUP EXPERTS";
-const blueTxt = "WE BUILD";
+const whiteText = "specialists";
+const blueTxt = "We are Startup";
 const paraFirst =
-  "With Our Innovation And Expertise In Cutting-Edge Technology. We Help To Achieve";
-const paraSecond = "Optimal Buisness Growth ";
+  "Having successful track record of bringing 500+ products to life.";
+const paraSecond = "Leading the path of innovation!";
 import Loader from "react-loader-spinner";
 import Axios from "./../../service/axios-config";
 

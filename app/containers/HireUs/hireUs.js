@@ -393,7 +393,7 @@ const HireUs = (props) => {
       <div className="hire-process-wrapper py-5">
         <Container className="themed-container" fluid={false}>
           <h2>
-            monthly-basic <span className="skycolor">hiring process</span>
+            monthly-basis <span className="skycolor">hiring process</span>
           </h2>
           <Row className="d-flex align-items-center">
             <Col>
@@ -408,7 +408,7 @@ const HireUs = (props) => {
       <div className="monthly-based py-5">
         <Container className="themed-container" fluid={false}>
           <h2 className="mb-5">
-            monthly-basic <span className="skycolor">hiring process</span>
+            Fixed-basis <span className="skycolor">hiring process</span>
           </h2>
           <Row className="d-flex align-items-center justify-content-center">
             {
@@ -422,8 +422,6 @@ const HireUs = (props) => {
                     <div className="fixedmotnPara">
                       <p>{data.name}</p>
                     </div>
-
-
                   </div>
                 </Col>
               ))
