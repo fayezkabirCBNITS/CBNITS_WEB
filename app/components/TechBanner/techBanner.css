@@ -125,6 +125,8 @@
     .tech-lang-container {
         margin-top: 60px;
         padding-bottom: 32px;
+        display: flex;
+        justify-content: center;
     }
 }
 
