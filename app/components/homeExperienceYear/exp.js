@@ -20,7 +20,7 @@ const Experience = props => {
                     <Col xl={6} lg={6}>
                         <div>
                             <div className="exp-name">
-                                <span>300</span> <abbr>employees</abbr>
+                                <span>200+</span> <abbr>employees</abbr>
                                 <p>Leaders and the hard-working personalities</p>
                             </div>
                             <div className="exp-name">
