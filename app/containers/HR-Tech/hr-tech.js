@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Container } from "reactstrap";
+import "./hrtech.css";
 import Banner from "../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-import "./hrtech.css";
 import cdHRTechBnr from "./../../images/csHRTech/cdHRTechBnr.jpg";
 import cloudMain from "./../../images/csHRTech/cdHRTechMain.png";
 import cdHRTechMain2 from "./../../images/csHRTech/cdHRTechMain2.jpg";

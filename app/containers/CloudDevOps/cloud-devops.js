@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
+import "./devops.css";
 import Banner from "../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 
@@ -11,8 +12,6 @@ import tickWhite from "./../../images/tickWhite.png";
 import expertiseimg from "./../../images/hl10.jpg";
 import agile from "./../../images/cloudDevMain.jpg";
 import cloudDevMain2 from "./../../images/cloudDevMain2.jpg";
-
-import "./devops.css";
 import DevopsOffering from "../../components/DevOps-Offering/devops-offering";
 import DevopsBusiness from "../../components/Devops-Business/DevopsBusiness";
 import { withRouter } from "react-router-dom";

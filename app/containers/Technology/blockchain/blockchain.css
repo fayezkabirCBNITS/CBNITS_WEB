@@ -42,6 +42,13 @@
     background-color: #f15a29 !important;
     border-color: #f15a29 !important;
   }
+  .imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
   
   @media (max-width: 375px) {
     .topDetails {

@@ -134,3 +134,10 @@
     font-size: 48px;
     text-transform: uppercase;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }

@@ -67,6 +67,13 @@
 .lang-wrapper span {
     margin-left: 12px;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 /*****************************end****************************************/
 
 .devCbnits {

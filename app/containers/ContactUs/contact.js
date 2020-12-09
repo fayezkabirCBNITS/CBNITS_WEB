@@ -12,6 +12,7 @@ import {
   Label,
   Input,
 } from "reactstrap";
+import "./contact.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
 import { showToast } from "../../utils/helper-methods";
@@ -25,8 +26,6 @@ import {
   faEnvelope,
   faSkype
 } from "@fortawesome/free-solid-svg-icons";
-
-import "./contact.css";
 import { withRouter } from "react-router-dom";
 
 const whiteText = "us";

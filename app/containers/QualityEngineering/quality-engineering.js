@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Container } from "reactstrap";
+import "./quality.css";
 import Banner from "../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-import "./quality.css";
 import QualityDevBnr from "./../../images/qualityEng/qualityEngBnr.jpg";
 import qualityEng from "./../../images/qualityEng/qualityEng.png";
 import QualityTesting from "./../../components/QualityTesting/qualityTesting";

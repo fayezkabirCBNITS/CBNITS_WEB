@@ -1,16 +1,5 @@
 /*****************************banner section****************************************/
-.software-header-img {
-  /* margin-top: -73px; */
-  height: 640px;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./../../images/softwareSupport/softwareBnr.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  padding-top: 80px;
-  font-family: "Lato", sans-serif;
-}
+
 .title-info {
   color: #fff;
 }
@@ -110,6 +99,13 @@
   margin: 0 auto;
   font-weight: 600;
   padding: 10px 30px;
+}
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
 }
 
 @media (max-width: 767px) {

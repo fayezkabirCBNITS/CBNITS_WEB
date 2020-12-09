@@ -14,16 +14,15 @@ import {
   Container,
   fo,
 } from "reactstrap";
+import "./hireus.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "./../../service/axios-config";
 import { countryCodes } from "../../Config/countrycodes";
 
-import bannerImg from "./../../images/hireUsBnr.jpg";
+import bannerImg from "./../../images/angularBnr.jpg";
 // import icon from "./../../images/list-icon.png"
 // import angularcreation from "./../../images/angularcreation.png"
 import tree from "./../../images/lineArrowRound.png";
-
-import "./hireus.css";
 
 const whiteText = "us";
 const blueTxt = "hire";

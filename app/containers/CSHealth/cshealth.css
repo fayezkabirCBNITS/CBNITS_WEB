@@ -52,6 +52,13 @@
     margin: 0 auto;
   }
 }
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}
 
 @media (min-width: 376px) and (max-width: 425px) {
   .webpage h2 {

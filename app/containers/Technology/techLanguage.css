@@ -60,6 +60,13 @@
   padding: 10px 36px;
   font-size: 18px;
 }
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}
 
 @media (max-width: 767px) {
   .tab-content {
