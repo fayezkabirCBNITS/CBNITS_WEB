@@ -11,7 +11,7 @@ import HeaderComp from "./../components/Header/index";
 import FooterComp from "./../components/Footer/index";
 const HomePage = React.lazy(() => import("./../containers/Home/index"));
 import NotFound from "./../containers/NotFoundPage/Loadable";
-const AboutUs = React.lazy(() => import("./../containers/AboutUs/about"));
+// const AboutUs = React.lazy(() => import("./../containers/AboutUs/about"));
 const Career = React.lazy(() => import("../containers/career/career"));
 const mobileAppDevelopment = React.lazy(() =>
   import("../containers/MobileAppDevelopment/mobileAppDevelopment")
@@ -95,7 +95,6 @@ const Routing = (_) => {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/home" component={HomePage} />
-          <Route exact path="/aboutus--" component={AboutUs} />
           <Route exact path="/career" component={Career} />
           <Route exact path="/website" component={Website} />
           <Route exact path="/software-support" component={SoftwareSupport} />
@@ -131,33 +130,8 @@ const Routing = (_) => {
         </Switch>
       </Suspense>
       <FooterComp />
-      {/* <GlobalStyle /> */}
     </AppWrapper>
   );
 };
-// const Routing = _ => {
-//     return (
-//         <AppWrapper>
-//             <Helmet
-//                 titleTemplate="%s - CBNITS"
-//                 defaultTitle="CBNITS"
-//             >
-//                 <meta name="description" content="CBNITS" />
-//             </Helmet>
-//             <HeaderComp />
-//             <Switch>
-//                 <Route exact path="/" component={HomePage} />
-//                 <Route exact path="/home" component={HomePage} />
-//                 <Route exact path="/aboutus" component={AboutUs} />
-//                 {/* <Route exact path="/career" component={Career} /> */}
-//                 <Route exact path="/website" component={Website} />
-//                 <Route exact path="/software-support" component={SoftwareSupport} />
-//                 <Route path="" component={NotFound} />
-//             </Switch>
-//             <FooterComp />
-//             {/* <GlobalStyle /> */}
-//         </AppWrapper>
-//     );
-// }
 
 export default Routing;

@@ -7,6 +7,16 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.custom-carousel-home {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 130px;
+    font-family: 'Lato', sans-serif;
+
+}
 .custom-carousel-home .carousel {
     height: 100%;
 }
