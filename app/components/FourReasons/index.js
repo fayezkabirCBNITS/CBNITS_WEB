@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Axios from "../../service/axios-config";
-import "./styles.css";
 import { Row, Col, Container, Form } from "reactstrap";
+import "./styles.css";
+import Axios from "../../service/axios-config";
 
 const FourReasons = (props) => {
   const [data, setData] = useState({});
@@ -16,7 +16,6 @@ const FourReasons = (props) => {
         category: "Four Reasons",
         page: "Career",
       });
-      console.log("res-- reason --->", res);
       if (res.status == 200) {
         setData(res.data.data[0]);
       } else {
@@ -35,30 +34,24 @@ const FourReasons = (props) => {
             Four reasons why you should <br />
             <span className="skycolor">choose our service</span>
           </h2>
-          {/* <p className="mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.{" "}
-          </p> */}
         </div>
         <Form>
           <Row className="d-flex justify-content-between">
             {data && data.description && data.description.length > 0
               ? data.description.map((item, idx) => {
-                  let parsedData = JSON.parse(item);
-                  return (
-                    <Col xl={3} lg={3} md={6} className="mb-4" key={idx}>
-                      <div className="we-container we-cnt-new fourResonsBX">
-                        <div className="num-txt num-txt-new border-bottom mb-3 pb-3">
-                          <span>{idx + 1}</span>
-                          <h6>{parsedData.title}</h6>
-                        </div>
-                        <p className="desp">{parsedData.description}</p>
+                let parsedData = JSON.parse(item);
+                return (
+                  <Col xl={3} lg={3} md={6} className="mb-4" key={idx}>
+                    <div className="we-container we-cnt-new fourResonsBX">
+                      <div className="num-txt num-txt-new border-bottom mb-3 pb-3">
+                        <span>{idx + 1}</span>
+                        <h6>{parsedData.title}</h6>
                       </div>
-                    </Col>
-                  );
-                })
+                      <p className="desp">{parsedData.description}</p>
+                    </div>
+                  </Col>
+                );
+              })
               : null}
           </Row>
         </Form>

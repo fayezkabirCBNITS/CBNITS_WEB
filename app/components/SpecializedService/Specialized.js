@@ -8,34 +8,32 @@ const Specialized = (props) => {
 
     useEffect(() => {
         _getWhoWeAre();   // Fetch Specialized Services images
-      }, []);
+    }, []);
 
-      const _getWhoWeAre = async () => {
+    const _getWhoWeAre = async () => {
         try {
-          let res = await Axios.post("/getPageWiseDatabyCategory", {
-            page: "Software Support",
-            category: "Specialized Services",
-          });
-          console.log("res-- Specialized Services --->", res.data.data);
-          if (res.status == 200) {
-            setResponseData(res.data.data.reverse());
-          }
-          else{
-              console.log("Something went wrong!");
-          }
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Software Support",
+                category: "Specialized Services",
+            });
+            if (res.status == 200) {
+                setResponseData(res.data.data.reverse());
+            }
+            else {
+                console.log("Something went wrong!");
+            }
         } catch (error) {
-          console.log("error---->", error);
+            console.log("error---->", error);
         }
-      };
-     console.log('responseData.ima=====> ',responseData.data ) 
-     
+    };
+
     return (
         <div className="special py-5">
             <Container className="themed-container" fluid={false}>
                 <div className="text-center special-heads">
                     <h2>Specialized <span> Services</span></h2>
                 </div>
-                
+
                 <Row className="d-flex align-items-center  justify-content-center">
                     {
                         responseData ? responseData.map((data, index) => (
@@ -47,8 +45,8 @@ const Specialized = (props) => {
                                     </div>
                                 </div>
                             </Col>
-                         )) : ''
-                    } 
+                        )) : ''
+                    }
                 </Row>
             </Container>
         </div>

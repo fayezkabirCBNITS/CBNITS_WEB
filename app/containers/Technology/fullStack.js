@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col, Container } from 'reactstrap';
+import "./fullstack.css"
 import Banner from "./../../components/TechBanner/techBanner"
 import Axios from "../../service/axios-config";
-
-import bannerImg from "./../../images/fullStackBnr.png"
+import bannerImg from "./../../images/fullStackBnr.jpg"
 import icon from "./../../images/tick-white.png"
 import classnames from 'classnames';
 import { withRouter } from "react-router-dom";
-
-
-import "./fullstack.css"
 
 const whiteText = "full-stack developers"
 const blueTxt = "hire dedicated"

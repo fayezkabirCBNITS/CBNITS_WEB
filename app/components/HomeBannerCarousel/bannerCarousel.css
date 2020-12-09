@@ -7,6 +7,16 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.custom-carousel-home {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-top: 130px;
+    font-family: 'Lato', sans-serif;
+
+}
 .custom-carousel-home .carousel {
     height: 100%;
 }
@@ -46,20 +56,14 @@ font-weight: 300;
     left: 0;
 
 }
-
-
-
-/* .testing {
-    
-    height: 700px;
+.imgSec {
     width: 100%;
-    background-image: url("./../../images/banner.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    padding-top: 80px;
-    font-family: 'Lato', sans-serif;
-} */
+    height: auto;
+}
+.imgSec img {
+    width: 100%;
+}
+
 
 .car-home-bnr {
     margin-top: 180px;

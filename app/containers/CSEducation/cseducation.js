@@ -10,8 +10,9 @@ import {
   TabContent,
   TabPane,
 } from "reactstrap";
+import "./cseducation.css";
 import Banner from "./../../components/TechBanner/techBanner";
-import caseStudyEduBnr from "./../../images/caseStudyEduBnr.jpg";
+import caseStudyEduBnr from "./../../images/howBnr.jpg";
 import cseMain2 from "./../../images/cseMain2.jpg";
 import cseMain from "./../../images/cseMain.jpg";
 import python from "./../../images/cst1.png";
@@ -23,7 +24,6 @@ import icon from "./../../images/list-icon.png";
 import cseIcon1 from "./../../images/cseIcon1.png";
 import cseIcon2 from "./../../images/cseIcon2.png";
 import cseIcon3 from "./../../images/cseIcon3.png";
-import "./cseducation.css";
 
 const whiteText = "case study";
 const blueTxt = "education website";

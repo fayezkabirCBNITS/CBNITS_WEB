@@ -34,12 +34,12 @@ const techArr = [
         img: img6,
         title: "Dynamic 365 Power Apps"
     },
-    
+
 ]
 
 
 
-const ExpertiseAbout= props => {
+const ExpertiseAbout = props => {
     return (
         <div className="expertise py-5">
             <Container className="themed-container" fluid={false}>
@@ -47,17 +47,17 @@ const ExpertiseAbout= props => {
                     <h2>THE MICROSOFT  <span>DYNAMIC 365</span></h2>
                     <p>Products And Solutions We Provide</p>
                 </div>
-              
-     
+
+
                 <Row className="d-flex align-items-center justify-content-between">
                     {
                         techArr.map((data, index) => (
                             <Col xl={6} lg={8} className=" d-flex align-items-center justify-content-center" key={index}>
                                 <div className="tect-wrap">
-                                <div  className="text-center">
-                                    <img src={data.img} />
-                                    <p>{data.title}</p>
-                                </div>
+                                    <div className="text-center">
+                                        <img src={data.img} />
+                                        <p>{data.title}</p>
+                                    </div>
                                 </div>
                             </Col>
                         ))

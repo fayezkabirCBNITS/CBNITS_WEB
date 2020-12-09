@@ -65,7 +65,13 @@
     color: "#fff";
     text-align: right;
   }
-  
+  .imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
   @media (max-width: 425px) {
     .footer {
       padding: 60px 0 50px 0;

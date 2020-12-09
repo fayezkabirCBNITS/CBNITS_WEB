@@ -20,12 +20,6 @@
     color:  #d6f0fb;
     margin-bottom: 60px;
 }
-@media (min-width: 992px) {
-    .special-wrap p {
-        font-size: 12px;
-    }
-
-}
 .special-wrap {
     padding: 15px;
     background-color: #19a3d9;
@@ -39,4 +33,17 @@
     height: 60px;
     width: 60px;
     margin: 20px;
+}
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .special-wrap p {
+        font-size: 12px;
+    }
+
 }

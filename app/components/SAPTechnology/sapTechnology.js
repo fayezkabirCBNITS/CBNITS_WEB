@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Button, Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import "./style.css"
-import Axios from "../../service/axios-config";
 
 import sapIcon6 from "./../../images/sap/sapIcon6.png";
 import sapIcon8 from "./../../images/sap/sapIcon8.png";

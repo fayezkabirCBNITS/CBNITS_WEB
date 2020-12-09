@@ -49,4 +49,11 @@
     font-size: 30px;
     color: #fff;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 

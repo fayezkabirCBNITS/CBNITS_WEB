@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Container } from "reactstrap";
+import "./techLanguage.css"
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-
 import bannerImg from "./../../images/reactBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import { withRouter } from "react-router-dom";
@@ -13,8 +13,6 @@ const paraFirst =
   "no matter how complex your project is, at CBNITS, our cutting edge and best in";
 const paraSecond =
   "class React Development Services have predictable outcomes. ";
-
-import "./techLanguage.css";
 
 
 const Reactjs = (props) => {

@@ -10,12 +10,12 @@ import {
   TabContent,
   TabPane,
 } from "reactstrap";
+import "./csitwochain.css";
 import Banner from "../../components/TechBanner/techBanner";
 
 import csI2chainBnr from "./../../images/csI2chainBnr.jpg";
 import expertiseimg from "./../../images/hl10.jpg";
 import csI2Main from "./../../images/csI2Main.jpg";
-import "./csitwochain.css";
 
 import python from "./../../images/tu1.png";
 import javascript from "./../../images/tu2.png";

@@ -14,6 +14,7 @@ import {
   Container,
   fo,
 } from "reactstrap";
+import "./about.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "./../../service/axios-config";
 import tool7 from "./../../images/tools7.png";
@@ -47,7 +48,7 @@ const whiteText = "us";
 const blueTxt = "about";
 const paraFirst = "Our exportise , know more about what we do";
 const paraSecond = "";
-import "./about.css";
+
 const AboutUs = (props) => {
   const [data, setData] = useState({});
   const [xFactor, setXFactot] = useState({});

@@ -1,19 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Row, Col, Container } from 'reactstrap';
+import "./techLanguage.css"
 import Banner from "./../../components/TechBanner/techBanner"
 import Axios from "../../service/axios-config";
-
 import bannerImg from "./../../images/pythonBnr.jpg"
 import icon from "./../../images/list-icon.png"
 import { withRouter } from "react-router-dom";
-
 const whiteText = "service"
 const blueTxt = "Python development"
 const paraFirst = "We leverage the power of Python for creating hogh performing"
 const paraSecond = "real-time web applications "
-
-import "./techLanguage.css"
-
 
 const Python = props => {
     const [data, setData] = useState({});
