@@ -13,7 +13,7 @@ import {
 import Banner from "./../../../components/TechBanner/techBanner";
 import Axios from "../../../service/axios-config";
 
-import uiuxBnr from "./../../../images/uiuxBnr.jpg";
+import uiuxBnr from "./../../../images/blockBnr.jpg";
 import "./blockchain.css";
 import { withRouter } from "react-router-dom";
 
