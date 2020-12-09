@@ -11,13 +11,11 @@ import {
     TabPane,
 } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
-
-import uiuxBnr from "./../../images/uiuxBnr.jpg";
+import uiuxBnr from "./../../images/bnr3.jpg";
 import expertiseimg from "./../../images/hl10.jpg";
 import uiuxMain from "./../../images/uiuxMain.jpg";
 import "./career.css";
 import classnames from "classnames";
-
 import Transformation from "./../../components/Transformation";
 import FourReasons from "./../../components/FourReasons";
 import Opertunities from "./../../components/Opportunities";

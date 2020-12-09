@@ -3,7 +3,7 @@ import { TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, Ca
 import "./fullstack.css"
 import Banner from "./../../components/TechBanner/techBanner"
 import Axios from "../../service/axios-config";
-import bannerImg from "./../../images/fullStackBnr.jpg"
+import bannerImg from "./../../images/habootBnr.jpg"
 import icon from "./../../images/tick-white.png"
 import classnames from 'classnames';
 import { withRouter } from "react-router-dom";
