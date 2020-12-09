@@ -9,7 +9,6 @@ import HeaderComp from "./../components/Header/index";
 import FooterComp from "./../components/Footer/index";
 import HomePage from "./../containers/Home/index";
 import NotFound from "./../containers/NotFoundPage/Loadable";
-import AboutUs from "./../containers/AboutUs/about";
 import Career from "../containers/career/career";
 import mobileAppDevelopment from "../containers/MobileAppDevelopment/mobileAppDevelopment";
 // import GlobalStyle from '../global-styles';
@@ -60,7 +59,6 @@ const Routing = (_) => {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/home" component={HomePage} />
-        <Route exact path="/aboutus--" component={AboutUs} />
         <Route exact path="/career" component={Career} />
         <Route exact path="/website" component={Website} />
         <Route exact path="/software-support" component={SoftwareSupport} />
