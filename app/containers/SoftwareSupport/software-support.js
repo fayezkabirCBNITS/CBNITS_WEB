@@ -16,7 +16,7 @@ import ph from "./../../images/ph.png";
 import Axios from "../../service/axios-config";
 import agile from "./../../images/agile.jpg";
 import TechBanner from "./../../components/TechBanner/techBanner";
-import BannerImg from "./../../images/softwareSupport/softwareBnr.jpg";
+import BannerImg from "./../../images/howBnr.jpg";
 
 const whiteText = "SUPPORT SERVICES";
 const blueTxt = "SOFTWARE MAINTENANCE &";

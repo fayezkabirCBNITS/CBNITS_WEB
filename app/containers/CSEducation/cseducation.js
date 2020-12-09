@@ -11,7 +11,7 @@ import {
   TabPane,
 } from "reactstrap";
 import Banner from "./../../components/TechBanner/techBanner";
-import caseStudyEduBnr from "./../../images/caseStudyEduBnr.jpg";
+import caseStudyEduBnr from "./../../images/howBnr.jpg";
 import cseMain2 from "./../../images/cseMain2.jpg";
 import cseMain from "./../../images/cseMain.jpg";
 import python from "./../../images/cst1.png";
