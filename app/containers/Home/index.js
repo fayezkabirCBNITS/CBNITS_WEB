@@ -19,17 +19,24 @@ const paraFirst =
 const paraSecond = "Leading the path of innovation!";
 import Loader from "react-loader-spinner";
 import Axios from "./../../service/axios-config";
+import axios from 'axios'
 
 const HomePage = (props) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const [responseData, setResponseData] = useState();
   const [whatWeDoData , setWhatWeDoData] = useState();
+  const [whyCbnitsData, setWhyCbnitsData] = useState();
+  const [items, setItems] = useState([]);
+  const [specialDomain, setSpecialDomain] = useState([]);
 
   useEffect(() => {
-    setIsLoaded(true);
+    // setIsLoaded(true);
     window.scrollTo({ top: 0 });
     getExpertData();
-    getWhatWeDoData()
+    getWhatWeDoData();
+    _getWhyCbnits();
+    getItems();
+    getSpecialDomain();
   }, [])
 
   const getExpertData = async () => {
@@ -59,16 +66,68 @@ const getWhatWeDoData = async () => {
     });
     if (res.status == 200) {
       setWhatWeDoData(res.data.data);
-      setIsLoaded(false)
+      // setIsLoaded(false)
     } else {
       console.log("Something went wrong!");
       
-      setIsLoaded(false);
+      // setIsLoaded(false);
     }
   } catch (error) {
     console.log("error---->", error);
-    setIsLoaded(false);
+    // setIsLoaded(false);
   }
+};
+
+const _getWhyCbnits = async () => {
+  try {
+    let res = await Axios.post("/getPageWiseDatabyCategory", {
+      page: "Home",
+      category: "Why CBNITS",
+    });
+    if (res.status == 200) {
+      setWhyCbnitsData(res.data.data.reverse());
+    } else {
+      console.log("Something went wrong!");
+    }
+  } catch (error) {
+    console.log("error---->", error);
+  }
+};
+
+const getItems = async() => {
+  try {
+    let res = await Axios.post("/getHomePageImagebyCategory", {
+      category: "Quotations",
+    });
+    if (res.status == 200) {
+      setItems(res.data.data);
+    } else {
+      console.log("Something went wrong!");
+    }
+  } catch (error) {
+    console.log("error---->", error);
+  }
+};
+
+const getSpecialDomain = () => {
+  axios({
+    method: "POST",
+    url: "https://api.cbnits.com/getHomePageImagebyCategory",
+    data: {
+      category: "Special Domains",
+    },
+  })
+    .then((res) => {
+      if (res) {
+        setSpecialDomain(res.data.data);
+        // setActiveIndexData(res.data.data[0]);
+        // setActiveColor(res.data.data[0].color);
+        // setReadmoreLink(res.data.data[0].link);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
   return (
@@ -94,10 +153,10 @@ const getWhatWeDoData = async () => {
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
           <Expertise responseData={responseData} />
-          <Specialised />
-          <WhyCbnits />
+          <Specialised specialDomain={specialDomain}/>
+          <WhyCbnits whyCbnitsData={whyCbnitsData} />
           <AboutCbnits />
-          <WorkingWithUs />
+          <WorkingWithUs items={items} />
           <CustomerSay />
           {/* </> */}
           
