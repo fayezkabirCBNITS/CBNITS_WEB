@@ -1,12 +1,8 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { Button, Row, Col, Container } from "reactstrap";
-import Banner from "./../../components/TechBanner/techBanner";
 import bannerImg from "../../images/banner.jpg";
 
 import "./home.css";
 import WhatWeDo from "./../../components/WhatWeDo/index";
-import PageBanner from "./../../components/Banner/banner";
-import Experience from "./../../components/ExperienceYear/experience";
 import Expertise from "./../../components/OurExpertise/expertise";
 import Specialised from "./../../components/SpecilalisedDomain/specialisec";
 import WhyCbnits from "./../../components/WhyCbnits/whycbnits";
@@ -23,61 +19,120 @@ const paraFirst =
 const paraSecond = "Leading the path of innovation!";
 import Loader from "react-loader-spinner";
 import Axios from "./../../service/axios-config";
+import axios from 'axios'
 
 const HomePage = (props) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  // const [isLoaded, setIsLoaded] = useState(false);
   const [responseData, setResponseData] = useState();
   const [whatWeDoData , setWhatWeDoData] = useState();
+  const [whyCbnitsData, setWhyCbnitsData] = useState();
+  const [items, setItems] = useState([]);
+  const [specialDomain, setSpecialDomain] = useState([]);
 
   useEffect(() => {
+    // setIsLoaded(true);
     window.scrollTo({ top: 0 });
     getExpertData();
-    getWhatWeDoData()
+    getWhatWeDoData();
+    _getWhyCbnits();
+    getItems();
+    getSpecialDomain();
   }, [])
 
   const getExpertData = async () => {
     try {
-        setIsLoaded(true);
+        // setIsLoaded(true);
         let res = await Axios.post("/getPageWiseDatabyCategory", {
             page: "Home",
             category: "Our Expertise",
         });
-        console.log("res-- Our Expertise --->", res);
         if (res.status == 200) {
             setResponseData(res.data.data.reverse());
-            setIsLoaded(false);
+            // setIsLoaded(false);
         } else {
             console.log("Something went wrong!");
         }
     } catch (error) {
         console.log("error---->", error);
-        props.setIsLoaded(false);
+        // props.setIsLoaded(false);
     }
 };
 const getWhatWeDoData = async () => {
   try {
-    setIsLoaded(true);
+    // setIsLoaded(true);
     let res = await Axios.post("/getPageWiseDatabyCategory", {
       page: "Home",
       category: "What We Do",
     });
     if (res.status == 200) {
-      console.log(res.data.data , "*************************************************")
       setWhatWeDoData(res.data.data);
+      // setIsLoaded(false)
     } else {
       console.log("Something went wrong!");
       
-      setIsLoaded(false);
+      // setIsLoaded(false);
     }
   } catch (error) {
     console.log("error---->", error);
-    setIsLoaded(false);
+    // setIsLoaded(false);
   }
+};
+
+const _getWhyCbnits = async () => {
+  try {
+    let res = await Axios.post("/getPageWiseDatabyCategory", {
+      page: "Home",
+      category: "Why CBNITS",
+    });
+    if (res.status == 200) {
+      setWhyCbnitsData(res.data.data.reverse());
+    } else {
+      console.log("Something went wrong!");
+    }
+  } catch (error) {
+    console.log("error---->", error);
+  }
+};
+
+const getItems = async() => {
+  try {
+    let res = await Axios.post("/getHomePageImagebyCategory", {
+      category: "Quotations",
+    });
+    if (res.status == 200) {
+      setItems(res.data.data);
+    } else {
+      console.log("Something went wrong!");
+    }
+  } catch (error) {
+    console.log("error---->", error);
+  }
+};
+
+const getSpecialDomain = () => {
+  axios({
+    method: "POST",
+    url: "https://api.cbnits.com/getHomePageImagebyCategory",
+    data: {
+      category: "Special Domains",
+    },
+  })
+    .then((res) => {
+      if (res) {
+        setSpecialDomain(res.data.data);
+        // setActiveIndexData(res.data.data[0]);
+        // setActiveColor(res.data.data[0].color);
+        // setReadmoreLink(res.data.data[0].link);
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 };
 
   return (
     <div>
-      {
+      {/* {
         isLoaded ? 
         <Loader
         type="ThreeDots"
@@ -89,31 +144,24 @@ const getWhatWeDoData = async () => {
         />
 
         :
-        <>
+        <> */}
             
 
-          {/* <Banner
-            bannerImg={bannerImg}
-            whiteText={whiteText}
-            blueTxt={blueTxt}
-            paraFirst={paraFirst}
-            paraSecond={paraSecond}
-            requiredButton={true}
-          /> */}
+          
           <BannerCarousel 
             bannerImg={bannerImg} />
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
-          <Expertise responseData={responseData}  setIsLoaded={(data) => setIsLoaded(data)} />
-          <Specialised />
-          <WhyCbnits />
+          <Expertise responseData={responseData} />
+          <Specialised specialDomain={specialDomain}/>
+          <WhyCbnits whyCbnitsData={whyCbnitsData} />
           <AboutCbnits />
-          <WorkingWithUs />
+          <WorkingWithUs items={items} />
           <CustomerSay />
-          </>
+          {/* </> */}
           
 
-      }
+      {/* } */}
     </div >
   );
 };

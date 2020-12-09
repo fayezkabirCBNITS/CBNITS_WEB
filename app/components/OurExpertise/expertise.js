@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import './expertise.css';
 
 const Expertise = props => {
-    const [responseData, setResponseData] = useState();
-    useEffect(() => {
-        setResponseData(props.responseData)
-    }, [])
-
-    console.log('responseData===>', responseData)
-
     return (
         <div className="expertiseDiv py-5">
             <Container className="themed-container" fluid={false}>
@@ -24,7 +17,7 @@ const Expertise = props => {
                     and skilled resources to our clients.
                 </p>
                 <Row className="d-flex align-items-center  justify-content-center">
-                    {responseData ? responseData.map((data, index) => (
+                    {props.responseData ? props.responseData.map((data, index) => (
                         <Col
                             xl={3}
                             lg={3}

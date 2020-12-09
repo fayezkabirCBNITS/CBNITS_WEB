@@ -6,7 +6,6 @@ import Axios from "../../service/axios-config";
 import bannerImg from "./../../images/angularBnr.jpg"
 import icon from "./../../images/list-icon.png"
 import { withRouter } from "react-router-dom";
-import Loader from "react-loader-spinner";
 
 import "./techLanguage.css";
 
@@ -21,7 +20,6 @@ const paraSecond =
 const Angularjs = (props) => {
     const [data, setData] = useState({});
     const [response, setResponse] = useState({});
-    const [isLoaded, setIsLoaded] = useState(false);
     useEffect(() => {
         _getData();
         _getResponse();
@@ -45,14 +43,12 @@ const Angularjs = (props) => {
 
     const _getResponse = async () => {
         try {
-            setIsLoaded(true)
             let res = await Axios.post("/getPageWiseDatabyCategory", {
                 page: "Angular Js Development Service",
                 category: "Advantages of Hiring Angular JS",
             });
             if (res.status == 200) {
                 setResponse(res.data.data[0]);
-                setIsLoaded(false)
             } else {
                 console.log("Something went wrong!");
             }
@@ -61,7 +57,8 @@ const Angularjs = (props) => {
         }
     };
     return (
-        <div>{
+        <div>
+            {/* {
             isLoaded ?
               <Loader
                 type="ThreeDots"
@@ -72,7 +69,7 @@ const Angularjs = (props) => {
                 visible={isLoaded}
               />
               :
-              <>
+              <> */}
             <Banner
                 bannerImg={bannerImg}
                 whiteText={whiteText}
@@ -146,8 +143,8 @@ const Angularjs = (props) => {
                     </Container>
                 </div>
             </div>
-        </>
-}
+        {/* </>
+} */}
         </div>
     );
 };
