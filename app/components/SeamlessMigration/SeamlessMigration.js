@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "reactstrap";
 import "./seamless.css";
 import Axios from "../../service/axios-config";
-import seamImage from "./../../images/career-left.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import icon from "./../../images/list-icon.png"
 
 const SeamLess = (props) => {
@@ -20,7 +17,6 @@ const SeamLess = (props) => {
         page: "Dynamic 365",
         category: "Dynamic 365 Last Post",
       });
-      console.log("res-- Dynamic 365 --->", res);
       if (res.status == 200) {
         setResponse(res.data.data[0]);
       } else {
@@ -64,16 +60,6 @@ const SeamLess = (props) => {
                       <Row key={key}>
                         <Col xl={1} lg={1}>
                         <img src={icon} alt={icon} />
-                          {/* <FontAwesomeIcon
-                            icon={faCheckCircle}
-                            style={{
-                              color: " #ff5c33",
-                              marginRight: "2px",
-                              fontSize: "18px",
-                              marginTop: "5px",
-                              marginLeft: "10px",
-                            }}
-                          /> */}
                         </Col>
                         <Col xl={11} lg={11}>
                           <p>
@@ -83,69 +69,6 @@ const SeamLess = (props) => {
                       </Row>
                     ))
                     : null}
-                  {/* <Row>
-                    <Col xl={1} lg={1}>
-                      <FontAwesomeIcon
-                        icon={faCheckCircle}
-                        style={{
-                          color: " #ff5c33",
-                          marginRight: "2px",
-                          fontSize: "18px",
-                          marginTop: "5px",
-                          marginLeft: "10px",
-                        }}
-                      />
-                    </Col>
-                    <Col xl={11} lg={11}>
-                      <p>
-                        {" "}
-                        Our Dynamics 365 expert can help you migrate from
-                        Dynamic CRM,
-                      </p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xl={1} lg={1}>
-                      <FontAwesomeIcon
-                        icon={faCheckCircle}
-                        style={{
-                          color: " #ff5c33",
-                          marginRight: "2px",
-                          fontSize: "18px",
-                          marginTop: "5px",
-                          marginLeft: "10px",
-                        }}
-                      />
-                    </Col>
-                    <Col xl={11} lg={11}>
-                      <p>
-                        {" "}
-                        Our Dynamics 365 expert can help you migrate from
-                        Dynamic CRM,
-                      </p>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col xl={1} lg={1}>
-                      <FontAwesomeIcon
-                        icon={faCheckCircle}
-                        style={{
-                          color: " #ff5c33",
-                          marginRight: "2px",
-                          fontSize: "18px",
-                          marginTop: "5px",
-                          marginLeft: "10px",
-                        }}
-                      />
-                    </Col>
-                    <Col xl={11} lg={11}>
-                      <p>
-                        {" "}
-                        Our Dynamics 365 expert can help you migrate from
-                        Dynamic CRM,
-                      </p>
-                    </Col>
-                  </Row> */}
                 </div>
               </Col>
             </Row>

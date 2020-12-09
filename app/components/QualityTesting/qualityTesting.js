@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Button, Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import "./test.css"
-import Axios from "../../service/axios-config";
 
 import tickWhite1 from "./../../images/qualityEng/qu1.png";
 import tickWhite2 from "./../../images/qualityEng/qu2.png";

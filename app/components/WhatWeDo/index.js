@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Axios from "../../service/axios-config";
 import "./whatwedo.css";
 import { Row, Col, Container, Form } from "reactstrap";
 

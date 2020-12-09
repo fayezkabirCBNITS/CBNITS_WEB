@@ -8,13 +8,13 @@
     background-color: #f8f9fc;
 }
 
-/* @media (min-width: 1200px){
-    .we-container.col-xl-3 {
-            flex: 0 0 32%;
-            max-width: 32%;
-        }
-
-} */
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 .num-txt {
     display: flex;
     justify-content: center;

@@ -37,3 +37,11 @@
     text-transform: capitalize;
     font-weight: 700;
   }
+  
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}

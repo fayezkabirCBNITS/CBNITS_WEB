@@ -1,37 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container } from "reactstrap";
-import axios from "axios";
-
 import "./banner.css";
+
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
 
 const Banner = (props) => {
-  const [images, setImages] = useState([]);
-
-//   useEffect(() => {
-//     getImageArray();
-//   }, []);
-
-//   const getImageArray = () => {
-//     axios({
-//       method: "POST",
-//       url: "https://api.cbnits.com/getHomePageImagebyCategory",
-//       data: {
-//         category: "Languages",
-//       },
-//     })
-//       .then((res) => {
-//         if (res) {
-//           setImages(res.data.data);
-//           console.log(res.data.data)
-//         }
-//       })
-//       .catch((err) => {
-//         console.log(err);
-//       });
-//   };
-
   return (
     <div className="header-img-about">
       <Container className="themed-container" fluid={false}>

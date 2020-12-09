@@ -108,16 +108,6 @@ const Example = (props) => {
       }} // defaults to an empty object. not recommended to be left blank.
       onExit={() => {}} // a function to be called when a mouse leaves the container
       data={[
-        // {
-        //     label: "Home",
-        //     key: 1,
-        //     items: <p>the the world</p>
-        // },
-        // {
-        //     label: "About",
-        //     key: 2,
-        //     items: <p>the  world</p>
-        // },
         {
           label: "Studio",
           key: 1,
@@ -232,12 +222,7 @@ const Example = (props) => {
           label: <p className="insignts">Insights & News</p>,
           key: 5,
           items: <p>coming soon.......</p>,
-        },
-        // {
-        //     label: "Conatact Us",
-        //     key: 6,
-        //     items: <p>contact world</p>
-        // },
+        }
       ]} // array of data to be rendered
     />
   );
@@ -288,37 +273,6 @@ const Example = (props) => {
               </Col>
             </Row>
           </Col>
-
-          {/* <Col xl={10} lg={11} md={11} xs={6} className="p-0 for-tab">
-            <Navbar light expand="md">
-              <NavbarToggler onClick={navtoggle} />
-              <Collapse isOpen={isOpen} navbar>
-                <Nav className="mr-auto" navbar>
-                  <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">
-                      GitHub
-                    </NavLink>
-                  </NavItem>
-                  <UncontrolledDropdown nav inNavbar>
-                    <DropdownToggle nav caret>
-                      Options
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem>Option 1</DropdownItem>
-                      <DropdownItem>Option 2</DropdownItem>
-                      <DropdownItem divider />
-                      <DropdownItem>Reset</DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                </Nav>
-                <NavbarText>Simple Text</NavbarText>
-              </Collapse>
-            </Navbar>
-          </Col> */}
-
           <Col xl={10} lg={11} md={11} xs={6} className="p-0 for-tab">
             <Navbar light expand="md">
               <NavbarToggler onClick={navtoggle} />
@@ -419,30 +373,3 @@ const Example = (props) => {
 };
 
 export default withRouter(Example);
-
-{
-  /* <Nav tabs className="d-flex justify-content-end" >
-        <NavItem>
-            <NavLink href="/">Home</NavLink>
-        </NavItem>
-        <NavItem>
-            <NavLink href="/aboutus">About</NavLink>
-        </NavItem>
-        <NavItem>
-            <NavLink href="#">Studios</NavLink>
-        </NavItem>
-        <NavItem>
-            <NavLink href="#">dedicated Hiring</NavLink>
-        </NavItem>
-        <NavItem>
-            <NavLink href="#">Insignts & News</NavLink>
-        </NavItem>
-        <NavItem>
-            <NavLink href="#">Contact</NavLink>
-        </NavItem>
-        <NavItem>
-            <Button color="primary">Get in touch</Button>
-        </NavItem>
-        
-    </Nav> */
-}

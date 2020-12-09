@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Container } from "reactstrap";
+import "./banner.css";
 import axios from "axios";
 
-import "./banner.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
 

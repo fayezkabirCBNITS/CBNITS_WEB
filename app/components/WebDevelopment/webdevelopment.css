@@ -37,10 +37,6 @@
     margin-bottom: 0px;
     font-weight: 500;
 }
-/* .tracks-img{
-    height: 50px;
-    padding: 10px;
-} */
 .btn{
     margin: auto;
     text-align: center;
@@ -68,3 +64,10 @@
     border-radius: 20px 20px 20px 20px;
     font-weight: 500;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
