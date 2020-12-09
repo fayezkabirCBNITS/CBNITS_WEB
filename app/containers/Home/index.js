@@ -1,12 +1,8 @@
 import React, { useState, useEffect, Suspense } from "react";
-import { Button, Row, Col, Container } from "reactstrap";
-import Banner from "./../../components/TechBanner/techBanner";
 import bannerImg from "../../images/banner.jpg";
 
 import "./home.css";
 import WhatWeDo from "./../../components/WhatWeDo/index";
-import PageBanner from "./../../components/Banner/banner";
-import Experience from "./../../components/ExperienceYear/experience";
 import Expertise from "./../../components/OurExpertise/expertise";
 import Specialised from "./../../components/SpecilalisedDomain/specialisec";
 import WhyCbnits from "./../../components/WhyCbnits/whycbnits";
@@ -30,6 +26,7 @@ const HomePage = (props) => {
   const [whatWeDoData , setWhatWeDoData] = useState();
 
   useEffect(() => {
+    setIsLoaded(true);
     window.scrollTo({ top: 0 });
     getExpertData();
     getWhatWeDoData()
@@ -37,33 +34,32 @@ const HomePage = (props) => {
 
   const getExpertData = async () => {
     try {
-        setIsLoaded(true);
+        // setIsLoaded(true);
         let res = await Axios.post("/getPageWiseDatabyCategory", {
             page: "Home",
             category: "Our Expertise",
         });
-        console.log("res-- Our Expertise --->", res);
         if (res.status == 200) {
             setResponseData(res.data.data.reverse());
-            setIsLoaded(false);
+            // setIsLoaded(false);
         } else {
             console.log("Something went wrong!");
         }
     } catch (error) {
         console.log("error---->", error);
-        props.setIsLoaded(false);
+        // props.setIsLoaded(false);
     }
 };
 const getWhatWeDoData = async () => {
   try {
-    setIsLoaded(true);
+    // setIsLoaded(true);
     let res = await Axios.post("/getPageWiseDatabyCategory", {
       page: "Home",
       category: "What We Do",
     });
     if (res.status == 200) {
-      console.log(res.data.data , "*************************************************")
       setWhatWeDoData(res.data.data);
+      setIsLoaded(false)
     } else {
       console.log("Something went wrong!");
       
@@ -77,7 +73,7 @@ const getWhatWeDoData = async () => {
 
   return (
     <div>
-      {
+      {/* {
         isLoaded ? 
         <Loader
         type="ThreeDots"
@@ -89,31 +85,24 @@ const getWhatWeDoData = async () => {
         />
 
         :
-        <>
+        <> */}
             
 
-          {/* <Banner
-            bannerImg={bannerImg}
-            whiteText={whiteText}
-            blueTxt={blueTxt}
-            paraFirst={paraFirst}
-            paraSecond={paraSecond}
-            requiredButton={true}
-          /> */}
+          
           <BannerCarousel 
             bannerImg={bannerImg} />
           <WhatWeDo whatWeDoData={whatWeDoData} />
           <YearsOfExperience />
-          <Expertise responseData={responseData}  setIsLoaded={(data) => setIsLoaded(data)} />
+          <Expertise responseData={responseData} />
           <Specialised />
           <WhyCbnits />
           <AboutCbnits />
           <WorkingWithUs />
           <CustomerSay />
-          </>
+          {/* </> */}
           
 
-      }
+      {/* } */}
     </div >
   );
 };
