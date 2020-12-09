@@ -38,3 +38,11 @@
     font-weight: 500;
     color: #4d4d4d;
 }
+
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+}

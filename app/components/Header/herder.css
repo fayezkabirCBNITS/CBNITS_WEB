@@ -175,17 +175,13 @@
     }
     
 }
-/* @media (min-width: 767px) and (max-width: 1024px) {
-    
-    .css-13azwyo { 
-        width: 47em !important;
-        left: -81%;
-    }
-    .mega-link h6 {
-        font-size: 11px;
-    }
-
-} */
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 
 .for-tab .navbar-collapse {
     left: -14px;

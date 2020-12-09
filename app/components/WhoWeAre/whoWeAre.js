@@ -16,12 +16,11 @@ const WhoWeAre = (props) => {
         page: "About Us",
         category: "Who We Are",
       });
-      console.log("res-- Who We Are --->", res.data.data[0]);
       if (res.status == 200) {
         setData(res.data.data[0]);
       }
-      else{
-          console.log("Something went wrong!");
+      else {
+        console.log("Something went wrong!");
       }
     } catch (error) {
       console.log("error---->", error);
@@ -38,7 +37,7 @@ const WhoWeAre = (props) => {
                   who <span className="skycolor">we are</span>
                 </h5>
                 <p>
-                 {data && data.description && data.description.length && data.description[0]}
+                  {data && data.description && data.description.length && data.description[0]}
                 </p>
               </div>
             </Col>

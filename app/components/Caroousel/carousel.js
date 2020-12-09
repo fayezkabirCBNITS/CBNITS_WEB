@@ -65,8 +65,8 @@ const CarouselCustom = (props) => {
           </div>
         </div>
         <CarouselCaption
-          // captionText={item.name}
-          // captionHeader={item.name}
+          captionText={""}
+          captionHeader={""}
         />
       </CarouselItem>
     );

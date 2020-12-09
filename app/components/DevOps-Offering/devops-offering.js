@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Button, Row, Col, Container } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 import "./offering.css"
 import Axios from "../../service/axios-config";
 
@@ -16,7 +16,6 @@ const CloudPortfolio = props => {
                 page: "CLOUD & DEVOPS",
                 category: "DEVOPS OFFERING",
             });
-            // console.log("res-- Our Cloud Development Services --->", res.data.data[0]);
             if (res.status == 200) {
                 setResponseData(res.data.data[0]);
             }

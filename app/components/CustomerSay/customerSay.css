@@ -39,6 +39,13 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 
 @media only screen and (max-width : 767px) {
     .each-customer {

@@ -77,6 +77,13 @@
 .experience {
   background-color: #f8f9fc;
 }
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}
 
 @media (max-width: 767px) {
   .circle-container {

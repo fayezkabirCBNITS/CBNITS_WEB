@@ -70,7 +70,6 @@ const Banner = (props) => {
   };
 
   return (
-    // <div bannerimage="./../../images/banner.jpg" className="tech-img">
     <div
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${
