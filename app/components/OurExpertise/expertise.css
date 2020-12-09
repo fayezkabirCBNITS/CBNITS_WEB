@@ -41,6 +41,14 @@
     margin: 20px;
 }
 
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+}
+
 @media only screen and (max-width : 767px) {
     .expertiseDiv-head h2{font-size: 35px;}
 

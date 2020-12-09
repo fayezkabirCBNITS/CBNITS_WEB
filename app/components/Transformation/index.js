@@ -41,7 +41,6 @@ const Transformation = props => {
                     <Col sm={6}>
                         <div className="whyTitle">
                             <h2>transformation at <span> speed and scale.</span></h2>
-                            {/* <p className="mt-4 mb-4">{data && data.subDescription} </p> */}
                             <p className="mt-4 mb-4">You can check the latest job openings here if you are looking to be a part of a young, vibrant and growing team. Take your first step to an incredible career with us.</p>
                         </div>
                         <ul className="listStyle">
@@ -49,11 +48,6 @@ const Transformation = props => {
                                 data.description.map((item, key) => (
                                     <li key={key}>{item}</li>
                                 )) : null}
-                            {/* <li>Lorem ipsum dolor sit amet, consectetur</li>
-                        <li>Adipiscing elit, sed do eiusmod tempor incididunt ut labore</li>
-                        <li>Quis ipsum suspendisse</li>
-                        <li>Viverra maecenas accumsan lacus</li>
-                        <li>Suspendisse ultrices gravida.</li> */}
                         </ul>
                     </Col>
 

@@ -34,3 +34,11 @@
 .txthead{
     line-height: 7px;
 }
+
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+}

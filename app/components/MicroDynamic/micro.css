@@ -25,12 +25,6 @@
     color:  #d6f0fb;
     margin-bottom: 60px;
 }
-@media (min-width: 992px) {
-    .tect-wraps p {
-        font-size: 12px;
-    }
-
-}
 .micro-tect-wraps {
     margin: 15px 0;
     background-color: #19a3d9;
@@ -43,7 +37,19 @@
     margin-top: 20px ;
 }
 .micro-tect-wraps img {
-    /* height: 100px;
-    width: 100px; */
     margin-top: 30px;
+}
+
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .tect-wraps p {
+        font-size: 12px;
+    }
+
 }

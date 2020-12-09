@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Nav, NavItem, Button, NavLink, Row, Col, Container } from 'reactstrap';
+import React from "react";
+import { Row, Col, Container } from 'reactstrap';
 
 import "./_about.css"
 

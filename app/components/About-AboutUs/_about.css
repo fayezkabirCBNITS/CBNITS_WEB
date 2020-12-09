@@ -28,3 +28,10 @@
 .tracks p{
     margin-bottom: 0px;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }

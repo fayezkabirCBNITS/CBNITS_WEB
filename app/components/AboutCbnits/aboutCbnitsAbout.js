@@ -17,18 +17,18 @@ const Expertise = props => {
                             <Col xl={6} lg={10}>
                                 <div className="left-party-about ">
                                     <img src={help1} alt="img" />
-                                  
+
                                 </div>
                             </Col>
                             <Col xl={6} lg={6}>
 
                                 <div className="right-party right-party-1-1">
-                                   
+
                                     <img src={help2} alt="img" />
                                 </div>
                                 <div className="right-party right-party-1-1">
                                     <img src={help3} alt="img" />
-                                   
+
                                 </div>
                             </Col>
                         </Row>

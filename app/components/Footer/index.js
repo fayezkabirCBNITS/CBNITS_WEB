@@ -18,8 +18,7 @@ const Example = (props) => {
     return (
         <div className="footer">
             <div className="moon">
-
-            <img src={footer} alt="foot" />
+                <img src={footer} alt="foot" />
             </div>
             <Container className="themed-container" fluid={false}>
                 <div className="haveproject text-center">
@@ -36,9 +35,6 @@ const Example = (props) => {
                             <NavItem>
                                 <NavLink href="/aboutus">About</NavLink>
                             </NavItem>
-                            {/* <NavItem>
-                                <NavLink href="#">Blog</NavLink>
-                            </NavItem> */}
                             <NavItem>
                                 <NavLink href="/hire-us">dedicated Hiring</NavLink>
                             </NavItem>
@@ -48,12 +44,6 @@ const Example = (props) => {
                             <NavItem>
                                 <NavLink href="/contact">Contact</NavLink>
                             </NavItem>
-                            {/* <NavItem>
-                                <NavLink href="#">Terms and Conditions</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#">Privacy Policy</NavLink>
-                            </NavItem> */}
                         </Nav>
                     </Col>
                 </Row>

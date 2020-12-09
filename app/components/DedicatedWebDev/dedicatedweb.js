@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Row, Col, Container } from 'reactstrap';
 import './dediacatedweb.css';
 import Axios from "../../service/axios-config";
@@ -9,26 +9,24 @@ const DedicatedWeb = props => {
 
     useEffect(() => {
         _getWhoWeAre();   // Fetch Specialized Services images
-      }, []);
+    }, []);
 
-      const _getWhoWeAre = async () => {
+    const _getWhoWeAre = async () => {
         try {
-          let res = await Axios.post("/getPageWiseDatabyCategory", {
-            page: "Web Development",
-            category: "Developers",
-          });
-          console.log("res-- Developers --->", res.data.data);
-          if (res.status == 200) {
-            setResponseData(res.data.data);
-          }
-          else{
-              console.log("Something went wrong!");
-          }
+            let res = await Axios.post("/getPageWiseDatabyCategory", {
+                page: "Web Development",
+                category: "Developers",
+            });
+            if (res.status == 200) {
+                setResponseData(res.data.data);
+            }
+            else {
+                console.log("Something went wrong!");
+            }
         } catch (error) {
-          console.log("error---->", error);
+            console.log("error---->", error);
         }
-      };
-     console.log('Developers=====> ',responseData ) 
+    };
 
     return (
         <div className="dedicated py-5">
@@ -37,7 +35,7 @@ const DedicatedWeb = props => {
                     <h2>types of dedicated <span>webdevelopers</span></h2>
                     <p>you can Hire from CBNITS</p>
                 </div>
-                
+
                 <Row className="d-flex align-items-center justify-content-between">
                     {
                         responseData ? responseData.map((data, index) => (

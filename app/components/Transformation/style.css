@@ -22,3 +22,10 @@
     height: 16px;
     background-repeat: no-repeat;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }

@@ -3,20 +3,6 @@ import { Row, Col, Container } from 'reactstrap';
 import './micro.css';
 import Axios from "../../service/axios-config";
 
-import python from "./../../images/softwareSupport/spl1.png"
-import java from "./../../images/softwareSupport/spl2.png"
-import golang from "./../../images/softwareSupport/spl3.png"
-import msg from "./../../images/softwareSupport/spl4.png"
-import ph from "./../../images/softwareSupport/spl5.png"
-
-const imgArr = [
-    { img: python, name: "python" },
-    { img: java, name: "angular.js" },
-    { img: golang, name: "vue.js" },
-    { img: msg, name: "vue.js" },
-    { img: ph, name: "vue.js" },
-    { img: java, name: "angular.js" },
-];
 
 const MicroDynamic = props => {
     const [data, setData] = useState([]);
@@ -29,7 +15,6 @@ const MicroDynamic = props => {
         page: "Dynamic 365",
         category: "Product and Solution",
       });
-      console.log("Product and Solution---->", res);
       if (res.status == 200) {
         setData(res.data.data);
       } else {

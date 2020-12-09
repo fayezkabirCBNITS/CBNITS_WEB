@@ -49,4 +49,11 @@
 .hrdid-cusrow.reason-pick::after {
     display: none;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 /***************end************/

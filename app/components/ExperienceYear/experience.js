@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Axios from "../../service/axios-config";
 import { Row, Col, Container } from 'reactstrap';
 import './experience.css';
-import exper from "./../../images/365.png";
+import Axios from "../../service/axios-config";
 
 
 const Experience = props => {
