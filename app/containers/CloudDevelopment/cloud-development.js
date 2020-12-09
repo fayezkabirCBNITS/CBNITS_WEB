@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./cloudDev.css";
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
 import Banner from "../../components/TechBanner/techBanner";
 
@@ -7,7 +8,6 @@ import agile from "./../../images/cloudDevMain.jpg";
 import cloudDevMain2 from "./../../images/cloudDevMain2.jpg";
 
 import CloudPortfolio from "./../../components/CloudPortfolio/CloudPortfolio";
-import "./cloudDev.css";
 
 const blueTxt = "Cloud";
 const whiteText = "Development";

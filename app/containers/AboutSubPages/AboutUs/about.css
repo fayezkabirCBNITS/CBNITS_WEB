@@ -115,3 +115,10 @@
     text-transform: uppercase;
     font-size: 15px;
 } */
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }

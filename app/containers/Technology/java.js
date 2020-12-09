@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {  Button, Row, Col, Container } from "reactstrap";
+import "./techLanguage.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-
 import bannerImg from "./../../images/golangBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import { withRouter } from "react-router-dom";
@@ -11,10 +11,6 @@ const whiteText = "service";
 const blueTxt = "Java development";
 const paraFirst = "Pick the right developers from our talented pool of";
 const paraSecond = "java programmers and kick-start your java projects no ";
-
-import "./techLanguage.css";
-
-
 
 const Javajs = (props) => {
   const [data, setData] = useState({});

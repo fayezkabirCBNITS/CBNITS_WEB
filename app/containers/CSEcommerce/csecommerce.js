@@ -10,6 +10,8 @@ import {
   TabContent,
   TabPane,
 } from "reactstrap";
+import "./csecommerce.css";
+
 import Banner from "./../../components/TechBanner/techBanner";
 import csHealthMain2 from "./../../images/csHealthMain2.png";
 import csEcomBnr from "./../../images/csEcomBnr.jpg";
@@ -27,7 +29,6 @@ import ccc3 from "./../../images/cst7.png";
 import ccc4 from "./../../images/cst8.png";
 import ccc5 from "./../../images/cst9.png";
 import icon from "./../../images/list-icon.png";
-import "./csecommerce.css";
 
 const whiteText = "case study";
 const blueTxt = "Ecommerce segment";

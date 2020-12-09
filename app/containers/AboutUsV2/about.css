@@ -169,6 +169,14 @@
 .company-img{
     width: 70%;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
+  
 @media only screen and (max-width : 767px) {
     .v2-cbnits-left h2 {
         font-size: 32px !important;

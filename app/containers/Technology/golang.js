@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Nav, NavItem, Button, NavLink, Row, Col, Container } from "reactstrap";
+import "./techLanguage.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-
 import bannerImg from "./../../images/golangBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import angularcreation from "./../../images/angularcreation.png";
@@ -14,8 +14,6 @@ const blueTxt = "Golang development";
 const paraFirst =
   "With CBNITS' top of the line Golang development services, bring";
 const paraSecond = "your most complex software ideas to life. ";
-
-import "./techLanguage.css";
 
 
 
