@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Container } from "reactstrap";
+import "./techLanguage.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-
 import bannerImg from "./../../images/nodeBnr.jpg";
 import icon from "./../../images/list-icon.png";
 
@@ -11,8 +11,6 @@ const blueTxt = "node js development";
 const paraFirst =
   "End-to-end Node.JS development service to build faster and sca-";
 const paraSecond = "label real-time application.";
-
-import "./techLanguage.css";
 import { withRouter } from "react-router-dom";
 
 

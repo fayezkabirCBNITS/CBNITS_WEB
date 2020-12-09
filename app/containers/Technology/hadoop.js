@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Button, Row, Col, Container } from "reactstrap";
+import "./hadoop.css";
 import Banner from "./../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-
 import habootBnr from "./../../images/habootBnr.jpg";
 import icon from "./../../images/list-icon.png";
 import { withRouter } from "react-router-dom";
-
-import "./hadoop.css";
 
 const whiteText = "And Cloudera";
 const blueTxt = "Hadoop, Big Data";

@@ -10,14 +10,12 @@ import {
   TabContent,
   TabPane,
 } from "reactstrap";
+import "./uiux.css";
 import Banner from "./../../components/TechBanner/techBanner";
-
 import uiuxBnr from "./../../images/uiuxBnr.jpg";
 import expertiseimg from "./../../images/hl10.jpg";
 import uiuxMain from "./../../images/uiuxMain.jpg";
-import "./uiux.css";
 import classnames from "classnames";
-
 import ui1 from "./../../images/uiux/ui1.jpg";
 import ui2 from "./../../images/uiux/ui2.jpg";
 import ui3 from "./../../images/uiux/ui3.jpg";

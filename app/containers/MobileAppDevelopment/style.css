@@ -136,6 +136,13 @@
     font-weight: 700;
     margin-bottom: 30px;
 }
+.imgSec {
+    width: 100%;
+    height: auto;
+  }
+  .imgSec img {
+    width: 100%;
+  }
 
 @media (max-width: 767px) {
     .centerDiv h2 {

@@ -135,6 +135,13 @@
   font-size: 14px;
   font-weight: 500;
 }
+.imgSec {
+  width: 100%;
+  height: auto;
+}
+.imgSec img {
+  width: 100%;
+}
 
 @media (max-width: 375px) {
   .develpment h2 {

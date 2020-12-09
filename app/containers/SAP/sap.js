@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "reactstrap";
+import "./sap.css";
 import Banner from "../../components/TechBanner/techBanner";
 import Axios from "../../service/axios-config";
-import "./sap.css";
 
 import sapBanner from "./../../images/sap/sapBnr.jpg";
 import sapBnr from "./../../images/sap/sapMain.jpg";

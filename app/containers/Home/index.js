@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
-import bannerImg from "../../images/banner.jpg";
-
 import "./home.css";
+import bannerImg from "../../images/banner.jpg";
 import WhatWeDo from "./../../components/WhatWeDo/index";
 import Expertise from "./../../components/OurExpertise/expertise";
 import Specialised from "./../../components/SpecilalisedDomain/specialisec";
