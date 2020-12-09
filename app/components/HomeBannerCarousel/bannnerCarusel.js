@@ -6,16 +6,15 @@ import {
     CarouselCaption,
     Container,
 } from "reactstrap";
+import "./bannerCarousel.css";
 
 import axios from "axios";
-import "./bannerCarousel.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
 
 const CarouselCustom = (props) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
-    // const [items, setItems] = useState(["1" , "2" , "3"]);
     const [bannerDetails, setBannerDetails] = useState([]);
     const [images, setImages] = useState([]);
 
@@ -99,11 +98,10 @@ const CarouselCustom = (props) => {
                     )
                     )}
                 </div>
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                <CarouselCaption captionText={""} captionHeader={""} />
             </CarouselItem>
         );
     });
-    console.log(bannerDetails, "checking length")
 
     return (
         <div className="custom-carousel-home  py-5"

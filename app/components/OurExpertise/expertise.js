@@ -8,7 +8,6 @@ const Expertise = props => {
         setResponseData(props.responseData)
     }, [])
 
-    console.log('responseData===>', responseData)
 
     return (
         <div className="expertiseDiv py-5">
