@@ -19,7 +19,7 @@ import {
   NavbarText,
 } from "reactstrap";
 import "./herder.css";
-import logo from "./../../images/logo.png";
+import logo from "./../../images/new-logo.png";
 import { ReactMegaMenu } from "react-mega-menu";
 
 import { withRouter } from "react-router-dom";

@@ -26,18 +26,18 @@ const Expertise = (props) => {
             what our <span>customers say</span>
           </h2>
         </div>
-        <Row className="d-flex justify-centent-center">
+        <Row className="d-flex justify-content-center">
           <Col xl={4} lg={4}>
             <div className="each-customer">
               <div className="customer-img">
-                <video width="100%" height="100%" poster={v1} controls>
-                  <source
-                    src="https://api.cbnits.com/uploads/Madhukar-CBNITS-2.mp4"
-                    type="video/mp4"
-                  />
-                  <source src="movie.ogg" type="video/ogg" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/GJpv8AGse3U"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div className="customer-details">
                 <h4>Madhukar Govindaraju</h4>
@@ -51,14 +51,14 @@ const Expertise = (props) => {
           <Col xl={4} lg={4}>
             <div className="each-customer">
               <div className="customer-img">
-                <video width="100%" height="240" poster={v2} controls>
-                  <source
-                    src="https://api.cbnits.com/uploads/ShuoYang.mp4"
-                    type="video/mp4"
-                  />
-                  <source src="movie.ogg" type="video/ogg" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/xxCXQ2D5cdY"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div className="customer-details">
                 <h4>Shuo Yang</h4>
