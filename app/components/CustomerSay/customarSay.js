@@ -33,7 +33,7 @@ const Expertise = (props) => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/GJpv8AGse3U"
+                  src="https://www.youtube.com/embed/znMk8-IBJOk"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
@@ -54,7 +54,7 @@ const Expertise = (props) => {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/xxCXQ2D5cdY"
+                  src="https://www.youtube.com/embed/R2jREXqCfHg"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
