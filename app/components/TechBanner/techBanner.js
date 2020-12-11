@@ -39,14 +39,15 @@ const Banner = (props) => {
   const getImageArray = () => {
     axios({
       method: "POST",
-      url: "https://api.cbnits.com/getHomePageImagebyCategory",
+      url: "https://api.cbnits.com/getPageWiseDatabyCategory",
       data: {
+        page : "Banner",
         category: "Languages",
       },
     })
       .then((res) => {
         if (res) {
-          setImages(res.data.data);
+          setImages(res.data.data.reverse());
           console.log(res.data.data);
         }
       })
