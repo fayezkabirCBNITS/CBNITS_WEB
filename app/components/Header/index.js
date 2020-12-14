@@ -219,9 +219,23 @@ const Example = (props) => {
             ),
         },
         {
-          label: <p className="insignts">Insights & News</p>,
+          label: "Insights & News",
           key: 5,
-          items: <p>coming soon.......</p>,
+          items: (
+            <div>
+              <Row>
+                
+              <Col className="news-link">
+                    <Nav tabs className="d-flex direction-column align-items-center">
+                      <NavItem>
+                        <NavLink href="/news">News</NavLink>
+                      </NavItem>
+                    </Nav>
+                  </Col>
+              </Row>
+            </div>
+            
+              ),
         }
       ]} // array of data to be rendered
     />
