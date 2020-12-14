@@ -116,6 +116,9 @@
 .dedicate-link .nav-tabs .nav-link {
     color: #000000;
 }
+.news-link .nav-tabs .nav-link {
+    color: #000000;
+}
 .insignts {
     margin-bottom: 0px;
     cursor: not-allowed;

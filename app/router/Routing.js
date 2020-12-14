@@ -37,7 +37,9 @@ import Hrtech from './../containers/HR-Tech/hr-tech';
 import Csitwochain from './../containers/CSI2Chain/csitwochain'
 import CSHealth from './../containers/CSHealth/cshealth'
 import Csecommerce from './../containers/CSEcommerce/csecommerce';
-import CSEducation from './../containers/CSEducation/cseducation'
+import CSEducation from './../containers/CSEducation/cseducation';
+import News from "./../containers/InsightsAndNews/news";
+import Artical from "./../containers/InsightsAndNews/article"
 
 
 const AppWrapper = styled.div`
@@ -86,6 +88,8 @@ const Routing = (_) => {
         <Route exact path="/cs-Health" component={CSHealth} />
         <Route exact path="/cs-ecommerce" component={Csecommerce} />
         <Route exact path="/cs-ed-tech" component={CSEducation} />
+        <Route exact path="/news" component={News} />
+        <Route exact path="/news/article/:id" component={Artical} />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
