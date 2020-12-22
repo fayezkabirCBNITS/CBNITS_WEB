@@ -48,7 +48,7 @@ const Expertise = (props) => {
               </div>
             </div>
           </Col>
-          <Col xl={4} lg={4}>
+          {/* <Col xl={4} lg={4}>
             <div className="each-customer">
               <div className="customer-img">
                 <iframe
@@ -68,7 +68,7 @@ const Expertise = (props) => {
                 </p>
               </div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>
