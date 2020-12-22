@@ -6,6 +6,9 @@ import styled from "styled-components";
 import "./techBanner.css";
 import msg from "./../../images/msg.png";
 import ph from "./../../images/ph.png";
+import usa from "./../../images/usa.png";
+import singapore from "./../../images/singapore.png";
+import india from "./../../images/india.png";
 import { withRouter } from "react-router-dom";
 import Axios from "./../../service/axios-config"
 
@@ -89,9 +92,21 @@ const Banner = (props) => {
           </span>
           <span>
             <abbr>
-              <img src={ph} alt="phone" />{" "}
+              <img src={usa} alt="phone" />{" "}
             </abbr>
             +1669-213-8571
+          </span>
+          <span>
+            <abbr>
+              <img src={singapore} alt="phone" />{" "}
+            </abbr>
+            +65-31585521
+          </span>
+          <span>
+            <abbr>
+              <img src={india} alt="phone" />{" "}
+            </abbr>
+            +91-9674533118
           </span>
         </p>
         <div className="tech-middle-section">
