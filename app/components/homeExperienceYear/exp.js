@@ -28,7 +28,7 @@ const Experience = props => {
                                 <p>Countries where we have satisfied customers</p>
                             </div>
                             <div className="exp-name">
-                                <span>100+</span> <abbr>Projects</abbr>
+                                <span>1000+</span> <abbr>Projects</abbr>
                                 <p>Enterprise-class solutions & projects delivered</p>
                             </div>
                         </div>

@@ -46,7 +46,7 @@ import ab5 from "./../../images/ab5.png";
 
 const whiteText = "us";
 const blueTxt = "about";
-const paraFirst = "Our exportise , know more about what we do";
+const paraFirst = "Our expertise , know more about what we do";
 const paraSecond = "";
 
 const AboutUs = (props) => {

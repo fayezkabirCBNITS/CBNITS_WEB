@@ -116,7 +116,7 @@ const ContactUs = (props) => {
               <div className="contact-head">
                 <h2>Office</h2>
                 <h2 className="skycolor mb-5">Address:</h2>
-                <h3>Office Location</h3>
+                <h3>Office</h3>
                 <div>
                   <h4>USA</h4>
                   <Row>
@@ -138,10 +138,10 @@ const ContactUs = (props) => {
                       />
                     </Col>
                     <Col xl={11} lg={11}>
-                      <p>669-213-8571</p>
+                      <p>+1669-213-8571</p>
                     </Col>
                   </Row>
-                </div>
+                </div>                
                 <div>
                   <h4>India</h4>
                   <Row>
@@ -166,7 +166,21 @@ const ContactUs = (props) => {
                       />
                     </Col>
                     <Col xl={11} lg={11}>
-                      <p>9038025366</p>
+                      <p>+91-9674533118</p>
+                    </Col>
+                  </Row>
+                </div>
+                <div>
+                  <h4>Singapore</h4>
+                  <Row>
+                    <Col xl={1} lg={1}>
+                      <FontAwesomeIcon
+                        icon={faMobileAlt}
+                        className="fontIcon"
+                      />
+                    </Col>
+                    <Col xl={11} lg={11}>
+                      <p>+65-31585521</p>
                     </Col>
                   </Row>
                 </div>
