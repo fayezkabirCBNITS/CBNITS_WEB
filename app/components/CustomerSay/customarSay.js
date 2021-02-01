@@ -1,21 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Row, Col, Container } from "reactstrap";
 import "./customerSay.css";
-import ai from "./../../images/e1.png";
-import blockchain from "./../../images/e2.png";
-import v1 from "./../../images/video1.jpg";
-import v2 from "./../../images/video2.jpg";
-
-const techArr = [
-  {
-    img: ai,
-    title: "Al & Machine Learnings",
-  },
-  {
-    img: blockchain,
-    title: "blockchain",
-  },
-];
 
 const Expertise = (props) => {
   return (
@@ -37,7 +22,7 @@ const Expertise = (props) => {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                ></iframe>
+                />
               </div>
               <div className="customer-details">
                 <h4>Madhukar Govindaraju</h4>
@@ -48,27 +33,27 @@ const Expertise = (props) => {
               </div>
             </div>
           </Col>
-          {/* <Col xl={4} lg={4}>
+          <Col xl={4} lg={4}>
             <div className="each-customer">
               <div className="customer-img">
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/R2jREXqCfHg"
+                  src="https://www.youtube.com/embed/zcjU7CRfaJM"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
-                ></iframe>
+                />
               </div>
               <div className="customer-details">
-                <h4>Shuo Yang</h4>
+                <h4>Joe Banerjee</h4>
                 <p>
-                  CBNITS has huge supporting infrastructure such as sourcing,
-                  interview, scheduling,...
+                  CBNITS is proud to be part of your digital transformation
+                  journey.
                 </p>
               </div>
             </div>
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     </div>

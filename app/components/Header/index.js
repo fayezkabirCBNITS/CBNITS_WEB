@@ -230,6 +230,9 @@ const Example = (props) => {
                       <NavItem>
                         <NavLink href="/news">News</NavLink>
                       </NavItem>
+                      <NavItem>
+                        <NavLink href="/press-release">Press Release</NavLink>
+                      </NavItem>
                     </Nav>
                   </Col>
               </Row>

@@ -1,0 +1,39 @@
+.newsImgBg {
+    
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    /* padding-top: 130px; */
+    padding: 30px 0;
+    height: 100px;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+.newsType {
+    background-color: green;
+    display: inline-block;
+    padding: 5px 20px;
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    margin-bottom: 0px;
+    color: #fff;
+}
+.newsCopmbtm h5{
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000;
+    margin: 10px 0px;
+}
+.dateAdded {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+.newsAuthor {
+    font-size: 14px;
+    color: #3bc6fc;
+    border-bottom: 1px solid #3bc6fc;
+}

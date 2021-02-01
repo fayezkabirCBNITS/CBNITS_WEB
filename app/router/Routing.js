@@ -16,31 +16,32 @@ import Dynamic from "../containers/dynamic365/dynamic365";
 import Website from "./../containers/Website/website";
 import SoftwareSupport from "./../containers/SoftwareSupport/software-support";
 
-import TechLanguage from "./../containers/Technology/angular"
-import FullStack from "./../containers/Technology/fullStack"
-import Reactjs from "./../containers/Technology/react"
-import Javajs from "./../containers/Technology/java"
-import Nodejs from "./../containers/Technology/node"
-import Golang from "./../containers/Technology/golang"
-import Python from "./../containers/Technology/python"
-import ContactUs from "./../containers/ContactUs/contact"
-import Hadoop from "./../containers/Technology/hadoop"
-import BlockChain from "./../containers/Technology/blockchain/blockchain"
-import UiUx from "./../containers/Technology/ui-ux"
+import TechLanguage from "./../containers/Technology/angular";
+import FullStack from "./../containers/Technology/fullStack";
+import Reactjs from "./../containers/Technology/react";
+import Javajs from "./../containers/Technology/java";
+import Nodejs from "./../containers/Technology/node";
+import Golang from "./../containers/Technology/golang";
+import Python from "./../containers/Technology/python";
+import ContactUs from "./../containers/ContactUs/contact";
+import Hadoop from "./../containers/Technology/hadoop";
+import BlockChain from "./../containers/Technology/blockchain/blockchain";
+import UiUx from "./../containers/Technology/ui-ux";
 import Hireus from "../containers/HireUs/hireUs";
 import AboutUsV2 from "../containers/AboutUsV2/about";
-import CloudDevelopment from './../containers/CloudDevelopment/cloud-development'
-import CloudDevOps from './../containers/CloudDevOps/cloud-devops';
-import QualityEngineer from './../containers/QualityEngineering/quality-engineering';
-import SAP from './../containers/SAP/sap';
-import Hrtech from './../containers/HR-Tech/hr-tech';
-import Csitwochain from './../containers/CSI2Chain/csitwochain'
-import CSHealth from './../containers/CSHealth/cshealth'
-import Csecommerce from './../containers/CSEcommerce/csecommerce';
-import CSEducation from './../containers/CSEducation/cseducation';
+import CloudDevelopment from "./../containers/CloudDevelopment/cloud-development";
+import CloudDevOps from "./../containers/CloudDevOps/cloud-devops";
+import QualityEngineer from "./../containers/QualityEngineering/quality-engineering";
+import SAP from "./../containers/SAP/sap";
+import Hrtech from "./../containers/HR-Tech/hr-tech";
+import Csitwochain from "./../containers/CSI2Chain/csitwochain";
+import CSHealth from "./../containers/CSHealth/cshealth";
+import Csecommerce from "./../containers/CSEcommerce/csecommerce";
+import CSEducation from "./../containers/CSEducation/cseducation";
 import News from "./../containers/InsightsAndNews/news";
-import Artical from "./../containers/InsightsAndNews/article"
-
+import Artical from "./../containers/InsightsAndNews/article";
+import PressRelease from "./../containers/PressRelease/pressRelease";
+import PressReleaseArticle from "./../containers/PressRelease/article";
 
 const AppWrapper = styled.div`
   // max-width: calc(768px + 16px * 2);
@@ -90,6 +91,12 @@ const Routing = (_) => {
         <Route exact path="/cs-ed-tech" component={CSEducation} />
         <Route exact path="/news" component={News} />
         <Route exact path="/news/article/:id" component={Artical} />
+        <Route exact path="/press-release" component={PressRelease} />
+        <Route
+          exact
+          path="/press-release/article/:id"
+          component={PressReleaseArticle}
+        />
         <Route path="" component={NotFound} />
       </Switch>
       <FooterComp />
