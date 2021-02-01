@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Container, Collapse } from "reactstrap";
+import { Row, Col, Container, Collapse, Button } from "reactstrap";
 import "./styles.css";
 import Axios from "../../service/axios-config";
+import Modal from "../../utils/helper-methods/careerPageModal";
 
 import accordionImage from "./../../images/accArrow.png";
 
@@ -26,7 +27,7 @@ const Opertunities = (props) => {
     try {
       let res = await Axios.get("/getallCareerPost");
       if (res.status == 200) {
-        setData(res.data.data.reverse());
+        setData(res.data.data);
       } else {
         console.log("Something went wrong");
       }
@@ -74,7 +75,9 @@ const Opertunities = (props) => {
                     <Collapse isOpen={currentId == accordian._id}>
                       <div className="collapseContent py-4">
                         <div>
-                          <p className="pl-xl-5 pl-lg-5 pl-md-4 cllp-p">{accordian.careerExperienceYr}</p>
+                          <p className="pl-xl-5 pl-lg-5 pl-md-4 cllp-p">
+                            {accordian.careerExperienceYr}
+                          </p>
                           <Row className="d-flex align-items-center">
                             <Col xl={5} lg={5} md={5} sm={12}>
                               <div className="imgSec">
@@ -82,12 +85,19 @@ const Opertunities = (props) => {
                               </div>
                             </Col>
                             <Col xl={7} lg={7} md={7} sm={12}>
-                              <ul class="listStyle">
+                              <ul className="listStyle">
                                 {accordian.careerDescription &&
-                                  accordian.careerDescription.map((item, idx) => (
-                                    <li key={idx}>{item}</li>
-                                  ))}
+                                  accordian.careerDescription.map(
+                                    (item, idx) => <li key={idx}>{item}</li>
+                                  )}
                               </ul>
+                            </Col>
+                            <Col>
+                              <Modal
+                                buttonLabel={"Apply Now"}
+                                className={""}
+                                jobDescription={accordian.careerTitle}
+                              />
                             </Col>
                           </Row>
                         </div>
